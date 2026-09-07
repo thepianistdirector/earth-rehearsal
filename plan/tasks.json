@@ -1,15 +1,63 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "project": "earth-rehearsal",
-  "contractVersion": "initial-2026-09-07",
+  "contractVersion": "architecture-foundation-2026-09-07",
   "stateAuthority": "../STATUS.md",
   "tasks": [
+    {
+      "id": "ER-F01",
+      "wave": 0,
+      "title": "Establish the architecture contract",
+      "status": "DONE",
+      "dependsOn": [],
+      "ownedPaths": [
+        "ARCHITECTURE.md",
+        "EXPERIMENTS.md",
+        "SOURCES.md"
+      ],
+      "acceptance": "Define domain-specific solver and applicability boundaries; units and spatial/temporal/scale coupling; mass, energy, capture, disposal and lifecycle ledgers; uncertainty, identifiability, calibration and validation; versioned study/run/result contracts; negative outcomes; evaluator authority; scheduler recovery; plugin isolation; and evidence-based local-to-distributed scale triggers."
+    },
+    {
+      "id": "ER-F02",
+      "wave": 0,
+      "title": "Establish the outcome and dependency roadmap",
+      "status": "DONE",
+      "dependsOn": [
+        "ER-F01"
+      ],
+      "ownedPaths": [
+        "README.md",
+        "ROADMAP.md",
+        "TASKS.md",
+        "STATUS.md",
+        "CONTRIBUTING.md"
+      ],
+      "acceptance": "Prepend Wave 0 without replacing Waves 1\u20138; connect the first analytic case to the original 24 tasks; state scientific gates, external reviewer/data/resource dependencies, scope cuts, stop conditions and evidence-driven replanning triggers."
+    },
+    {
+      "id": "ER-F03",
+      "wave": 0,
+      "title": "Specify the executable next-work packet and validate the repository plan",
+      "status": "DONE",
+      "dependsOn": [
+        "ER-F02"
+      ],
+      "ownedPaths": [
+        "EXPERIMENTS.md",
+        "TASKS.md",
+        "plan/tasks.json",
+        "tools/validate_plan.py"
+      ],
+      "acceptance": "Specify BOX-001 with sufficient equations, synthetic values, intervention arms, invalid cases, artifacts and gates to begin ER-001 without inventing science; add a standard-library validator for unique IDs, status/wave constraints, dependencies, acyclicity, Wave 0 ordering, roadmap/task navigation and local Markdown links."
+    },
     {
       "id": "ER-001",
       "wave": 1,
       "title": "Specify the first pollutant scenario",
       "status": "PLANNED",
-      "dependsOn": [],
+      "dependsOn": [
+        "ER-F03"
+      ],
       "ownedPaths": [
         "docs/benchmarks/"
       ],

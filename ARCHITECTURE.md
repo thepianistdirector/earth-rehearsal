@@ -1,92 +1,195 @@
 # Earth Rehearsal architecture
 
-Status: proposed design, no implementation. Owner: Lucas Santana. Version: initial plan, 2026-09-07.
+Status: **architecture foundation accepted; research runtime not implemented**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
 
-## Scientific boundary and adapters
+## Product boundary
 
-Start with Python finite-volume or compartment transport models and a separate intervention accounting layer. A mass ledger tracks sources, sinks, transfer, captured material and disposal destinations. Add SWMM through an adapter for runoff/drainage and EPANET through a different adapter for distribution hydraulics/water-quality work. Neither tool is assumed to supply a validated microplastic or ecosystem model. Spatial climate and restoration models remain independent adapters with scale and coupling tests. Results are immutable software experiments with maps or plots generated from the recorded run.
+Earth Rehearsal is an open, reproducible environmental study system. Its first job is to answer a narrow question about pollutant mass in a synthetic watershed. It may later connect domain solvers, but a connection is accepted only for an explicit scientific purpose and applicability range.
 
-The initial model uses a small inspectable reference implementation. Evaluate EPA SWMM and EPANET for the relevant later hydraulics boundaries, and Copernicus products for climate inputs. Specialized particle, ecosystem and climate-response solvers require separate benchmark selection.
+The platform can establish software behavior, numerical agreement with known answers, and agreement with declared datasets. It cannot establish safe drinking water, ecological recovery, avoided disease, site suitability, regulatory compliance, or net environmental benefit without the corresponding observations, boundary definition and qualified review. Capture moves material into another managed state; it never makes mass, risk, energy demand or waste disappear.
 
-Referenced engines are candidates for a version-specific evaluation, not installed or approved production dependencies. Wave 1 records the exact official source/version/license, maintenance and advisory review, runtime/transitive behavior, telemetry/data implications, alternatives and rollback before adoption. Prefer the smallest viable local stack; do not introduce Kubernetes, a vector database, a workflow platform or a model provider merely to create infrastructure.
+Agents may propose specifications, parameters and interpretations. Versioned numerical engines and protected evaluators alone calculate accepted metrics and invalidity decisions. No agent response is a scientific result.
 
-## Experiment flow
+## Domain model: separate physics, explicit applicability
+
+The architecture is a study kernel with process-isolated adapters, not one universal Earth solver. Each adapter publishes a `ModelCard`, consumes an accepted `ScenarioVersion`, and returns quantities at declared spatial and temporal supports.
+
+| Domain | Planned governing representation | Earliest supported use | Must not be inferred | Applicability falsifier |
+| --- | --- | --- | --- | --- |
+| Catchment rainfall–runoff | Water-balance compartments first; later an EPA SWMM adapter for subcatchment runoff and drainage routing | Synthetic hydrographs and water-volume accounting | Site flood prediction from invented parameters | Water balance fails, forcing lies outside calibrated range, or routing choice changes the decision |
+| Drainage/channel hydraulics | Kinematic routing where its assumptions hold; one-dimensional Saint-Venant/dynamic-wave adapter where backwater, reversal or pressurization matters | Reproduction of an official engine example before project scenarios | Two-dimensional inundation, groundwater exchange or habitat hydraulics | Omitted hydraulic process controls the metric or refinement does not converge |
+| Pollutant/particle fate | Conservative compartments, then finite-volume advection–dispersion with explicit aqueous, suspended, bed, bank, captured and escaped states | Known-answer transport and bounded synthetic particle classes | Universal microplastic settling, fragmentation or toxicity | Results rely on unconstrained settling/resuspension/fragmentation constants or particle properties outside the model card |
+| Source reduction and interception | Event-sourced stock/flow accounting around the transport solver | Paired intervention arms with equal forcing | That downstream capture is equivalent to prevention | Source and capture effects are not separately identifiable, or any mass is silently removed |
+| Captured-material lifecycle | Foreground inventory of collection, storage, transport, sorting, leakage, treatment, recovery and final disposal; energy/emissions remain separate ledgers | Scenario comparison with every terminal destination named or marked unknown | Circularity, avoided production, health benefit or net benefit from capture alone | A downstream stage is omitted, counted twice, or uses an unsupported substitution credit |
+| Pressurized water distribution | EPA EPANET adapter for hydraulic state, water age, source tracing and supported constituent reactions | Official network example and declared constituent kinetics | Treatment efficacy or potability | Reaction coefficients lack site evidence or the question requires chemistry outside EPANET's representation |
+| Treatment train | Separate ideal-reactor or empirical unit-operation adapters with residual streams, dose and energy inputs | Bench-scale hypotheses within a unit operation's model card | Regulatory removal credit or potable output | Performance is extrapolated across feedwater, scale, fouling or operating regime |
+| Wetland/restoration | Water and constituent budgets coupled to a separately reviewed empirical response model | Directional, site-bounded restoration hypotheses | Biodiversity gain, permanence or ecosystem-service benefit from hydrology alone | Response model lacks independent observations, omits displaced harm, or transfers outside its biome/scale |
+| Urban cooling | Surface energy/water balance or validated empirical temperature response at declared morphology and weather range | Relative synthetic comparisons | Mortality reduction or neighborhood equity outcome | Boundary weather, morphology or irrigation regime lies outside evidence, or energy/water trade-offs reverse the ranking |
+| Climate extension | Reanalysis as historical boundary evidence; projections as scenario-conditioned inputs with model/internal/forcing uncertainty kept distinct | Stress-testing an already validated local model | Local prediction from a coarse cell or a single ensemble statistic | Relevant regional process is unresolved or ensemble/model choice changes the conclusion |
+
+SWMM, EPANET, ERA5 and other named tools are candidates for version-specific evaluation, not installed or approved dependencies. Their official capabilities define a possible adapter boundary; Earth Rehearsal must establish fitness for each study. A specialized groundwater, two-dimensional flood, reactive-chemistry, ecological-population or atmospheric-dispersion solver is a new domain decision, not a flag on an existing adapter.
+
+## Scientific applicability ladder
+
+Each claim carries one of these scopes; later scopes require all earlier evidence relevant to the claim:
+
+1. `A0_KNOWN_ANSWER`: algebraic or manufactured case checks implementation and conservation only.
+2. `A1_SYNTHETIC`: internally coherent scenario explores model behavior; no field transfer.
+3. `A2_CALIBRATED_CONTEXT`: parameters estimated from a declared development dataset and identifiable enough for the stated use.
+4. `A3_INDEPENDENTLY_CONFIRMED_CONTEXT`: frozen model evaluated against data or cases excluded from calibration and search.
+5. `A4_DECISION_CONTEXT_REVIEWED`: exact decision, alternatives, uncertainty, rights and harmful outcomes reviewed by qualified people. This is still decision support, not authority to act.
+
+An artifact reports numerical verification, parameter calibration, independent validation, sensitivity/uncertainty analysis, and domain review as separate fields. Passing one never promotes the others.
+
+## Quantities, coordinates and coupling
+
+Persist quantities with a numeric value, machine-readable unit, physical dimension, sign convention and support. The reference kernel stores calculation values in declared SI units (`m3`, `s`, `kg`, `J`, `K`) while retaining source units and the exact conversion. Concentration is never accepted without numerator and denominator bases; particle count and particle mass are different state variables and may be converted only through a declared size/shape/density model. Carbon dioxide equivalent requires the named characterization method, gases and time horizon.
+
+Every spatial field declares coordinate reference system, horizontal/vertical datum, geometry support (point, line, cell, reach or catchment), cell bounds and missing-data semantics. Every temporal field declares timestamp or interval, timezone/calendar, accumulation versus instantaneous meaning, and interval bounds. Climate and array formats should follow current Climate and Forecast metadata conventions where applicable; choosing a file format does not resolve semantic mismatches.
+
+Coupling is accepted through a versioned `ExchangeContract` containing source and target variable, unit conversion, spatial remap, temporal aggregation/interpolation, conservation expectation, lag, uncertainty propagation and out-of-domain rule. Initial studies use one-way, offline coupling. Two-way iteration is admitted only after an experiment shows feedback materially affects the decision and a convergence criterion is specified.
+
+Conservative extensive quantities use overlap- or flux-weighted remapping. Intensive variables use a scientifically justified method and never borrow conservation semantics. A coupling test must pass a constant-field case, an impulse/step case, a whole-domain balance, a boundary/missing-cell case and a resolution perturbation. Reject a run rather than silently extrapolate, fill, clip or change calendars.
+
+## Conservation and consequence ledgers
+
+For each conserved material `x` and reporting interval:
+
+```text
+opening_stock_x + external_inputs_x
+  = closing_stock_x + boundary_outputs_x + transformed_x + residual_x
+```
+
+`transformed_x` names products and stoichiometry; degradation or fragmentation cannot be a generic sink. The evaluator computes the residual independently from raw state/flux outputs. A tolerance is justified from arithmetic, solver order, timestep/grid behavior and input precision before intervention search. Absolute and scale-normalized residuals are both reported so a near-zero denominator cannot disguise a failure.
+
+Captured pollutant moves to a custody ledger:
+
+```text
+captured -> stored -> transported -> sorted -> recovered | treated | disposed | leaked | unknown
+```
+
+Every transfer conserves mass and records loss or uncertainty. An `unknown` destination is truthful data and blocks claims of completed disposal or net benefit. Energy is conserved within solver boundaries where relevant and separately inventoried as purchased energy/fuel, recovered energy and rejected heat. Lifecycle emissions, cost, toxicity proxies, land/water use and ecological response are distinct metrics; the system does not collapse them into one score until a reviewed decision rule names weights and trade-offs.
+
+For adapters that solve an energy balance, the evaluator also checks:
+
+```text
+opening_stored_energy + imported_work_heat_and_fuel
+  = closing_stored_energy + useful_exported_work_and_heat
+  + unrecovered_rejected_heat + residual
+```
+
+`useful_exported_work_and_heat` contains energy intentionally delivered across the product boundary; `unrecovered_rejected_heat` contains the remaining thermal discharge. They are disjoint and every joule crosses at most one output category. Chemical conversion, phase change and storage terms must be named rather than hidden in rejected heat. A lifecycle energy inventory across organizations is an accounting boundary, not proof of thermodynamic closure inside every upstream process.
+
+## Uncertainty, identifiability and evidence
+
+The study contract separates:
+
+- input/measurement uncertainty;
+- parameter uncertainty and covariance;
+- numerical discretization and solver tolerance;
+- model-form discrepancy and omitted processes;
+- scenario/forcing uncertainty;
+- stochastic variability; and
+- structural unknowns that cannot honestly be assigned a distribution.
+
+Calibration declares the parameters allowed to move, bounds and priors if any, objective function, development observations, optimization budget and identifiability diagnostic. Parameters that trade off without unique support are reported as non-identifiable; the platform may predict an aggregate observable within a bounded context but must not interpret individual fitted values causally. Profile likelihood, posterior diagnostics or sensitivity rank are candidates selected per model, not universal proof.
+
+Validation uses frozen code, parameters and acceptance thresholds on cases excluded from fitting and candidate selection. Spatial or temporal cross-validation must respect dependence; random row splits are rejected when they leak neighboring conditions. Benchmark agreement verifies a numerical implementation only within that benchmark. A reserved case is consumed when its result influences development and is versioned as development evidence thereafter.
+
+Results include negative, null, contradictory and inconclusive outcomes. A favorable metric is invalid if conservation, applicability, rights, budget or evaluator-integrity gates fail. Search reports all attempted candidates and failures so selection does not erase the denominator.
+
+## Versioned study and run contracts
 
 ```mermaid
 flowchart LR
-  A[Approved public sources or synthetic inputs] --> B[Source and scenario validation]
-  B --> C[Accepted experiment specification]
-  H[Human or bounded proposal agent] --> C
-  C --> D[Budget and scope gate]
-  D --> E[Isolated domain adapter]
-  E --> F[Protected numerical and quality evaluator]
-  F --> G[Recorded results and limitations]
-  G --> I[Independent reproduction]
-  I --> J[Research report]
+  S[SourceRecord] --> C[ScenarioVersion]
+  M[ModelCard] --> C
+  C --> E[ExperimentSpec]
+  E --> R[RunAttempt]
+  R --> V[Protected evaluation]
+  V --> B[ResultBundle]
+  B --> Q[StudyVersion]
+  Q --> P[Qualified review / publication decision]
+  A[Proposal agent or human] --> E
+  A -. cannot modify .-> V
 ```
 
-This diagram describes the planned system. A producer cannot edit its evaluator, overwrite accepted results or extend its own budget. Source text and model output are untrusted data, never permission to execute code or change project rules.
+| Contract | Required identity and content |
+| --- | --- |
+| `SourceRecord` | Provider, canonical URL/DOI, access date, version/retrieval window, license/terms, attribution, redistribution and derivative permissions, original byte identity when lawful to retain, transformations, spatial/temporal coverage, quality flags and limitations |
+| `ModelCard` | Adapter/engine version, governing equations, state variables and units, discretization, supported ranges/scales, parameters, calibration evidence, independent validation evidence, numerical tolerances, known invalid states and prohibited interpretations |
+| `ScenarioVersion` | Immutable scenario ID/version, source records, geometry/time supports, initial/boundary conditions, forcing, interventions, parameter sets, coupling graph and applicability target |
+| `ExperimentSpec` | Question, hypotheses, comparison arms, metrics, invalidity/falsification rules, seeds, calibration/confirmation partitions, evaluator version, allowed adapters/plugins, and CPU/memory/disk/time/run/inference budgets |
+| `RunAttempt` | Logical run ID plus attempt number, accepted spec/study version, repository revision, environment lock, actual solver settings/seeds/hardware/threads, lifecycle timestamps, resource use and terminal reason |
+| `ResultBundle` | Raw outputs, diagnostics, balance ledgers, evaluator findings, uncertainty components, negative results, partial/failure artifacts, source/model notices and exact reproduction command |
+| `StudyVersion` | Frozen set of experiment specs and result bundles, claim table, applicability, contradicting evidence, reviewer roles/decisions and supersession link |
 
-## Components and ownership
+Schemas are versioned and reject unknown execution fields. A study revision creates a new version; it never overwrites an accepted run. Source byte digests may establish intrinsic data identity, but ordinary repository revisions and semantic contract versions identify plans and reviews.
 
-| Component | Owns | Does not own |
-| --- | --- | --- |
-| Input catalog | Exact public source reference, date/version, license, units and permitted transformations | Silent data scraping or access to private records |
-| Scenario contract | Inputs, supported ranges, initial/boundary conditions, comparison arms and seeds | Numerical claims outside the model card |
-| Coordinator | Scheduling, state transitions, cancellation and resource accounting | Scientific truth or automatic publication |
-| Domain adapter | Engine-specific conversion, execution and raw diagnostics | Metric definitions and permission changes |
-| Evaluator | Predeclared invariants, metrics, holdouts and invalidity decisions | Editing the candidate to make it pass |
-| Artifact store | Immutable completed run bundles and explicit partial/failed results | Personal credentials or hidden data copies |
-| Report/workbench | Inspectable comparisons, uncertainty, limitations and source links | Invented outcomes or unlabeled simulations |
+Run lifecycle:
 
-Use a local Python command-line coordinator and filesystem bundles first. SQLite is appropriate when durable multi-run scheduling becomes necessary. Keep JSON for contracts and small metadata, CSV for simple numeric tables, and introduce a larger-array format only when the data warrants it. Numerical engines may use C/C++ or other languages behind process adapters. Select exact language/runtime versions in the first implementation task after compatibility checks.
+```text
+PROPOSED -> ACCEPTED -> QUEUED -> STARTING -> RUNNING -> EVALUATING
+         -> SUCCEEDED | NEGATIVE | INCONCLUSIVE
+         -> INVALID | FAILED | CANCELLED | BUDGET_EXHAUSTED
+```
+
+`NEGATIVE` and `INCONCLUSIVE` are valid evaluated outcomes. `INVALID`, `FAILED`, `CANCELLED` and `BUDGET_EXHAUSTED` cannot support an intervention claim. Retries append an attempt to the same logical run and never overwrite completed evidence.
+
+## Protected execution and evaluator boundary
+
+The coordinator accepts only registered schema versions, adapters, evaluator versions and resource envelopes. Proposal agents cannot write accepted specs, evaluator code, holdouts, raw outputs, result status or publication fields. Evaluators recompute invariants from raw outputs and are versioned separately from candidates; a change reopens affected evidence.
+
+An ordinary subprocess running as the developer account is a process boundary, not a security boundary: it can normally read the account's home directory, credentials, repository files and holdouts. Before enforced isolation exists, the prototype may execute only reviewed built-in code against synthetic development fixtures. It must not execute third-party/untrusted plugins or protected confirmation cases.
+
+Admission of an untrusted plugin requires an official source and license review, pinned version/environment, declared capabilities and file formats, known network/subprocess/native-code behavior, minimal fixture, malformed-output and timeout tests, and rollback. Execution then requires an enforced separate OS identity, container or VM with allowlisted read-only input mounts, one fresh writable scratch/output mount, no home/keychain/SSH/browser/token or holdout visibility, network denied by enforcement, and enforced CPU, memory, wall-time, disk and subprocess limits. Isolation acceptance must demonstrate that attempted reads, writes, network calls and resource overruns are denied; configuration prose or a `shell=False` subprocess is not evidence.
+
+Protected confirmation adds a distinct least-privilege input path: the candidate receives only the accepted scenario interface, while the protected evaluator controls confirmation inputs and writes authoritative status. Outputs cross back only through schema and size validation. In-process untrusted plugins, arbitrary serialized objects and install-at-run-time behavior are prohibited.
+
+Trust may graduate from `QUARANTINED_FIXTURE` to `KNOWN_ANSWER`, `SYNTHETIC_STUDY`, and then a reviewed scientific scope. Trust is adapter-version and claim-specific; it does not transfer to another engine version, dataset or domain.
+
+## Scheduler, budgets and recovery
+
+The first coordinator is a single local command using filesystem bundles and atomic rename. Add SQLite only when durable multi-run claiming is needed. The scheduler reserves estimated CPU, accelerator, memory, disk, wall time, attempt count and agent-inference budget before launch, then records actual use including failures. It must refuse work that cannot fit the remaining campaign envelope.
+
+Each run writes to an attempt-specific temporary directory. Heartbeats and ownership leases make abandoned work detectable. Cancellation first requests graceful termination, then kills the process tree after a declared grace policy, preserves readable diagnostics, accounts incurred resources and records `CANCELLED`. Restart reconciles live processes and leases before dispatch; an orphan can be recovered, failed or retried, never silently duplicated. Publishing a result bundle is atomic and idempotent.
+
+Scale only when measurement demonstrates need:
+
+1. **Local sequential:** default through the first analytic and synthetic studies.
+2. **Local bounded parallel:** eligible after replay, cancellation, resource enforcement and duplicate-prevention tests pass, and measured queue delay dominates useful run time without violating memory/disk limits.
+3. **Remote single worker:** eligible when an accepted study cannot fit available local hardware or turnaround, portable environments and artifacts reproduce locally/remotely, secrets are absent, and remote failure/cost limits are tested.
+4. **Distributed scheduler:** eligible only when multiple independent studies create sustained measured demand, transfer/storage costs are materialized, retries are idempotent, evaluator integrity is preserved and operations ownership/budget are allocated.
+
+No Kubernetes, workflow platform, message broker, vector database or cloud account is justified by the current state. A distributed system is a response to measured workload, not a prerequisite for science.
 
 ## Planned repository map
 
 ```text
-src/                 coordinator, contracts, evaluation and reports
-adapters/            independently testable domain engines
-scenarios/           lawful public or synthetic scenarios
-benchmarks/          fixed numerical references and confirmation cases
-tests/               behavior, failure and boundary checks
+src/                 contracts, coordinator, accounting, evaluation, reports
+adapters/            isolated domain engines and exchange boundaries
+scenarios/           synthetic or lawfully reusable versioned inputs
+benchmarks/          known answers, manufactured cases, confirmation cases
+tests/               contract, conservation, coupling, failure, recovery checks
 apps/workbench/      later local comparison interface
-docs/                domain decisions and scientific interpretation
+docs/                model cards, data records, studies, decisions, reviews
+plan/                machine-readable contributor dependency graph
+tools/               repository and plan validation utilities
 ```
 
-These directories are proposed owned scopes, not existing software. The project starts as documentation only. Early tasks establish an actual runnable skeleton and exact verification commands before downstream implementation begins.
+The directories are intended ownership boundaries. Most do not exist yet.
 
-## Shared data contracts
+## Architecture falsifiers and rejected shortcuts
 
-- `SourceRecord`: human-readable ID, provider URL, version/date, license, permitted use, transformations, coverage, quality limitations and whether redistribution is allowed.
-- `ModelCard`: engine/version, governing assumptions, variables/units, supported ranges, calibration evidence, validation cases, numerical tolerances, invalid states and prohibited interpretations.
-- `ExperimentSpec`: ID, question, model/scenario versions, source references, parameters, seeds, baseline/candidate, metrics, quality constraints, acceptance/falsification rule, allowed adapter and compute/storage limits.
-- `RunResult`: spec ID, repository commit, environment, actual seed, start/end, raw artifact paths, diagnostics, measured/modelled status, metrics, uncertainty, cost and terminal state.
-- `ResearchClaim`: exact statement, supporting and contradicting run/source references, applicability, limitations, reproduction status and reviewer decision.
+| Observation | Required response |
+| --- | --- |
+| The box-model reference cannot close water and pollutant mass under hand calculation | Stop implementation, repair the contract/evaluator; no intervention ranking |
+| Reasonable timestep, grid, remap or model-form choices reverse a ranking | Report fragility, narrow applicability or collect evidence; do not average away disagreement |
+| Source reduction and capture cannot be identified separately from available observations | Report an aggregate effect or redesign the experiment; no causal parameter story |
+| Captured mass has no supportable downstream destination | Preserve `unknown`; block disposal, circularity and net-benefit claims |
+| A coupled domain requires feedback that one-way exchange cannot reproduce | Add a bounded coupling experiment before two-way architecture |
+| A public dataset cannot be redistributed or its version cannot be reconstructed | Retain metadata/retrieval recipe if permitted or substitute a synthetic fixture; do not vendor it |
+| A plugin needs broad credentials, network or filesystem access, or isolation cannot prove denial | Reject or isolate/redesign the adapter; do not expose the developer account or protected confirmation material |
+| Qualified reviewer or applicability data are unavailable | Stop at numerical/synthetic evidence and label the gap |
 
-The persisted contract uses explicit schema versions and rejects unknown execution fields. Units are machine-readable and must be converted at a named boundary. A run records seeds, solver settings, thread count, hardware and tolerances: stochastic reproducibility and floating-point equivalence are distinct from bitwise determinism.
-
-## Execution and recovery
-
-Lifecycle: `PROPOSED -> ACCEPTED -> QUEUED -> RUNNING -> EVALUATED -> REPLICATED` with `REJECTED`, `INVALID`, `FAILED` and `CANCELLED` terminal alternatives. A low score is a valid negative result; a numerical failure is invalid evidence and must not become a favorable score.
-
-Write outputs into a run-specific temporary directory and publish the result atomically only when required outputs validate. Preserve partial diagnostics after interruption. Retries use the same logical run ID and cannot overwrite a completed result. At restart, reconcile running subprocesses, recorded costs and worker ownership before scheduling. Cancellation must terminate the subprocess tree and mark its artifacts and cost state explicitly.
-
-Workers receive only the accepted scenario, pinned engine environment and bounded scratch/output locations. Deny network by default after input preparation, omit personal credentials and limit CPU/GPU time, memory, disk and subprocess count. Use process argument arrays rather than shell interpolation. Model weights and serialized objects require safe loading; no arbitrary remote-code trust. Separate contributor code from evaluator and release credentials.
-
-## Evaluation and domain invariants
-
-Mass balance residual; retained/escaped/captured/disposed pollutant mass; water-quality variables within each model's scope; energy and lifecycle emissions; cost assumptions; habitat-impact proxies; downstream transfer and uncertainty. No claim that simulated removal proves safe water or net environmental benefit.
-
-Conserve water and pollutant mass across explicit boundaries. Captured material cannot disappear; count disposal, leakage, fragmentation and energy use where modeled. Public data are not automatically licensed for redistribution. No hardware control, environmental release, field intervention or location targeting of sensitive habitats. Distinguish modeled proxies from verified ecological outcomes.
-
-Tolerances are justified from numerical analysis, source precision or a domain reference before candidate search. Calibrate on development evidence and confirm on reserved cases. Save all candidate attempts, including failure, and report comparison uncertainty; do not tune repeatedly against a supposedly independent final holdout.
-
-## Scale and integration decisions
-
-Prove one local experiment first. Add batch workers only after replay, cancellation and duplicate prevention pass; add distributed runs only when measured elapsed time justifies the complexity. No cloud resource is provisioned by this plan. Future Tanduna contributions remain ordinary reviewed GitHub changes. An optional Research Continuum integration uses versioned experiment contracts and cannot bypass this project's evaluator or safety policy.
-
-## Risks and cut order
-
-Stop ranking if mass does not close or results depend on unvalidated removal constants. If finer resolution reverses a ranking, report model uncertainty and collect better public evidence. Cut global-climate ambition before weakening the first watershed benchmark.
-
-Cut photorealism and polished dashboards first, distributed execution second, and additional scientific domains third. Preserve the first reproducible experiment, source rights, evaluation integrity and bounded claims. Revisit architecture only when a measured limitation or failed benchmark justifies it.
+Rejected for the foundation: one monolithic multiphysics solver, one generic “removal efficiency,” a single weighted sustainability score, agent-authored acceptance, mutable latest-result files, calibration against confirmation cases, automatic spatial/temporal interpolation, and distributed infrastructure before measured need. These choices would hide the boundary most likely to falsify a result.

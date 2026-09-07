@@ -1,6 +1,6 @@
 # Earth Rehearsal roadmap
 
-All eight waves and 24 tasks are **PLANNED**. No delivery date, compute allocation or completed research is promised.
+Wave 0 is **DONE**: its three architecture-foundation tasks were accepted by the authorized root after independent review and reproduced checks. All 24 original scientific/build tasks remain **PLANNED** across Waves 1–8. The programme now contains nine waves and 27 tasks; no scientific result or runtime is claimed.
 
 ## Product objective
 
@@ -10,21 +10,50 @@ Let researchers simulate environmental interventions before proposing physical e
 
 Create a synthetic watershed with a transparent flow and particle mass-balance model. Compare no intervention, source reduction and simulated interception under dry and storm conditions. Report retained, escaped, captured and disposed mass, costs and uncertainties. No real treatment equipment or field experiment is part of the project.
 
-Waves 1–3 establish the first integrated experiment. Wave 4 tests whether its evidence is robust. Later waves expand domains, add agents, improve collaboration and prepare an independently reproduced research preview. Wave order is an integration dependency, not a calendar. The explicit task dependencies are in [TASKS.md](TASKS.md).
+Wave 0 makes the programme executable. Waves 1–3 establish the first integrated experiment. Wave 4 tests whether its evidence is robust. Later waves expand domains, add agents, improve collaboration and prepare an independently reproduced research preview. Wave order is an integration dependency, not a calendar. The explicit task dependencies are in [TASKS.md](TASKS.md).
+
+## Outcome and dependency logic
+
+```mermaid
+flowchart LR
+  W0[Wave 0: reviewed architecture] --> W1[Wave 1: accepted study contract]
+  W1 --> W2[Wave 2: verified conservative kernels]
+  W2 --> W3[Wave 3: reproduced synthetic comparison]
+  W3 --> W4[Wave 4: uncertainty and confirmation gate]
+  W4 --> W5[Wave 5: separately evidenced domain extensions]
+  W5 --> W6[Wave 6: protected budgeted search]
+  W6 --> W7[Wave 7: reproducible local workbench]
+  W7 --> W8[Wave 8: independently reviewed preview]
+```
+
+The critical path is Wave 0 → BOX-001 contract and skeleton → conservative transport/intervention/custody ledgers → first comparison → refinement/holdout evidence. Domain extensions cannot accelerate that path because each introduces different physics and applicability evidence. Qualified review, data rights and source/model evaluation are external dependencies with unknown lead time; they are gates, not implied capacity.
+
+Within Wave 5, drainage/distribution, restoration/cooling, and climate/lifecycle can be investigated independently after the common uncertainty gate. Their results rejoin only through versioned exchange and study contracts. A domain can be deferred without weakening the first watershed milestone. Wave 6 agents depend on protected evaluators and accepted domain evidence; they cannot be used to manufacture that evidence.
 
 ## Capacity and next planning window
 
-Assume one maintainer and one implementation owner per coherent surface. Human reviewer availability, hardware and paid-compute budget are currently unallocated. Plan the next one or two weeks around Waves 1–2 only after measuring the first task's throughput; later tasks are outcome packages to split when prerequisites exist. The conservative dependency graph waits for the previous wave's accepted gate. Within a wave, use disjoint work only when dependencies and shared resources permit it.
+Assume one maintainer and one implementation owner per coherent surface. Human reviewer availability, hardware and paid-compute budget are currently unallocated. Do not forecast calendar dates until ER-001 and ER-003 produce observed implementation, review and rework effort. Later tasks are outcome packages to split when prerequisites exist. The conservative dependency graph waits for the previous wave's accepted gate. Within a wave, use disjoint work only when dependencies and shared resources permit it.
 
 Proposed initial experiment ceiling for future approval: one local worker, at most 20 trial runs, at most two elapsed compute hours and 5 GiB of new artifacts per campaign. Agent inference costs count toward an explicitly approved budget. These are draft limits, not permission to start or spend. Reduce the workload if the first benchmark cannot fit. GPU, cloud, domain-review time and additional workers need an explicit allocation before execution.
 
 ## Waves and tasks
 
+## Wave 0: Architecture and research-programme foundation
+
+Outcome/gate: Maintainer-reviewed architecture, dependency logic and one executable known-answer packet exist without claiming a simulator or scientific result.
+
+Entry: Clean documentation baseline at repository revision `f05ca211968e293e1b5ebc6924d4676e667e0089`.
+- **ER-F01: Establish the architecture contract.** Separate solver physics, applicability, quantities/coupling, evidence, study/run contracts, evaluator authority, plugin trust and scale triggers.
+- **ER-F02: Establish the outcome and dependency roadmap.** Connect the first benchmark to the original Waves 1–8, scientific gates, resource decisions, cut order and replanning triggers.
+- **ER-F03: Specify the executable next-work packet and validate the repository plan.** Make BOX-001 and ER-001 startable without scientific guesswork and provide a standard-library consistency check.
+
+Gate decision: the maintainer reviews all three tasks and records acceptance in [STATUS.md](STATUS.md). Until then they remain `READY_FOR_REVIEW`; no architecture document is implementation or scientific validation.
+
 ## Wave 1: Watershed experiment contract
 
 Outcome/gate: One bounded question, lawful inputs and conservation checks are defined.
 
-Entry: No implementation prerequisite; inspect the initial plan.
+Entry: ER-F03 accepted with Wave 0 review evidence recorded; inspect the current plan and source before implementation.
 - **ER-001: Specify the first pollutant scenario.** Define the synthetic catchment, particle classes, boundary conditions, analytic references and mass-accounting equation.
 - **ER-002: Review environmental data and rights.** Record exact source licenses, resolution, date coverage and missing variables; clearly label invented scenario inputs.
 - **ER-003: Build the experiment skeleton.** A CLI validates units and source/sink definitions; a hand-computable no-removal case passes.
@@ -113,3 +142,7 @@ All source and clinical/environmental/privacy/performance claims stay within [EX
 Stop ranking if mass does not close or results depend on unvalidated removal constants. If finer resolution reverses a ranking, report model uncertainty and collect better public evidence. Cut global-climate ambition before weakening the first watershed benchmark.
 
 Stop a campaign when its approved budget is exhausted, the evaluator is compromised, required provenance is missing or the task crosses its safety boundary. Do not keep adding agents to rescue an unsupported hypothesis. Cut rich visuals, distributed compute and additional domains before the initial benchmark. Reforecast after accepted task evidence, not from speculative agent throughput.
+
+Replan the affected path when a known-answer case fails, an assumed solver boundary omits a decision-controlling process, source rights prevent reproduction, calibration parameters are non-identifiable, confirmation contradicts development results, model/refinement choice reverses an intervention ranking, a qualified reviewer rejects applicability, or observed task/review effort invalidates the active packet size. Preserve negative evidence and change only the impacted claims and dependencies.
+
+Scope cuts proceed in this order: polished/photorealistic presentation; distributed and then local parallel execution; autonomous search; additional climate/restoration/water-system domains; spatial resolution and scenario breadth. Preserve source rights, explicit units/support, conservation and custody ledgers, evaluator independence, negative outcomes, BOX-001, and one reproducible synthetic watershed comparison.

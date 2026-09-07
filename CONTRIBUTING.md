@@ -4,7 +4,7 @@ Read [README.md](README.md), [STATUS.md](STATUS.md), the relevant [task](TASKS.m
 
 Choose one bounded task whose prerequisites are accepted. Before implementation, agree the actual base branch/commit, owned files, acceptance evidence, available commands and resource/permission limits. One primary owner handles a coherent change. Preserve other contributors' files and avoid speculative shared infrastructure.
 
-The first implementation task creates the runnable skeleton and documents real setup/test commands. Until then, there is nothing to install or run. Referenced engines are candidates; do not install dependencies, download model weights or datasets, or start paid experiments without the corresponding task authority and exact dependency/data review.
+The repository-plan validator already runs with `python3 tools/validate_plan.py`; it checks the task graph, plan consistency, navigation and local links only. There is no simulation runtime or simulator dependency to install or run. ER-003 creates that runnable skeleton and documents its real setup/test commands. Referenced engines are candidates; do not install dependencies, download model weights or datasets, or start paid experiments without the corresponding task authority and exact dependency/data review.
 
 A contribution should contain a focused change, why it addresses the task, actual checks and failures, reproduction inputs, source/license notices and honest limitations. Unit checks prove local behavior; benchmark agreement and independent scientific interpretation require their own evidence. Never weaken a metric, tolerance, holdout or privacy boundary to make a result pass.
 
