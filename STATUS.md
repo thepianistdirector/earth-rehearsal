@@ -1,8 +1,8 @@
 # Current state
 
-Updated September 7, 2026. Maintainer: Lucas Santana. The canonical task/status authority is [plan/tasks.json](plan/tasks.json); TASKS.md and ROADMAP.md are generated views. This file summarizes evidence and unresolved gates.
+Updated September 8, 2026. Maintainer: Lucas Santana. The canonical task/status authority is [plan/tasks.json](plan/tasks.json); TASKS.md and ROADMAP.md are generated views. This file summarizes evidence and unresolved gates.
 
-**Earth Rehearsal 0.1 is implemented and locally verified. Public release, external human workflow and native Tanduna publication remain incomplete.** The native Codex Goal is ACTIVE, keyed to this owning task, and is not marked complete.
+**[Earth Rehearsal v0.1.0 is public](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0), and its publicly downloaded source artifact passes isolated Linux verification. External human workflow and native Tanduna publication remain incomplete.** Work resumed after the owner approved publication on September 8. The overall delivery remains incomplete.
 
 ## Preserved foundation
 
@@ -24,7 +24,7 @@ Strict SI inputs, bounded controls/step counts, study and runtime identities, pa
 
 [Verification evidence](docs/evidence/verification.md) records actual commands, environment and limitations. Runtime unit/integration tests include actual process death before calculation and activation; corruption falsifiers; hand-computable analytic controls; independent trajectory/refinement; strict invalid inputs; CSV fidelity; escaping; changed inputs; identical reproduction; and preservation of previous evidence.
 
-The archive is exercised after extraction using isolated Python, without the source checkout on Python's search path. The primary workflow, all four negative controls, exported-bundle reopen and full recovery tests pass. This is a fresh local package execution on the same Linux host, **not** an externally obtained public artifact or human user validation.
+The archive is exercised after extraction using isolated Python, without the source checkout on Python's search path. The primary workflow, all four negative controls, exported-bundle reopen and full recovery tests pass. The initial run used the local candidate. After publication, all four public assets were downloaded without authentication and their checksums verified. The public source archive passed thirteen isolated commands, including 36 runtime tests and twenty negative plan probes. [Public download evidence](docs/evidence/public-release-verification.json) records the actual results. This remains an agent-run check on the same Linux host; independent-machine and human participant validation remain pending.
 
 Browser evidence covers desktop, phone, 320-pixel narrow layout, 200% CSS zoom approximation, keyboard focus and horizontal table scrolling, reduced-motion preference, semantic headers/captions and chart labels, and no remote resources/scripts. Agent visual review preferred the compact report layout. No screen-reader or universal accessibility claim is made.
 
@@ -32,17 +32,17 @@ Browser evidence covers desktop, phone, 320-pixel narrow layout, 200% CSS zoom a
 
 221 canonical rows: 27 historical umbrella contracts plus 194 distinct delivery outcomes; 40 BOX-001 outcomes form 0.1. The plan has 28 active/public waves and 444 dependency links. Generated exports and twenty negative plan probes pass. Original numeric waves, acceptance, prerequisites and ownership scopes remain immutable; explicit publication-wave mapping fits Tanduna's observed limit.
 
-Thirty-six bounded BOX implementation outcomes have local evidence; four release/human/platform outcomes are BLOCKED. Automated hand controls retain AUTOMATED PASS rather than claiming a human observation. Later proposals remain PLANNED and are not the 0.1 implementation target.
+Thirty-six bounded BOX implementation outcomes have local evidence, one publication outcome is RELEASE VERIFIED, and three human/platform outcomes remain BLOCKED. Automated hand controls retain AUTOMATED PASS rather than claiming a human observation. Later proposals remain PLANNED and are not the 0.1 implementation target.
 
 ## Unresolved release gates
 
-- **Concrete release decision:** approve the final reviewed source/diff, account thepianistdirector, repository thepianistdirector/earth-rehearsal, tag v0.1.0 and exact source/example assets before committing/pushing/tagging/publishing. No public release has been created. Git author identity is not locally configured; the existing repository author is known, but no email is invented or global setting changed.
+- **Public release completed:** the owner approved publication on September 8. Source commit `34239693662cf97efa3a77b9917a93db856d04e3`, tag `v0.1.0` and the four exact approved assets are public at the release link above. The release archive retains its original candidate-status snapshot; current main records subsequent evidence. Human review remains an unfulfilled prerequisite in the ledger, and publication does not satisfy it.
 - **Required human review:** a real reviewer must assess the released interpretation and the requested human evidence. Agent critics are separate software/design evidence. No participant or reviewer is fabricated.
-- **External first run:** after an authorized public release, an actual external participant must obtain the public asset, change an input, diagnose a negative control, reopen and reproduce it. The local extracted-package run does not fill this gate.
-- **Native Tanduna:** fresh public readback shows zero tasks and no published roadmap. The original proposal is revision 1 in discussion. The supported authenticated writer is not available in this task. Exact plan approval, authenticated supported draft/review/publication, returned-ID reconciliation and public readback remain necessary. Local exports and placeholders are not publication.
+- **External first run:** an actual external participant must obtain the public asset, change an input, diagnose a negative control, reopen and reproduce it. The automated public-download run does not fill this gate.
+- **Native Tanduna:** the last public readback showed zero tasks and no published roadmap. The original proposal is revision 1 in discussion. The supported authenticated writer is not available in this task. The owner approved the exact 221-row programme. Authenticated supported draft/review/publication, returned-ID reconciliation and public readback remain necessary. A Mac helper prompt and private queue are prepared for the supported same-computer authentication workflow; the helper and its schedule are not yet verified running. Local exports and placeholders are not publication.
 
-Public destinations: [GitHub](https://github.com/thepianistdirector/earth-rehearsal), [Tanduna roadmap](https://tanduna.com/projects/earth-rehearsal/roadmap), [Tanduna tasks](https://tanduna.com/p/earth-rehearsal/tasks). None is represented as an already published 0.1.
+Public destinations: [GitHub](https://github.com/thepianistdirector/earth-rehearsal), [Tanduna roadmap](https://tanduna.com/projects/earth-rehearsal/roadmap), [Tanduna tasks](https://tanduna.com/p/earth-rehearsal/tasks). GitHub v0.1.0 is published; native Tanduna publication remains pending.
 
 ## Next work
 
-Complete the release and human/platform gates above. Then begin W06's bounded catchment definition, with explicit spatial boundaries, particle applicability, source rights and qualified freshwater-transport review. Do not add environmental interpretations or real-world interventions to BOX-001.
+Complete the remaining human/platform gates above. Then begin W06's bounded catchment definition, with explicit spatial boundaries, particle applicability, source rights and qualified freshwater-transport review. Do not add environmental interpretations or real-world interventions to BOX-001.

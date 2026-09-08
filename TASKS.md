@@ -458,14 +458,14 @@ Generated from `plan/tasks.json`; edit the canonical ledger, then run `python3 t
 
 ### ER-B05-06 — Publish authorized GitHub release
 
-- Status: **BLOCKED**; release: 0.1; basis: owner_proposed_cut; kind: delivery_outcome.
+- Status: **RELEASE VERIFIED**; release: 0.1; basis: owner_proposed_cut; kind: delivery_outcome.
 - Outcome: Exact approved tag and assets are publicly downloadable and asset hashes match locally verified artifacts.
 - Area: External users reproduce and inspect the study; original/canonical wave: W05; publication wave: W05.
 - Prerequisites: ER-B05-04, ER-B05-08.
 - Acceptance: Exact approved tag and assets are publicly downloadable and asset hashes match locally verified artifacts.
 - Sources: owner-launch, BOX-001, ER-021, ER-023, ER-024, decision-runtime, decision-numerics.
-- Evidence needs: Actual external observation and destination-specific publication authority.
-- Recorded evidence: ["STATUS.md#unresolved-release-gates"].
+- Evidence needs: Owner publication approval received September 8, 2026. Public assets and unauthenticated download verified. Required human review in ER-B05-08 remains incomplete; this status records publication and asset verification only.
+- Recorded evidence: ["https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0", "docs/evidence/public-release-verification.json", "STATUS.md#unresolved-release-gates"].
 
 ### ER-B05-05 — Observe first-run and recovery workflow
 

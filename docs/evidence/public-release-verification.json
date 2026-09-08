@@ -1,0 +1,208 @@
+{
+  "observer": "Astra automated public download and isolated Linux execution; not a human or independent host",
+  "archive_sha256": "5607260a25f7defb71b646b21ea99ef30c8c2640e6f4d5687f5c3133c697415c",
+  "version": "0.1.0",
+  "runtime_source_digest": "13288ad265c1ef23a644fe45252520683e49f6ad78c82d2701b23141f6a39a63",
+  "python": "3.12.14",
+  "platform": "linux",
+  "source_files_verified": 57,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "run",
+        "--out",
+        "runs/default"
+      ],
+      "exit_code": 0,
+      "seconds": 0.09860603895504028,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.1.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nComplete bundle: runs/default\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "run",
+        "--source-factor",
+        "0.25",
+        "--out",
+        "runs/changed"
+      ],
+      "exit_code": 0,
+      "seconds": 0.07099837303394452,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.1.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              1.198650131    1.051349869    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nComplete bundle: runs/changed\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "inspect",
+        "runs/default"
+      ],
+      "exit_code": 0,
+      "seconds": 0.032384092977736145,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.1.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nVERIFIED: retained evidence, hashes and independently recomputed balances\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "reproduce",
+        "runs/default",
+        "--out",
+        "runs/reproduced"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1114360120263882,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.1.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nReproduced into new bundle: runs/reproduced\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "export",
+        "runs/default",
+        "--out",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "seconds": 0.04512637300649658,
+      "stdout": "Exported verified evidence: runs/exported\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "inspect",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "seconds": 0.03217433299869299,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.1.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nVERIFIED: retained evidence, hashes and independently recomputed balances\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "conservation",
+        "--out",
+        "runs/conservation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.018806069041602314,
+      "stdout": "EXPECTED_REJECTION: step mass balance: mismatch (-0.1 versus 0)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "disposal",
+        "--out",
+        "runs/disposal.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.02608286199392751,
+      "stdout": "EXPECTED_REJECTION: unsupported disposal/lifecycle/ecological/health claim\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "source",
+        "--out",
+        "runs/source.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.01855908997822553,
+      "stdout": "EXPECTED_REJECTION: source flux: mismatch (0.12 versus 0.06)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "custody",
+        "--out",
+        "runs/custody.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.02861832402413711,
+      "stdout": "EXPECTED_REJECTION: missing custody transfer records for OUTLET_CAPTURE/4/capture-total\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 1.4535552539746277,
+      "stdout": "",
+      "stderr": "test_caught_interruption_preserves_prior_evidence (test_bundle.BundleTests.test_caught_interruption_preserves_prior_evidence) ... ok\ntest_complete_inspect_does_not_execute_numerics (test_bundle.BundleTests.test_complete_inspect_does_not_execute_numerics) ... ok\ntest_failed_evaluation_keeps_raw_evidence_without_complete_marker (test_bundle.BundleTests.test_failed_evaluation_keeps_raw_evidence_without_complete_marker) ... ok\ntest_hash_and_missing_marker_rejected (test_bundle.BundleTests.test_hash_and_missing_marker_rejected) ... ok\ntest_interrupt_after_activation_leaves_complete_result (test_bundle.BundleTests.test_interrupt_after_activation_leaves_complete_result) ... ok\ntest_process_death_before_calculation_and_activation (test_bundle.BundleTests.test_process_death_before_calculation_and_activation) ... ok\ntest_reproduce_and_supported_change_produce_real_results (test_bundle.BundleTests.test_reproduce_and_supported_change_produce_real_results) ... ok\ntest_reproduce_requires_matching_runtime (test_bundle.BundleTests.test_reproduce_requires_matching_runtime) ... ok\ntest_analytic_gate_is_independent_of_conservation (test_evaluator.EvaluatorTests.test_analytic_gate_is_independent_of_conservation) ... ok\ntest_conserving_wrong_source_and_outlet_cannot_pass (test_evaluator.EvaluatorTests.test_conserving_wrong_source_and_outlet_cannot_pass) ... ok\ntest_custody_does_not_allow_disposal_or_duplicate_terminal_stock (test_evaluator.EvaluatorTests.test_custody_does_not_allow_disposal_or_duplicate_terminal_stock) ... ok\ntest_custom_cap_bound_grid_really_refines (test_evaluator.EvaluatorTests.test_custom_cap_bound_grid_really_refines) ... ok\ntest_default_independent_reference_and_refinement (test_evaluator.EvaluatorTests.test_default_independent_reference_and_refinement) ... ok\ntest_reject_malformed_runs_and_nonfinite_fields (test_evaluator.EvaluatorTests.test_reject_malformed_runs_and_nonfinite_fields) ... ok\ntest_reject_mass_water_and_time_corruption (test_evaluator.EvaluatorTests.test_reject_mass_water_and_time_corruption) ... ok\ntest_reject_missing_duplicate_extra_and_reordered_steps (test_evaluator.EvaluatorTests.test_reject_missing_duplicate_extra_and_reordered_steps) ... ok\ntest_stationary_control_does_not_claim_observed_order (test_evaluator.EvaluatorTests.test_stationary_control_does_not_claim_observed_order) ... ok\ntest_zero_segment_and_extreme_capture_controls (test_evaluator.EvaluatorTests.test_zero_segment_and_extreme_capture_controls) ... ok\ntest_cap_bound_grid_actually_refines (test_numerics.NumericsTests.test_cap_bound_grid_actually_refines) ... ok\ntest_default_independent_reference (test_numerics.NumericsTests.test_default_independent_reference) ... ok\ntest_hand_controls (test_numerics.NumericsTests.test_hand_controls) ... ok\ntest_independent_numerics_refine_and_capture_preserves_dynamics (test_numerics.NumericsTests.test_independent_numerics_refine_and_capture_preserves_dynamics) ... ok\ntest_small_time_outlet_retains_positive_second_order_term (test_numerics.NumericsTests.test_small_time_outlet_retains_positive_second_order_term) ... ok\ntest_zero_segment_and_nonzero_initial_source_control (test_numerics.NumericsTests.test_zero_segment_and_nonzero_initial_source_control) ... ok\ntest_complete_exact_comparison_and_offline_semantics (test_report.ReportTests.test_complete_exact_comparison_and_offline_semantics) ... ok\ntest_csv_preserves_every_finest_step_and_forcing (test_report.ReportTests.test_csv_preserves_every_finest_step_and_forcing) ... ok\ntest_large_chart_is_bounded_without_losing_segment_boundary (test_report.ReportTests.test_large_chart_is_bounded_without_losing_segment_boundary) ... ok\ntest_supplied_metadata_is_escaped (test_report.ReportTests.test_supplied_metadata_is_escaped) ... ok\ntest_zero_trajectory_has_finite_accessible_chart (test_report.ReportTests.test_zero_trajectory_has_finite_accessible_chart) ... ok\ntest_nested_json_has_a_useful_bounded_failure (test_study.StudyTests.test_nested_json_has_a_useful_bounded_failure) ... ok\ntest_positive_duration_cannot_disappear_from_time_grid (test_study.StudyTests.test_positive_duration_cannot_disappear_from_time_grid) ... ok\ntest_reject_budget_before_calculation (test_study.StudyTests.test_reject_budget_before_calculation) ... ok\ntest_reject_invalid_quantities_and_units (test_study.StudyTests.test_reject_invalid_quantities_and_units) ... ok\ntest_reject_nonfixed_volume_and_negative_forcing (test_study.StudyTests.test_reject_nonfixed_volume_and_negative_forcing) ... ok\ntest_reject_unsupported_fields_and_factor (test_study.StudyTests.test_reject_unsupported_fields_and_factor) ... ok\ntest_zero_duration_segment_allowed_but_not_empty_study (test_study.StudyTests.test_zero_duration_segment_allowed_but_not_empty_study) ... ok\n\n----------------------------------------------------------------------\nRan 36 tests in 1.403s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "tools/validate_plan.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2345650649513118,
+      "stdout": "PASS: 20 negative probes: missing original, frozen acceptance, missing mapping, dangling dependency, dependency cycle, wrong project, duplicate outcome, orphan task, release scope, coverage mismatch, task order, wave order, false completion, duplicate acceptance, malformed dependency, count drift, lost successor, immutable history tamper, generated view drift, non-object plan\nPASS: 221 tasks, 28 active waves, 444 links; lineage, mappings, scope, DAG and generated views\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "tools/render_plan.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.025371811003424227,
+      "stdout": "PASS: generated views match\n",
+      "stderr": ""
+    }
+  ],
+  "identical_reproduction": true,
+  "changed_input_changed_trajectory": true,
+  "parent_identity_retained": true,
+  "publicly_obtained": true,
+  "public_source_url": "https://github.com/thepianistdirector/earth-rehearsal/releases/download/v0.1.0/earth-rehearsal-0.1.0.tar.gz",
+  "download_authentication": "none",
+  "verified_utc": "2026-09-08T12:19:25.089951+00:00"
+}

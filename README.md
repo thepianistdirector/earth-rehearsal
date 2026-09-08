@@ -4,15 +4,15 @@
 
 Earth Rehearsal 0.1 is a local, standard-library Python tool for BOX-001: a fixed-volume, well-mixed synthetic reservoir under dry and storm forcing. Run baseline, source reduction and outlet capture; compare independent analytic and numerical trajectories; inspect water, pollutant and custody ledgers.
 
-**Local release candidate. Public release and native Tanduna plan publication are pending.** This calculation is `A0_KNOWN_ANSWER` evidence. It does not establish real-world cleanup, disposal, ecological, lifecycle or health benefit. The source-reduction and capture factors are fictional inputs, not measured effectiveness.
+**[Download v0.1.0](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0). Native Tanduna plan publication and human validation remain pending.** This calculation is `A0_KNOWN_ANSWER` evidence. It does not establish real-world cleanup, disposal, ecological, lifecycle or health benefit. The source-reduction and capture factors are fictional inputs, not measured effectiveness.
 
 Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Public source](https://github.com/thepianistdirector/earth-rehearsal) · [Tanduna project](https://tanduna.com/projects/earth-rehearsal) · [Evidence status](STATUS.md).
 
 ## First run
 
-Use **Python 3.12**. The candidate is verified on Linux with CPython 3.12; other operating systems and Python versions are not yet verified. There is no pip install, external dataset, browser dependency, account or network requirement for the calculation.
+Use **Python 3.12**. The public source artifact is verified on Linux with CPython 3.12; other operating systems and Python versions are not yet verified. There is no pip install, external dataset, browser dependency, account or network requirement for the calculation.
 
-From the source package directory:
+Download `earth-rehearsal-0.1.0.tar.gz` and `SHA256SUMS` from the release, verify the archive checksum and extract it. From the source package directory:
 
 ```sh
 python3 earth.py run --out runs/first

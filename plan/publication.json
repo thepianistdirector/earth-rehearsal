@@ -20,7 +20,7 @@
     "projectUrl": "https://tanduna.com/projects/earth-rehearsal",
     "roadmapUrl": "https://tanduna.com/projects/earth-rehearsal/roadmap",
     "tasksUrl": "https://tanduna.com/p/earth-rehearsal/tasks",
-    "accessInstructions": "Local candidate: Python 3.12, python3 earth.py run --out runs/first; inspect with python3 earth.py inspect runs/first; change --source-factor 0.25 into a fresh directory; reproduce with python3 earth.py reproduce runs/first --out runs/reproduced. Public v0.1.0 URL remains pending concrete release approval and actual upload; no public runtime access is asserted.",
+    "accessInstructions": "Public v0.1.0: https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0. Download earth-rehearsal-0.1.0.tar.gz and SHA256SUMS, verify and extract. With Python 3.12 run python3 earth.py run --out runs/first; inspect with python3 earth.py inspect runs/first; change --source-factor 0.25 into a fresh directory; reproduce with python3 earth.py reproduce runs/first --out runs/reproduced. Public download and isolated Linux execution verified; human participant and macOS evidence remain pending.",
     "platformMapping": {},
     "projectId": "prj_3bacba68d40085fafb027f6409b7cfdc",
     "observedNativeTasks": 0,
@@ -39,7 +39,8 @@
     "foundation": "plan/lineage/architecture-foundation-2026-09-07/manifest.json",
     "decision-runtime": "docs/decisions/0001-box-runtime.md",
     "decision-numerics": "docs/decisions/0002-numerical-policy.md",
-    "live-platform": "docs/evidence/platform-capabilities.md"
+    "live-platform": "docs/evidence/platform-capabilities.md",
+    "public-release": "docs/evidence/public-release-verification.json"
   },
   "waves": [
     {
@@ -3179,13 +3180,15 @@
         "decision-numerics"
       ],
       "riskEvidenceNeeds": [
-        "Actual external observation and destination-specific publication authority."
+        "Owner publication approval received September 8, 2026. Public assets and unauthenticated download verified. Required human review in ER-B05-08 remains incomplete; this status records publication and asset verification only."
       ],
-      "status": "BLOCKED",
+      "status": "RELEASE VERIFIED",
       "basis": "owner_proposed_cut",
       "kind": "delivery_outcome",
       "outcomeKey": "publish authorized github release",
       "evidence": [
+        "https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0",
+        "docs/evidence/public-release-verification.json",
         "STATUS.md#unresolved-release-gates"
       ],
       "publicationWave": "W05",

@@ -379,4 +379,4 @@ Release horizon: long-term.
 
 No authenticated supported Tanduna writer available; save/submit creates review state, not public acceptance.
 
-Local candidate: Python 3.12, python3 earth.py run --out runs/first; inspect with python3 earth.py inspect runs/first; change --source-factor 0.25 into a fresh directory; reproduce with python3 earth.py reproduce runs/first --out runs/reproduced. Public v0.1.0 URL remains pending concrete release approval and actual upload; no public runtime access is asserted.
+Public v0.1.0: https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0. Download earth-rehearsal-0.1.0.tar.gz and SHA256SUMS, verify and extract. With Python 3.12 run python3 earth.py run --out runs/first; inspect with python3 earth.py inspect runs/first; change --source-factor 0.25 into a fresh directory; reproduce with python3 earth.py reproduce runs/first --out runs/reproduced. Public download and isolated Linux execution verified; human participant and macOS evidence remain pending.
