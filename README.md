@@ -69,7 +69,7 @@ python3 tools/validate_plan.py --self-test
 python3 tools/render_plan.py --check
 ```
 
-The runtime tests exercise controls, independent reference agreement, corruption detection and real process interruption. Plan checks validate planning consistency only. Agent tests and reviews are not human/domain validation. See [CONTRIBUTING.md](CONTRIBUTING.md) for the contributor workflow.
+The runtime tests exercise controls, independent reference agreement, corruption detection and real process interruption. Plan checks validate planning consistency only. Agent tests and reviews are not human/domain validation. See [CONTRIBUTING.md](CONTRIBUTING.md) for the contributor workflow. The [human review and external first-run kit](docs/REVIEW-KIT.md) provides the exact public assets, steps and an unfilled observation form.
 
 The [canonical plan](plan/tasks.json) contains 221 rows: 27 preserved historical contracts and 194 delivery outcomes, including 40 bounded 0.1 outcomes across five waves. The [roadmap](ROADMAP.md) retains the wider catchment, drainage, treatment, water-distribution, restoration, climate and lifecycle programme. Those later domains require their own physics, rights and evidence; BOX-001 does not complete them. [Architecture](ARCHITECTURE.md) · [Task contracts](TASKS.md).
 
