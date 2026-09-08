@@ -1,0 +1,11 @@
+# Decision 0003 — offline evidence report
+
+The report asks where fictional pollutant mass goes and how closely independent methods agree. It is a distributable, Python-standard-library HTML renderer and CSV exporter, with no remote fonts, JavaScript, chart services or publishing dependencies. The accepted numerical policy already freezes the scientific meaning and visual constraints.
+
+Use warm white, dark ink, a restrained serif headline and system sans-serif evidence tables. Blue solid numerical lines and ochre dashed analytic lines provide redundant differentiation. Three reservoir-stock facets share a zero-based scale because baseline and outlet capture physically overlap. An all-zero trajectory receives a 0–1 kg scale. Charts retain at most 1,000 vertices, including the start, end and segment boundaries; sampling is disclosed and all finest-grid raw steps remain in CSV. Independent analytic values are recomputed from the retained study for each displayed/CSV endpoint.
+
+Exact round-trip numerical text remains in the finest-arm comparison and ledgers. Intermediate custody throughput and terminal custody stocks appear in a separate labeled table; they are never summed with the captured transfer. Whole-run mass, water and custody residuals, dimensionless normalized residuals, segment ledgers, all refinement errors, analytic comparisons and a-priori bounds are exposed. Raw JSON diagnostic details supplement human-readable refinement tables.
+
+A prominent scope panel states wholly synthetic, A0_KNOWN_ANSWER and NOT_EVALUATED outcomes. Assumptions, excluded processes, all forcing segments with SI units and arm controls are visible. Runtime identity and local evidence links permit inspection without a network connection.
+
+Semantic tables have captions and scoped headers. Overflow regions are keyboard focusable, charts have accessible titles/descriptions, navigation has focus styles, the report has a skip link, and facets stack on narrow screens. All supplied text is HTML-escaped. Tests check actual evaluator outputs, complete CSV row and numeric fidelity, metadata injection, semantic/offline structure, and all-zero rendering. Root browser QA separately checks visual rendering and narrow layout.

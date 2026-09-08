@@ -1,109 +1,78 @@
 # Earth Rehearsal
 
-**A software laboratory for cleaner water, less pollution and testable climate interventions.**
+**Reproduce a fictional reservoir calculation. See where the mass goes.**
 
-Let researchers simulate environmental interventions before proposing physical experiments: plastic interception, water treatment, runoff prevention, restoration and climate adaptation. Optimize the full system, including displaced pollution, waste disposal, energy use and ecological tradeoffs.
+Earth Rehearsal 0.1 is a local, standard-library Python tool for BOX-001: a fixed-volume, well-mixed synthetic reservoir under dry and storm forcing. Run baseline, source reduction and outlet capture; compare independent analytic and numerical trajectories; inspect water, pollutant and custody ledgers.
 
-Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Tanduna project](https://tanduna.com/p/earth-rehearsal) · [Public repository](https://github.com/thepianistdirector/earth-rehearsal)
+**Local release candidate. Public release and native Tanduna plan publication are pending.** This calculation is `A0_KNOWN_ANSWER` evidence. It does not establish real-world cleanup, disposal, ecological, lifecycle or health benefit. The source-reduction and capture factors are fictional inputs, not measured effectiveness.
 
-> **Architecture foundation completed.** The three Wave 0 tasks are **DONE**: the architecture contract, outcome/dependency roadmap, and executable next-work packet with a standard-library plan validator. The original 24 scientific/build tasks remain **PLANNED**. No simulator, model integration, application, autonomous research runtime or scientific result is implemented. Acceptance and reproduced checks are recorded in [STATUS.md](STATUS.md).
+Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Public source](https://github.com/thepianistdirector/earth-rehearsal) · [Tanduna project](https://tanduna.com/projects/earth-rehearsal) · [Evidence status](STATUS.md).
 
-## Who this is for
+## First run
 
-Environmental modelers, water researchers, climate-adaptation teams and open-science contributors.
+Use **Python 3.12**. The candidate is verified on Linux with CPython 3.12; other operating systems and Python versions are not yet verified. There is no pip install, external dataset, browser dependency, account or network requirement for the calculation.
 
-## First useful experiment
+From the source package directory:
 
-Start with BOX-001, a hand-computable well-mixed reservoir under dry and storm forcing. Compare no intervention, synthetic source reduction and synthetic outlet capture. It must conserve water and pollutant mass, keep captured material in a custody ledger, reject a deliberately broken balance and label disposal and net benefit `NOT_EVALUATED`. Then grow the same contract into a synthetic watershed with spatial transport.
-
-Software experiments make it possible to compare ideas repeatedly, inspect failures and share reproducible evidence without operating physical systems. They remain bounded by the quality and applicability of their models. A convincing visualization or agent report is not independent validation.
-
-```mermaid
-flowchart LR
-  Q[Question and applicability] --> S[Versioned scenario]
-  S --> N[Isolated numerical solver]
-  N --> E[Protected evaluator]
-  E --> L[Mass, custody, energy and uncertainty ledgers]
-  L --> R[Reproducible study version]
-  R --> H[Qualified human review]
+```sh
+python3 earth.py run --out runs/first
+python3 earth.py inspect runs/first
 ```
 
-## What we want to build
+Open `runs/first/report.html` in a browser. The same directory contains the exact `study.json`, raw `result.json`, complete finest-grid `trajectories.csv`, checksummed `manifest.json` and activation marker `complete.json`. All three arms and three refinement levels are retained. HTML works without scripts or an internet connection.
 
-### Watershed and plastic transport
+The main comparison uses the finest Euler grid; the analytic result and their differences are shown separately. With default inputs, the analytic baseline ends at about **4.789738 kg in the reservoir** and **4.210262 kg through the outlet**. Numerical output is deliberately not identical: timestep refinement measures its error.
 
-Catchment runoff, particle transport, size classes, settling/resuspension and interception; progress from an analytically testable box model to a validated spatial model.
+## Change and challenge the study
 
-### Clean-water process studio
+```sh
+python3 earth.py run --source-factor 0.25 --out runs/source-quarter
+python3 earth.py run --capture-fraction 0.75 --out runs/capture-three-quarters
+python3 earth.py negative-control --kind conservation --out runs/broken-conservation.json
+python3 earth.py negative-control --kind disposal --out runs/false-disposal.json
+```
 
-Compare treatment chains and pipe-network scenarios with explicit residuals and waste destinations; do not infer potability from a simulation.
+A successful negative control prints `EXPECTED_REJECTION` and writes the evaluator's reason. It never creates a complete successful result. `--kind source` and `--kind custody` test incorrect source flux and missing custody. CLI control changes retain the parent study identity in provenance.
 
-### Restoration and urban cooling
+For volume, initial mass, flow, source or duration, copy `scenarios/box-001.json`, edit supported quantities with their explicit SI units, and validate before running:
 
-Explore wetlands, vegetation, runoff retention and heat adaptation using declared climate and ecosystem assumptions.
+```sh
+python3 earth.py validate-study my-study.json
+python3 earth.py run --study my-study.json --out runs/custom
+```
 
-### Climate and lifecycle comparison
+Keep exactly dry then storm, positive equal inflow/outflow and a fixed volume. Unsupported fields, incompatible units, invalid signs/ranges, nonfinite numbers, nonadvancing time grids and excessive step counts fail clearly. The [frozen numerical policy](docs/decisions/0002-numerical-policy.md) defines computational bounds; these are not environmental plausibility ranges. An externally edited file is a separate study; the tool does not infer its unknown parent.
 
-Study mitigation/adaptation scenarios with bounded public models, lifecycle boundaries and uncertainty; no geoengineering actuation.
+## Reopen, reproduce and recover
 
-### Experiment selection agents
+```sh
+python3 earth.py inspect runs/first
+python3 earth.py reproduce runs/first --out runs/reproduced
+python3 earth.py export runs/first --out runs/exported
+```
 
-Search robust interventions while accounting for cost, energy, uncertainty and ecological side effects.
+`inspect` verifies retained artifacts and recomputes evaluation without executing the numerical kernel. `reproduce` requires the matching source package and writes a separate attempt with the same frozen study. `export` copies the verified portable JSON/CSV/HTML evidence into a fresh directory.
 
-Each domain keeps its own governing representation and evidence. Drainage hydraulics, particle fate, pressurized distribution, treatment units, restoration response, urban energy balance, climate inputs and lifecycle inventories do not become scientifically interchangeable because they share a scenario format.
+Existing output directories are never overwritten. An interrupted attempt retains its study and any available raw evidence. An attempt without `complete.json` is incomplete, even if some report files exist. Rerun its `study.json` into a new directory. A hard-killed attempt can retain `RUNNING` in `attempt.json`; absence of the completion marker remains decisive. Hash checks detect changed bytes, not the authenticity of an untrusted author. Inspect untrusted reports as you would other downloaded HTML.
 
-## Architecture in one paragraph
+## What capture means
 
-Build a small, local study kernel around versioned scenarios, model cards, exchange contracts, run attempts, protected evaluation and immutable result bundles. Start with analytic compartments, then conservative finite-volume transport. Add SWMM through a runoff/drainage adapter and EPANET through a distinct pressurized-distribution adapter only after official examples and project-specific applicability tests pass. Climate, restoration, treatment and lifecycle models remain separate. Coupling must declare units, coordinates, time support, remapping, uncertainty and out-of-domain behavior.
+The reservoir boundary closes as initial mass + source = final stock + escaped + captured, within the predeclared arithmetic tolerance. Captured mass is an integrated transfer into custody, through storage and then to `destination_unknown`. Terminal stored stock is zero in this fixture. Stored throughput and unknown-destination stock are not extra removal credits to add to captured mass.
 
-Agents propose and interpret experiments; numerical engines and protected evaluators determine results. Every experiment retains inputs, assumptions, source/model/study versions, environment, resource use, negative outcomes and failure state. Execution stays local and sequential until measured workload plus replay, cancellation, recovery and isolation evidence justify another scale.
+Disposal, lifecycle, ecology and health remain `NOT_EVALUATED`, including for zero-capture runs. No settling, reaction, fragmentation, evaporation, groundwater, spatial variability or real intervention performance is modeled. Read [limitations](docs/LIMITATIONS.md), [the experiment contract](EXPERIMENTS.md) and [source notices](SOURCES.md).
 
-## Build plan
+## Verify and contribute
 
-| Wave | Outcome | Gate |
-| --- | --- | --- |
-| 0 | Architecture and research-programme foundation | Maintainer reviews the contracts, dependency logic, BOX-001 packet and plan validation. |
-| 1 | Watershed experiment contract | One bounded question, lawful inputs and conservation checks are defined. |
-| 2 | Flow, transport and intervention kernels | The model conserves quantities and explains intervention effects. |
-| 3 | First cleanup comparison | A complete synthetic watershed study is reproducible. |
-| 4 | Validation and uncertainty | Fragile cleanup rankings are detected before expansion. |
-| 5 | Water, restoration and climate extensions | New environmental domains have their own model evidence. |
-| 6 | Agent-guided environmental experiments | Agents explore robust interventions with traceable assumptions. |
-| 7 | Open study workbench | Contributors can inspect interventions and reproduce bundles. |
-| 8 | Independent environmental preview | A release candidate makes only supported research claims. |
+```sh
+python3 -m unittest discover -s tests -v
+python3 tools/validate_plan.py --self-test
+python3 tools/render_plan.py --check
+```
 
-Read the [roadmap](ROADMAP.md), [27 contributor tasks](TASKS.md), [architecture](ARCHITECTURE.md), [experiment and evaluation contract](EXPERIMENTS.md), [sources and data policy](SOURCES.md) and [current state](STATUS.md). Review status is not implementation evidence; a plan is not execution authorization.
+The runtime tests exercise controls, independent reference agreement, corruption detection and real process interruption. Plan checks validate planning consistency only. Agent tests and reviews are not human/domain validation. See [CONTRIBUTING.md](CONTRIBUTING.md) for the contributor workflow.
 
-## Evidence ladder
-
-| Scope | What it can support | What it cannot support by itself |
-| --- | --- | --- |
-| Known answer | Algebra, units, conservation and solver implementation | Environmental realism |
-| Synthetic study | Behavior inside a declared invented scenario | Field transfer or effectiveness |
-| Calibrated context | Fit to named development observations | Independent prediction |
-| Independently confirmed context | Performance on frozen, withheld evidence | A different site, time, scale or intervention |
-| Decision-context review | A bounded recommendation with trade-offs and qualified review | Authority for physical action or universal benefit |
-
-## Scientific and operating boundaries
-
-Conserve water and pollutant mass across explicit boundaries. Captured material cannot disappear; count disposal, leakage, fragmentation and energy use where modeled. Public data are not automatically licensed for redistribution. No hardware control, environmental release, field intervention or location targeting of sensitive habitats. Distinguish modeled proxies from verified ecological outcomes.
-
-Stop ranking if mass does not close or results depend on unvalidated removal constants. If finer resolution reverses a ranking, report model uncertainty and collect better public evidence. Cut global-climate ambition before weakening the first watershed benchmark.
-
-## Contribute
-
-Start with [CONTRIBUTING.md](CONTRIBUTING.md). The immediate gate is maintainer review of ER-F01 through ER-F03. After acceptance, the next packet is the first ER-001 subpacket: BOX-001 scenario and analytic reference specification, fully bounded in [TASKS.md](TASKS.md). That accounting subpacket does not complete ER-001's synthetic-catchment and particle-class acceptance. There are no install or simulation commands yet; `python3 tools/validate_plan.py` checks only the repository plan.
-
-## Related independent projects
-
-- [Vital Rehearsal](https://github.com/thepianistdirector/vital-rehearsal): An open simulation laboratory for physiology, disease research and safer care workflows.
-- [Grid Horizons](https://github.com/thepianistdirector/grid-horizons): Simulate better grids, transformers and energy systems before proposing physical changes.
-- [Civic Safelab](https://github.com/thepianistdirector/civic-safelab): Test public-safety sensing in synthetic worlds while measuring privacy and false alarms.
-- [Lean Model Lab](https://github.com/thepianistdirector/lean-model-lab): Find reproducible training and inference efficiency gains without hiding quality tradeoffs.
-- [Research Continuum](https://github.com/thepianistdirector/research-continuum): A reproducible autonomous research system that turns hypotheses into independently checked experiments.
-
-These repositories are independently buildable. Shared experiment formats are a design intention; there is no shared service or integration implemented today. Extract a common library only after two real implementations demonstrate the need.
+The [canonical plan](plan/tasks.json) contains 221 rows: 27 preserved historical contracts and 194 delivery outcomes, including 40 bounded 0.1 outcomes across five waves. The [roadmap](ROADMAP.md) retains the wider catchment, drainage, treatment, water-distribution, restoration, climate and lifecycle programme. Those later domains require their own physics, rights and evidence; BOX-001 does not complete them. [Architecture](ARCHITECTURE.md) · [Task contracts](TASKS.md).
 
 ## License
 
-Original repository content is licensed under **AGPL-3.0-only**; see [LICENSE](LICENSE). Third-party data, models, papers and code retain their own terms and are not relicensed by this repository. No third-party dataset, model weights or upstream implementation is bundled in this initial planning release.
+Original source, synthetic fixture and generated project artifacts are **AGPL-3.0-only**; see [LICENSE](LICENSE) and [NOTICE](NOTICE). External papers and candidate models retain their own terms. No third-party solver, dataset, font, image, model weights or production library is bundled. No field intervention, equipment control or environmental release is part of this software.

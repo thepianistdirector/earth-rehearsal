@@ -1,6 +1,6 @@
 # Earth Rehearsal experiment and evaluation contract
 
-Status: accepted architecture-foundation requirements; the narrow BOX-001 runtime now has local numerical and recovery evidence. Public release and human review remain pending; see STATUS.md.
+Status: accepted architecture-foundation requirements; no experiment has run in this repository.
 
 ## Research programme contract
 
@@ -116,7 +116,3 @@ Each proposed claim links supporting and contradicting evidence, applicability c
 The hypothesis producer and proposal agent cannot change scoring code, accepted constraints, holdouts, raw outputs or evidence status. Evaluators recompute conservation and applicability gates from recorded artifacts. Preserve negative and inconclusive findings.
 
 Stop ranking when mass or water does not close, results depend on unvalidated removal/fate constants, resolution or model-form choices reverse the ranking, provenance/rights are missing, the evaluator is compromised, or the approved budget is exhausted. Stop at synthetic/numerical evidence when calibration data or qualified reviewers are unavailable. No automatic escalation to a larger model, new dataset, paid provider, distributed system or physical deployment is allowed.
-
-## Frozen narrow 0.1 execution policy
-
-The owner-authorized BOX-001 runtime uses [the exact default fixture](scenarios/box-001.json) and [predeclared numerical policy BOX-EULER-1](docs/decisions/0002-numerical-policy.md). Computational bounds, interval clipping, independent analytic integration, step/refinement budgets, tolerances and invalidity rules were fixed before numerical execution. This is new mapped BOX work; original catchment and human-review acceptance remains unchanged.

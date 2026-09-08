@@ -1,6 +1,6 @@
 # Earth Rehearsal architecture
 
-Status: **architecture foundation accepted; narrow BOX-001 runtime implemented and locally verified; public release pending**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
+Status: **architecture foundation accepted; research runtime not implemented**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
 
 ## Product boundary
 
@@ -193,7 +193,3 @@ The directories are intended ownership boundaries. Most do not exist yet.
 | Qualified reviewer or applicability data are unavailable | Stop at numerical/synthetic evidence and label the gap |
 
 Rejected for the foundation: one monolithic multiphysics solver, one generic “removal efficiency,” a single weighted sustainability score, agent-authored acceptance, mutable latest-result files, calibration against confirmation cases, automatic spatial/temporal interpolation, and distributed infrastructure before measured need. These choices would hide the boundary most likely to falsify a result.
-
-## Authorized narrow 0.1 implementation
-
-[Decision 0001](docs/decisions/0001-box-runtime.md) selects a standard-library local BOX-001 slice under the September 7 owner launch. The architecture above remains the long-term contract. New BOX work is mapped independently; it does not complete the original catchment and human-review requirements. See [STATUS.md](STATUS.md) for actual implementation and evidence levels.

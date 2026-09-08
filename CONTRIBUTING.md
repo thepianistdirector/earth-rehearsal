@@ -1,15 +1,23 @@
 # Contributing to Earth Rehearsal
 
-Read [README.md](README.md), [STATUS.md](STATUS.md), the relevant [task](TASKS.md), [architecture](ARCHITECTURE.md) and [experiment contract](EXPERIMENTS.md). Project artifacts are in English. Lucas Santana is the maintainer and decides scope and source integration.
+Read [README.md](README.md), [STATUS.md](STATUS.md), the relevant [task](TASKS.md), [architecture](ARCHITECTURE.md) and [experiment contract](EXPERIMENTS.md). Artifacts are in English. Lucas Santana maintains scope and source integration.
 
-Choose one bounded task whose prerequisites are accepted. Before implementation, agree the actual base branch/commit, owned files, acceptance evidence, available commands and resource/permission limits. One primary owner handles a coherent change. Preserve other contributors' files and avoid speculative shared infrastructure.
+Choose one bounded outcome and inspect its source history, prerequisites, current branch/HEAD and existing writers. Record owned files, actual checks, falsifiers and exit evidence before editing. Preserve unrelated changes. The canonical task/status ledger is `plan/tasks.json`; after changes run `python3 tools/render_plan.py`. Historical contracts and frozen source documents remain in lineage.
 
-The repository-plan validator already runs with `python3 tools/validate_plan.py`; it checks the task graph, plan consistency, navigation and local links only. There is no simulation runtime or simulator dependency to install or run. ER-003 creates that runnable skeleton and documents its real setup/test commands. Referenced engines are candidates; do not install dependencies, download model weights or datasets, or start paid experiments without the corresponding task authority and exact dependency/data review.
+Use Python 3.12 and the standard library. Run:
 
-A contribution should contain a focused change, why it addresses the task, actual checks and failures, reproduction inputs, source/license notices and honest limitations. Unit checks prove local behavior; benchmark agreement and independent scientific interpretation require their own evidence. Never weaken a metric, tolerance, holdout or privacy boundary to make a result pass.
+```sh
+python3 -m unittest discover -s tests -v
+python3 tools/validate_plan.py --self-test
+python3 tools/render_plan.py --check
+python3 earth.py run --out runs/contribution
+python3 earth.py inspect runs/contribution
+```
 
-Conserve water and pollutant mass across explicit boundaries. Captured material cannot disappear; count disposal, leakage, fragmentation and energy use where modeled. Public data are not automatically licensed for redistribution. No hardware control, environmental release, field intervention or location targeting of sensitive habitats. Distinguish modeled proxies from verified ecological outcomes.
+Test discovery must find real assertions. Numerical tests must be able to falsify representative defects, including conservation-preserving wrong physics. Do not tune tolerances to make results pass, discard failed evidence, change a frozen study in place or treat a planning validator as a scientific result. A source change intentionally changes the runtime digest; reproduce old bundles with their matching source package.
 
-Use ordinary GitHub changes for code and documentation, and the [Tanduna project](https://tanduna.com/p/earth-rehearsal) for project discussion and task coordination. Submitting a contribution does not authorize automatic merge, release, deployment or real-world action. Do not post sensitive vulnerabilities, personal data or credentials publicly; contact the maintainer through an appropriate private route if needed.
+Document behavior, relevant checks, failures and limitations in a focused contribution. New production dependencies require exact source/version/license, transitive, security, network/resource and replacement review plus missing maintainer approval before installation. No shared-host configuration, paid compute, external outreach or publication is implied by a code contribution.
 
-Contributions of original material must be compatible with [AGPL-3.0-only](LICENSE). Keep third-party licensing and attribution intact. Cite research precisely and avoid copying paper text or datasets into the repository without the applicable rights.
+Original contributions must be compatible with [AGPL-3.0-only](LICENSE). Preserve source rights and attribution. Public data are not automatically licensed for redistribution. No field intervention, equipment control, environmental release or sensitive-habitat targeting. A qualified reviewer must assess any real environmental interpretation; BOX-001's known-answer evidence cannot substitute.
+
+Use [GitHub](https://github.com/thepianistdirector/earth-rehearsal) for source review and [Tanduna](https://tanduna.com/p/earth-rehearsal) for project coordination. Only actual supported native publication/review creates platform completion; do not assert a runner-reviewed state for externally completed work. Maintainer authorization is required for the exact release or platform update.

@@ -1,0 +1,15 @@
+# Scope and limitations of 0.1
+
+BOX-001 tests an accounting calculation for one fictional fixed-volume mixed reservoir. The exact study has a dry segment and a storm segment, conservative pollutant, equal inflow/outflow and three paired arms. The first-order numerical method approximates its closed-form solution; numerical error is reported and refinement is checked. Neither method establishes environmental realism.
+
+The source and capture factors are arbitrary synthetic controls. Outlet capture changes only the escaped/captured split, not reservoir dynamics or water flow. Captured material goes through an accounting storage state to an unknown destination. No device, disposal facility, leakage probability, treatment constant or ecological response is modeled. Unknown fate is not safe disposal. No environmental, ecological, health or net lifecycle benefit is evaluated.
+
+Supported bounds and rejected assumptions are defined in [the frozen policy](decisions/0002-numerical-policy.md). Requests within numeric bounds can still exceed the timestep budget or floating-point time resolution and are rejected. One run uses a single local process, at most 100000 numerical steps per arm across all refinement levels, and at most 256 MB per artifact file. No batch workers, untrusted plugins, downloads, remote calls, hardware control or field interventions execute. A local Python process is not a sandbox.
+
+Verified runtime environment: Linux x86_64, CPython 3.12.14. Other Python versions, operating systems, filesystem durability behavior and assistive technologies are not claimed verified. Atomic file replacement and directory fsync are used on this Linux filesystem. Power-loss durability on other filesystems is untested. Existing evidence is never overwritten by the CLI. Hard-killed attempts can retain RUNNING metadata; only a verified complete.json marker means complete.
+
+The finest numerical result and analytic reference can differ. Refinement agreement establishes the behavior of this discretization for this synthetic study. It does not quantify model-form, parameter, input, measurement or ecological uncertainty. Ties are explicit; a change in metric ordering across refinement levels invalidates comparison. No universal sustainability score is produced.
+
+Portable bundles retain raw records and hashes. Hashes detect accidental changes relative to their manifest, not a malicious author who replaces the manifest and its activation record. Use the exact corresponding source package to reproduce a bundle. Reports contain no active scripts or remote resources, but arbitrary externally supplied HTML has no authenticity guarantee.
+
+Automated tests, agent critic review, extracted-package runs and browser observations are separately recorded in [STATUS.md](../STATUS.md). A real external participant's workflow and required human review remain pending until recorded with provenance. No public product release or native Tanduna publication is implied by a local candidate.

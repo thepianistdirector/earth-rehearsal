@@ -1,0 +1,15 @@
+Earth Rehearsal 0.1
+Copyright (C) 2026 Lucas Santana and Earth Rehearsal contributors.
+
+Original code, documentation and wholly synthetic BOX-001 fixture: AGPL-3.0-only.
+See LICENSE for the full license and warranty disclaimer.
+
+The fixture is transcribed from Earth Rehearsal EXPERIMENTS.md, foundation
+revision a7e2fe7bc47726798ef01364f692a4ceb53f36e1. It is fictional and contains
+no third-party measurements, participant data or empirical device performance.
+Analytic and numerical code is an original implementation of the stated equations.
+
+Python 3.12 and its standard library are supplied by the user, not bundled.
+Referenced environmental model documentation and research retain their own terms;
+no upstream engine, third-party dataset or paper text is redistributed here.
+Local browser QA tools/libraries are development-only and excluded from the package.

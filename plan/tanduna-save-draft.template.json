@@ -1,0 +1,1922 @@
+{
+  "projectSlug": "earth-rehearsal",
+  "proposalId": "${PROPOSAL_ID:EXPANDED_BOX_001_PROGRAMME}",
+  "expectedRevision": null,
+  "plan": {
+    "optionKey": null,
+    "waves": [
+      {
+        "name": "Architecture and research-programme foundation",
+        "taskIds": [
+          "${TASK_ID:ER-F01}",
+          "${TASK_ID:ER-F02}",
+          "${TASK_ID:ER-F03}"
+        ]
+      },
+      {
+        "name": "BOX-001 is an executable accounting contract",
+        "taskIds": [
+          "${TASK_ID:ER-B01-01}",
+          "${TASK_ID:ER-B01-02}",
+          "${TASK_ID:ER-B01-03}",
+          "${TASK_ID:ER-B01-04}",
+          "${TASK_ID:ER-B01-05}",
+          "${TASK_ID:ER-B01-06}",
+          "${TASK_ID:ER-B01-07}",
+          "${TASK_ID:ER-B01-08}"
+        ]
+      },
+      {
+        "name": "Analytic and numerical paths expose real trajectories",
+        "taskIds": [
+          "${TASK_ID:ER-B02-01}",
+          "${TASK_ID:ER-B02-02}",
+          "${TASK_ID:ER-B02-03}",
+          "${TASK_ID:ER-B02-04}",
+          "${TASK_ID:ER-B02-05}",
+          "${TASK_ID:ER-B02-06}",
+          "${TASK_ID:ER-B02-07}",
+          "${TASK_ID:ER-B02-08}"
+        ]
+      },
+      {
+        "name": "Captured material retains a destination",
+        "taskIds": [
+          "${TASK_ID:ER-B03-01}",
+          "${TASK_ID:ER-B03-02}",
+          "${TASK_ID:ER-B03-03}",
+          "${TASK_ID:ER-B03-04}",
+          "${TASK_ID:ER-B03-05}",
+          "${TASK_ID:ER-B03-06}",
+          "${TASK_ID:ER-B03-07}",
+          "${TASK_ID:ER-B03-08}"
+        ]
+      },
+      {
+        "name": "Invalid claims and failed runs stay visible",
+        "taskIds": [
+          "${TASK_ID:ER-B04-01}",
+          "${TASK_ID:ER-B04-02}",
+          "${TASK_ID:ER-B04-03}",
+          "${TASK_ID:ER-B04-04}",
+          "${TASK_ID:ER-B04-05}",
+          "${TASK_ID:ER-B04-06}",
+          "${TASK_ID:ER-B04-07}",
+          "${TASK_ID:ER-B04-08}"
+        ]
+      },
+      {
+        "name": "External users reproduce and inspect the study",
+        "taskIds": [
+          "${TASK_ID:ER-B05-01}",
+          "${TASK_ID:ER-B05-02}",
+          "${TASK_ID:ER-B05-03}",
+          "${TASK_ID:ER-B05-04}",
+          "${TASK_ID:ER-B05-08}",
+          "${TASK_ID:ER-B05-06}",
+          "${TASK_ID:ER-B05-05}",
+          "${TASK_ID:ER-B05-07}"
+        ]
+      },
+      {
+        "name": "Catchment scenarios have explicit boundaries",
+        "taskIds": [
+          "${TASK_ID:ER-001}",
+          "${TASK_ID:ER-P06-01}",
+          "${TASK_ID:ER-P06-02}",
+          "${TASK_ID:ER-P06-03}",
+          "${TASK_ID:ER-P06-04}",
+          "${TASK_ID:ER-P06-05}",
+          "${TASK_ID:ER-P06-06}",
+          "${TASK_ID:ER-P06-07}"
+        ]
+      },
+      {
+        "name": "Environmental sources have usable rights",
+        "taskIds": [
+          "${TASK_ID:ER-002}",
+          "${TASK_ID:ER-P07-01}",
+          "${TASK_ID:ER-P07-02}",
+          "${TASK_ID:ER-P07-03}",
+          "${TASK_ID:ER-P07-04}",
+          "${TASK_ID:ER-P07-05}",
+          "${TASK_ID:ER-P07-06}",
+          "${TASK_ID:ER-P07-07}"
+        ]
+      },
+      {
+        "name": "Flow and transport kernels meet references",
+        "taskIds": [
+          "${TASK_ID:ER-003}",
+          "${TASK_ID:ER-P08-01}",
+          "${TASK_ID:ER-004}",
+          "${TASK_ID:ER-P08-02}",
+          "${TASK_ID:ER-P08-03}",
+          "${TASK_ID:ER-P08-04}",
+          "${TASK_ID:ER-P08-05}",
+          "${TASK_ID:ER-P08-06}",
+          "${TASK_ID:ER-P08-07}"
+        ]
+      },
+      {
+        "name": "Intervention policies conserve material",
+        "taskIds": [
+          "${TASK_ID:ER-005}",
+          "${TASK_ID:ER-P09-01}",
+          "${TASK_ID:ER-P09-02}",
+          "${TASK_ID:ER-P09-03}",
+          "${TASK_ID:ER-P09-04}",
+          "${TASK_ID:ER-P09-05}",
+          "${TASK_ID:ER-P09-06}",
+          "${TASK_ID:ER-P09-07}"
+        ]
+      },
+      {
+        "name": "Waste custody survives the whole lifecycle",
+        "taskIds": [
+          "${TASK_ID:ER-006}",
+          "${TASK_ID:ER-P10-01}",
+          "${TASK_ID:ER-P10-02}",
+          "${TASK_ID:ER-P10-03}",
+          "${TASK_ID:ER-P10-04}",
+          "${TASK_ID:ER-P10-05}",
+          "${TASK_ID:ER-P10-06}",
+          "${TASK_ID:ER-P10-07}"
+        ]
+      },
+      {
+        "name": "Dry and storm comparisons use paired conditions",
+        "taskIds": [
+          "${TASK_ID:ER-007}",
+          "${TASK_ID:ER-P11-01}",
+          "${TASK_ID:ER-008}",
+          "${TASK_ID:ER-P11-02}",
+          "${TASK_ID:ER-P11-03}",
+          "${TASK_ID:ER-P11-04}",
+          "${TASK_ID:ER-P11-05}",
+          "${TASK_ID:ER-P11-06}",
+          "${TASK_ID:ER-009}",
+          "${TASK_ID:ER-P11-07}"
+        ]
+      },
+      {
+        "name": "Uncertainty reveals ranking reversals",
+        "taskIds": [
+          "${TASK_ID:ER-010}",
+          "${TASK_ID:ER-P12-01}",
+          "${TASK_ID:ER-P12-02}",
+          "${TASK_ID:ER-P12-03}",
+          "${TASK_ID:ER-P12-04}",
+          "${TASK_ID:ER-P12-05}",
+          "${TASK_ID:ER-P12-06}",
+          "${TASK_ID:ER-P12-07}"
+        ]
+      },
+      {
+        "name": "Resolution and remapping are evidence-backed",
+        "taskIds": [
+          "${TASK_ID:ER-011}",
+          "${TASK_ID:ER-P13-01}",
+          "${TASK_ID:ER-P13-02}",
+          "${TASK_ID:ER-P13-03}",
+          "${TASK_ID:ER-P13-04}",
+          "${TASK_ID:ER-P13-05}",
+          "${TASK_ID:ER-P13-06}",
+          "${TASK_ID:ER-P13-07}"
+        ]
+      },
+      {
+        "name": "Calibration does not consume confirmation",
+        "taskIds": [
+          "${TASK_ID:ER-012}",
+          "${TASK_ID:ER-P14-01}",
+          "${TASK_ID:ER-P14-02}",
+          "${TASK_ID:ER-P14-03}",
+          "${TASK_ID:ER-P14-04}",
+          "${TASK_ID:ER-P14-05}",
+          "${TASK_ID:ER-P14-06}",
+          "${TASK_ID:ER-P14-07}"
+        ]
+      },
+      {
+        "name": "Drainage adapters preserve their own physics",
+        "taskIds": [
+          "${TASK_ID:ER-013}",
+          "${TASK_ID:ER-P15-01}",
+          "${TASK_ID:ER-P15-02}",
+          "${TASK_ID:ER-P15-03}",
+          "${TASK_ID:ER-P15-04}",
+          "${TASK_ID:ER-P15-05}",
+          "${TASK_ID:ER-P15-06}",
+          "${TASK_ID:ER-P15-07}"
+        ]
+      },
+      {
+        "name": "Pressurized water models retain distinct claims",
+        "taskIds": [
+          "${TASK_ID:ER-P16-01}",
+          "${TASK_ID:ER-P16-02}",
+          "${TASK_ID:ER-P16-03}",
+          "${TASK_ID:ER-P16-04}",
+          "${TASK_ID:ER-P16-05}",
+          "${TASK_ID:ER-P16-06}",
+          "${TASK_ID:ER-P16-07}"
+        ]
+      },
+      {
+        "name": "Restoration response has a declared domain",
+        "taskIds": [
+          "${TASK_ID:ER-014}",
+          "${TASK_ID:ER-P17-01}",
+          "${TASK_ID:ER-P17-02}",
+          "${TASK_ID:ER-P17-03}",
+          "${TASK_ID:ER-P17-04}",
+          "${TASK_ID:ER-P17-05}",
+          "${TASK_ID:ER-P17-06}",
+          "${TASK_ID:ER-P17-07}"
+        ]
+      },
+      {
+        "name": "Urban cooling respects energy boundaries",
+        "taskIds": [
+          "${TASK_ID:ER-P18-01}",
+          "${TASK_ID:ER-P18-02}",
+          "${TASK_ID:ER-P18-03}",
+          "${TASK_ID:ER-P18-04}",
+          "${TASK_ID:ER-P18-05}",
+          "${TASK_ID:ER-P18-06}",
+          "${TASK_ID:ER-P18-07}"
+        ]
+      },
+      {
+        "name": "Climate inputs retain their provenance",
+        "taskIds": [
+          "${TASK_ID:ER-015}",
+          "${TASK_ID:ER-P19-01}",
+          "${TASK_ID:ER-P19-02}",
+          "${TASK_ID:ER-P19-03}",
+          "${TASK_ID:ER-P19-04}",
+          "${TASK_ID:ER-P19-05}",
+          "${TASK_ID:ER-P19-06}",
+          "${TASK_ID:ER-P19-07}"
+        ]
+      },
+      {
+        "name": "Lifecycle tradeoffs remain multidimensional",
+        "taskIds": [
+          "${TASK_ID:ER-P20-01}",
+          "${TASK_ID:ER-P20-02}",
+          "${TASK_ID:ER-P20-03}",
+          "${TASK_ID:ER-P20-04}",
+          "${TASK_ID:ER-P20-05}",
+          "${TASK_ID:ER-P20-06}",
+          "${TASK_ID:ER-P20-07}"
+        ]
+      },
+      {
+        "name": "Hypotheses declare evidence and falsifiers",
+        "taskIds": [
+          "${TASK_ID:ER-016}",
+          "${TASK_ID:ER-P21-01}",
+          "${TASK_ID:ER-P21-02}",
+          "${TASK_ID:ER-P21-03}",
+          "${TASK_ID:ER-P21-04}",
+          "${TASK_ID:ER-P21-05}",
+          "${TASK_ID:ER-P21-06}",
+          "${TASK_ID:ER-P21-07}"
+        ]
+      },
+      {
+        "name": "Search methods share constraints and budgets",
+        "taskIds": [
+          "${TASK_ID:ER-017}",
+          "${TASK_ID:ER-P22-01}",
+          "${TASK_ID:ER-P22-02}",
+          "${TASK_ID:ER-P22-03}",
+          "${TASK_ID:ER-P22-04}",
+          "${TASK_ID:ER-P22-05}",
+          "${TASK_ID:ER-P22-06}",
+          "${TASK_ID:ER-P22-07}"
+        ]
+      },
+      {
+        "name": "Confirmation challenges intervention rankings",
+        "taskIds": [
+          "${TASK_ID:ER-018}",
+          "${TASK_ID:ER-P23-01}",
+          "${TASK_ID:ER-P23-02}",
+          "${TASK_ID:ER-P23-03}",
+          "${TASK_ID:ER-P23-04}",
+          "${TASK_ID:ER-P23-05}",
+          "${TASK_ID:ER-P23-06}",
+          "${TASK_ID:ER-P23-07}"
+        ]
+      },
+      {
+        "name": "Study views communicate uncertainty accessibly",
+        "taskIds": [
+          "${TASK_ID:ER-019}",
+          "${TASK_ID:ER-P24-01}",
+          "${TASK_ID:ER-P24-02}",
+          "${TASK_ID:ER-P24-03}",
+          "${TASK_ID:ER-P24-04}",
+          "${TASK_ID:ER-P24-05}",
+          "${TASK_ID:ER-P24-06}",
+          "${TASK_ID:ER-P24-07}"
+        ]
+      },
+      {
+        "name": "Batch execution is bounded and recoverable",
+        "taskIds": [
+          "${TASK_ID:ER-020}",
+          "${TASK_ID:ER-P25-01}",
+          "${TASK_ID:ER-P25-02}",
+          "${TASK_ID:ER-P25-03}",
+          "${TASK_ID:ER-P25-04}",
+          "${TASK_ID:ER-P25-05}",
+          "${TASK_ID:ER-P25-06}",
+          "${TASK_ID:ER-P25-07}"
+        ]
+      },
+      {
+        "name": "Independent contributors reproduce new cases",
+        "taskIds": [
+          "${TASK_ID:ER-021}",
+          "${TASK_ID:ER-P26-01}",
+          "${TASK_ID:ER-022}",
+          "${TASK_ID:ER-023}",
+          "${TASK_ID:ER-P26-02}",
+          "${TASK_ID:ER-P26-03}",
+          "${TASK_ID:ER-P26-04}",
+          "${TASK_ID:ER-P26-05}",
+          "${TASK_ID:ER-P26-06}",
+          "${TASK_ID:ER-P26-07}"
+        ]
+      },
+      {
+        "name": "Research publication remains correctable",
+        "taskIds": [
+          "${TASK_ID:ER-024}",
+          "${TASK_ID:ER-P27-01}",
+          "${TASK_ID:ER-P27-02}",
+          "${TASK_ID:ER-P27-03}",
+          "${TASK_ID:ER-P27-04}",
+          "${TASK_ID:ER-P27-05}",
+          "${TASK_ID:ER-P27-06}",
+          "${TASK_ID:ER-P27-07}"
+        ]
+      }
+    ],
+    "unassignedTaskIds": [],
+    "dependencies": [
+      {
+        "taskId": "${TASK_ID:ER-F01}",
+        "dependsOnTaskIds": []
+      },
+      {
+        "taskId": "${TASK_ID:ER-F02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-F01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-F03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-F02}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-001}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-F03}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-002}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-001}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-003}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-001}",
+          "${TASK_ID:ER-002}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-004}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-001}",
+          "${TASK_ID:ER-002}",
+          "${TASK_ID:ER-003}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-005}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-001}",
+          "${TASK_ID:ER-002}",
+          "${TASK_ID:ER-003}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-006}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-001}",
+          "${TASK_ID:ER-002}",
+          "${TASK_ID:ER-003}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-007}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-004}",
+          "${TASK_ID:ER-005}",
+          "${TASK_ID:ER-006}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-008}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-004}",
+          "${TASK_ID:ER-005}",
+          "${TASK_ID:ER-006}",
+          "${TASK_ID:ER-007}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-009}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-004}",
+          "${TASK_ID:ER-005}",
+          "${TASK_ID:ER-006}",
+          "${TASK_ID:ER-008}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-010}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-007}",
+          "${TASK_ID:ER-008}",
+          "${TASK_ID:ER-009}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-011}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-007}",
+          "${TASK_ID:ER-008}",
+          "${TASK_ID:ER-009}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-012}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-007}",
+          "${TASK_ID:ER-008}",
+          "${TASK_ID:ER-009}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-013}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-010}",
+          "${TASK_ID:ER-011}",
+          "${TASK_ID:ER-012}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-014}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-010}",
+          "${TASK_ID:ER-011}",
+          "${TASK_ID:ER-012}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-015}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-010}",
+          "${TASK_ID:ER-011}",
+          "${TASK_ID:ER-012}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-016}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-013}",
+          "${TASK_ID:ER-014}",
+          "${TASK_ID:ER-015}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-017}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-013}",
+          "${TASK_ID:ER-014}",
+          "${TASK_ID:ER-015}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-018}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-013}",
+          "${TASK_ID:ER-014}",
+          "${TASK_ID:ER-015}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-019}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-016}",
+          "${TASK_ID:ER-017}",
+          "${TASK_ID:ER-018}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-020}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-016}",
+          "${TASK_ID:ER-017}",
+          "${TASK_ID:ER-018}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-021}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-016}",
+          "${TASK_ID:ER-017}",
+          "${TASK_ID:ER-018}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-022}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-019}",
+          "${TASK_ID:ER-020}",
+          "${TASK_ID:ER-021}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-023}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-019}",
+          "${TASK_ID:ER-020}",
+          "${TASK_ID:ER-021}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-024}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-019}",
+          "${TASK_ID:ER-020}",
+          "${TASK_ID:ER-021}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-F03}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B01-08}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}",
+          "${TASK_ID:ER-B01-02}",
+          "${TASK_ID:ER-B01-03}",
+          "${TASK_ID:ER-B01-04}",
+          "${TASK_ID:ER-B01-05}",
+          "${TASK_ID:ER-B01-06}",
+          "${TASK_ID:ER-B01-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B01-01}",
+          "${TASK_ID:ER-B01-02}",
+          "${TASK_ID:ER-B01-03}",
+          "${TASK_ID:ER-B01-04}",
+          "${TASK_ID:ER-B01-05}",
+          "${TASK_ID:ER-B01-06}",
+          "${TASK_ID:ER-B01-07}",
+          "${TASK_ID:ER-B01-08}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B02-08}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}",
+          "${TASK_ID:ER-B02-02}",
+          "${TASK_ID:ER-B02-03}",
+          "${TASK_ID:ER-B02-04}",
+          "${TASK_ID:ER-B02-05}",
+          "${TASK_ID:ER-B02-06}",
+          "${TASK_ID:ER-B02-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B02-01}",
+          "${TASK_ID:ER-B02-02}",
+          "${TASK_ID:ER-B02-03}",
+          "${TASK_ID:ER-B02-04}",
+          "${TASK_ID:ER-B02-05}",
+          "${TASK_ID:ER-B02-06}",
+          "${TASK_ID:ER-B02-07}",
+          "${TASK_ID:ER-B02-08}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B03-08}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}",
+          "${TASK_ID:ER-B03-02}",
+          "${TASK_ID:ER-B03-03}",
+          "${TASK_ID:ER-B03-04}",
+          "${TASK_ID:ER-B03-05}",
+          "${TASK_ID:ER-B03-06}",
+          "${TASK_ID:ER-B03-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B03-01}",
+          "${TASK_ID:ER-B03-02}",
+          "${TASK_ID:ER-B03-03}",
+          "${TASK_ID:ER-B03-04}",
+          "${TASK_ID:ER-B03-05}",
+          "${TASK_ID:ER-B03-06}",
+          "${TASK_ID:ER-B03-07}",
+          "${TASK_ID:ER-B03-08}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B04-08}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}",
+          "${TASK_ID:ER-B04-02}",
+          "${TASK_ID:ER-B04-03}",
+          "${TASK_ID:ER-B04-04}",
+          "${TASK_ID:ER-B04-05}",
+          "${TASK_ID:ER-B04-06}",
+          "${TASK_ID:ER-B04-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B04-01}",
+          "${TASK_ID:ER-B04-02}",
+          "${TASK_ID:ER-B04-03}",
+          "${TASK_ID:ER-B04-04}",
+          "${TASK_ID:ER-B04-05}",
+          "${TASK_ID:ER-B04-06}",
+          "${TASK_ID:ER-B04-07}",
+          "${TASK_ID:ER-B04-08}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-02}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-01}",
+          "${TASK_ID:ER-B05-02}",
+          "${TASK_ID:ER-B05-03}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-04}",
+          "${TASK_ID:ER-B05-08}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-B05-08}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-B05-04}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-F03}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P06-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-01}",
+          "${TASK_ID:ER-P06-02}",
+          "${TASK_ID:ER-P06-03}",
+          "${TASK_ID:ER-P06-04}",
+          "${TASK_ID:ER-P06-05}",
+          "${TASK_ID:ER-P06-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P07-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P07-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P07-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P07-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P07-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P07-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P07-01}",
+          "${TASK_ID:ER-P07-02}",
+          "${TASK_ID:ER-P07-03}",
+          "${TASK_ID:ER-P07-04}",
+          "${TASK_ID:ER-P07-05}",
+          "${TASK_ID:ER-P07-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P06-07}",
+          "${TASK_ID:ER-P07-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P08-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-01}",
+          "${TASK_ID:ER-P08-02}",
+          "${TASK_ID:ER-P08-03}",
+          "${TASK_ID:ER-P08-04}",
+          "${TASK_ID:ER-P08-05}",
+          "${TASK_ID:ER-P08-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P09-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-01}",
+          "${TASK_ID:ER-P09-02}",
+          "${TASK_ID:ER-P09-03}",
+          "${TASK_ID:ER-P09-04}",
+          "${TASK_ID:ER-P09-05}",
+          "${TASK_ID:ER-P09-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P09-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P10-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-01}",
+          "${TASK_ID:ER-P10-02}",
+          "${TASK_ID:ER-P10-03}",
+          "${TASK_ID:ER-P10-04}",
+          "${TASK_ID:ER-P10-05}",
+          "${TASK_ID:ER-P10-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-07}",
+          "${TASK_ID:ER-P09-07}",
+          "${TASK_ID:ER-P10-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P11-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-01}",
+          "${TASK_ID:ER-P11-02}",
+          "${TASK_ID:ER-P11-03}",
+          "${TASK_ID:ER-P11-04}",
+          "${TASK_ID:ER-P11-05}",
+          "${TASK_ID:ER-P11-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P12-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P12-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P12-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P12-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P12-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P12-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P12-01}",
+          "${TASK_ID:ER-P12-02}",
+          "${TASK_ID:ER-P12-03}",
+          "${TASK_ID:ER-P12-04}",
+          "${TASK_ID:ER-P12-05}",
+          "${TASK_ID:ER-P12-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P08-07}",
+          "${TASK_ID:ER-P11-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P13-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P13-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P13-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P13-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P13-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P13-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P13-01}",
+          "${TASK_ID:ER-P13-02}",
+          "${TASK_ID:ER-P13-03}",
+          "${TASK_ID:ER-P13-04}",
+          "${TASK_ID:ER-P13-05}",
+          "${TASK_ID:ER-P13-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P11-07}",
+          "${TASK_ID:ER-P12-07}",
+          "${TASK_ID:ER-P13-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P14-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-01}",
+          "${TASK_ID:ER-P14-02}",
+          "${TASK_ID:ER-P14-03}",
+          "${TASK_ID:ER-P14-04}",
+          "${TASK_ID:ER-P14-05}",
+          "${TASK_ID:ER-P14-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P15-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-01}",
+          "${TASK_ID:ER-P15-02}",
+          "${TASK_ID:ER-P15-03}",
+          "${TASK_ID:ER-P15-04}",
+          "${TASK_ID:ER-P15-05}",
+          "${TASK_ID:ER-P15-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P16-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P16-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P16-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P16-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P16-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P16-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P16-01}",
+          "${TASK_ID:ER-P16-02}",
+          "${TASK_ID:ER-P16-03}",
+          "${TASK_ID:ER-P16-04}",
+          "${TASK_ID:ER-P16-05}",
+          "${TASK_ID:ER-P16-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P17-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P17-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P17-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P17-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P17-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P17-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P17-01}",
+          "${TASK_ID:ER-P17-02}",
+          "${TASK_ID:ER-P17-03}",
+          "${TASK_ID:ER-P17-04}",
+          "${TASK_ID:ER-P17-05}",
+          "${TASK_ID:ER-P17-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P18-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P18-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P18-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P18-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P18-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P18-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P18-01}",
+          "${TASK_ID:ER-P18-02}",
+          "${TASK_ID:ER-P18-03}",
+          "${TASK_ID:ER-P18-04}",
+          "${TASK_ID:ER-P18-05}",
+          "${TASK_ID:ER-P18-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P19-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P19-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P19-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P19-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P19-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P19-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P19-01}",
+          "${TASK_ID:ER-P19-02}",
+          "${TASK_ID:ER-P19-03}",
+          "${TASK_ID:ER-P19-04}",
+          "${TASK_ID:ER-P19-05}",
+          "${TASK_ID:ER-P19-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P10-07}",
+          "${TASK_ID:ER-P19-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P20-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P20-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P20-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P20-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P20-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P20-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P20-01}",
+          "${TASK_ID:ER-P20-02}",
+          "${TASK_ID:ER-P20-03}",
+          "${TASK_ID:ER-P20-04}",
+          "${TASK_ID:ER-P20-05}",
+          "${TASK_ID:ER-P20-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P15-07}",
+          "${TASK_ID:ER-P16-07}",
+          "${TASK_ID:ER-P17-07}",
+          "${TASK_ID:ER-P18-07}",
+          "${TASK_ID:ER-P19-07}",
+          "${TASK_ID:ER-P20-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P21-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-01}",
+          "${TASK_ID:ER-P21-02}",
+          "${TASK_ID:ER-P21-03}",
+          "${TASK_ID:ER-P21-04}",
+          "${TASK_ID:ER-P21-05}",
+          "${TASK_ID:ER-P21-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P21-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P22-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P22-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P22-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P22-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P22-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P22-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P22-01}",
+          "${TASK_ID:ER-P22-02}",
+          "${TASK_ID:ER-P22-03}",
+          "${TASK_ID:ER-P22-04}",
+          "${TASK_ID:ER-P22-05}",
+          "${TASK_ID:ER-P22-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P14-07}",
+          "${TASK_ID:ER-P22-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P23-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-01}",
+          "${TASK_ID:ER-P23-02}",
+          "${TASK_ID:ER-P23-03}",
+          "${TASK_ID:ER-P23-04}",
+          "${TASK_ID:ER-P23-05}",
+          "${TASK_ID:ER-P23-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P24-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-01}",
+          "${TASK_ID:ER-P24-02}",
+          "${TASK_ID:ER-P24-03}",
+          "${TASK_ID:ER-P24-04}",
+          "${TASK_ID:ER-P24-05}",
+          "${TASK_ID:ER-P24-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P23-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P25-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P25-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P25-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P25-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P25-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P25-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P25-01}",
+          "${TASK_ID:ER-P25-02}",
+          "${TASK_ID:ER-P25-03}",
+          "${TASK_ID:ER-P25-04}",
+          "${TASK_ID:ER-P25-05}",
+          "${TASK_ID:ER-P25-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P24-07}",
+          "${TASK_ID:ER-P25-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P26-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-01}",
+          "${TASK_ID:ER-P26-02}",
+          "${TASK_ID:ER-P26-03}",
+          "${TASK_ID:ER-P26-04}",
+          "${TASK_ID:ER-P26-05}",
+          "${TASK_ID:ER-P26-06}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-01}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P26-07}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-02}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P27-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-03}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P27-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-04}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P27-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-05}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P27-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-06}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P27-01}"
+        ]
+      },
+      {
+        "taskId": "${TASK_ID:ER-P27-07}",
+        "dependsOnTaskIds": [
+          "${TASK_ID:ER-P27-01}",
+          "${TASK_ID:ER-P27-02}",
+          "${TASK_ID:ER-P27-03}",
+          "${TASK_ID:ER-P27-04}",
+          "${TASK_ID:ER-P27-05}",
+          "${TASK_ID:ER-P27-06}"
+        ]
+      }
+    ]
+  }
+}

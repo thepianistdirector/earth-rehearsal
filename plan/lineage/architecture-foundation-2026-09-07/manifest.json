@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "a7e2fe7bc47726798ef01364f692a4ceb53f36e1",
+  "files": {
+    "plan--tasks.json": "fec221969ddb9ff46831a758e1cacbf5d4d32042cd342e4f608b6212db0dedbf",
+    "TASKS.md": "737702a272514533c53a41b647e325692cf1690cfa279c0b9f7c6af94e61aeac",
+    "ROADMAP.md": "997c0ef08d9e17c3cd28576f65fe29387e8044724ae441238fe8714b5203d5cd",
+    "STATUS.md": "ec57f050cc70a1dd1d2de1dc885ad91a01fb8d5fbeeec776c1766a9841490ec8",
+    "ARCHITECTURE.md": "8a6e6379c088912c47e48a090f5c2eb9eaa5b0c0718ef9a12663aa6f80f6e15c",
+    "EXPERIMENTS.md": "ce637d3a323894eaca9b9e24c64fb0369d3a2696f866ddfdbe4818e2a999c67c",
+    "SOURCES.md": "d74ef7d85aa91425cfa6bb90b06415c9e6c47d1122be6056dc5039d132a03d4b",
+    "README.md": "c2ae3a6228fdb578b4d00cd9d499709f08f7b4685ab0e1cdba7cd5e327519e05",
+    "CONTRIBUTING.md": "6f10e562eae8f6daf98ce5a527f7c3255f336223adee3db98c053df5b9c8969e",
+    "tools--validate_plan.py": "a48cc79888df1f42f6bb077824ee858a3e5b389c6d22b5df28ba4e7a4f6129d1",
+    ".gitignore": "ecfa21d832349649b6ffae14dec7c8ff1b812f9271a72755962c71f9a6781051",
+    "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+  }
+}

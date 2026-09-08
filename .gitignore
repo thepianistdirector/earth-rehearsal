@@ -6,3 +6,11 @@ __pycache__/
 !.env.example
 runs/
 .cache/
+dist/
+.t/
+core
+core.*
+docs/evidence/tanduna-*.html
+docs/evidence/tanduna-*.txt
+docs/evidence/proposal.txt
+docs/evidence/platform-docs.txt

@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "project": "earth-rehearsal",
+  "contractVersion": "architecture-foundation-2026-09-07",
+  "stateAuthority": "../STATUS.md",
+  "tasks": [
+    {
+      "id": "ER-F01",
+      "wave": 0,
+      "title": "Establish the architecture contract",
+      "status": "DONE",
+      "dependsOn": [],
+      "ownedPaths": [
+        "ARCHITECTURE.md",
+        "EXPERIMENTS.md",
+        "SOURCES.md"
+      ],
+      "acceptance": "Define domain-specific solver and applicability boundaries; units and spatial/temporal/scale coupling; mass, energy, capture, disposal and lifecycle ledgers; uncertainty, identifiability, calibration and validation; versioned study/run/result contracts; negative outcomes; evaluator authority; scheduler recovery; plugin isolation; and evidence-based local-to-distributed scale triggers."
+    },
+    {
+      "id": "ER-F02",
+      "wave": 0,
+      "title": "Establish the outcome and dependency roadmap",
+      "status": "DONE",
+      "dependsOn": [
+        "ER-F01"
+      ],
+      "ownedPaths": [
+        "README.md",
+        "ROADMAP.md",
+        "TASKS.md",
+        "STATUS.md",
+        "CONTRIBUTING.md"
+      ],
+      "acceptance": "Prepend Wave 0 without replacing Waves 1\u20138; connect the first analytic case to the original 24 tasks; state scientific gates, external reviewer/data/resource dependencies, scope cuts, stop conditions and evidence-driven replanning triggers."
+    },
+    {
+      "id": "ER-F03",
+      "wave": 0,
+      "title": "Specify the executable next-work packet and validate the repository plan",
+      "status": "DONE",
+      "dependsOn": [
+        "ER-F02"
+      ],
+      "ownedPaths": [
+        "EXPERIMENTS.md",
+        "TASKS.md",
+        "plan/tasks.json",
+        "tools/validate_plan.py"
+      ],
+      "acceptance": "Specify BOX-001 with sufficient equations, synthetic values, intervention arms, invalid cases, artifacts and gates to begin ER-001 without inventing science; add a standard-library validator for unique IDs, status/wave constraints, dependencies, acyclicity, Wave 0 ordering, roadmap/task navigation and local Markdown links."
+    },
+    {
+      "id": "ER-001",
+      "wave": 1,
+      "title": "Specify the first pollutant scenario",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-F03"
+      ],
+      "ownedPaths": [
+        "docs/benchmarks/"
+      ],
+      "acceptance": "Define the synthetic catchment, particle classes, boundary conditions, analytic references and mass-accounting equation."
+    },
+    {
+      "id": "ER-002",
+      "wave": 1,
+      "title": "Review environmental data and rights",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-001"
+      ],
+      "ownedPaths": [
+        "docs/data/"
+      ],
+      "acceptance": "Record exact source licenses, resolution, date coverage and missing variables; clearly label invented scenario inputs."
+    },
+    {
+      "id": "ER-003",
+      "wave": 1,
+      "title": "Build the experiment skeleton",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-001",
+        "ER-002"
+      ],
+      "ownedPaths": [
+        "src/",
+        "tests/",
+        "scenarios/"
+      ],
+      "acceptance": "A CLI validates units and source/sink definitions; a hand-computable no-removal case passes."
+    },
+    {
+      "id": "ER-004",
+      "wave": 2,
+      "title": "Implement the reference flow/transport model",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-001",
+        "ER-002",
+        "ER-003"
+      ],
+      "ownedPaths": [
+        "adapters/transport/"
+      ],
+      "acceptance": "Pass closed-box and open-boundary analytical cases with justified residual tolerances."
+    },
+    {
+      "id": "ER-005",
+      "wave": 2,
+      "title": "Implement source-reduction and capture policies",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-001",
+        "ER-002",
+        "ER-003"
+      ],
+      "ownedPaths": [
+        "src/interventions/"
+      ],
+      "acceptance": "Track captured and residual mass separately; no efficiency parameter can silently remove unaccounted mass."
+    },
+    {
+      "id": "ER-006",
+      "wave": 2,
+      "title": "Add disposal and lifecycle accounting",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-001",
+        "ER-002",
+        "ER-003"
+      ],
+      "ownedPaths": [
+        "src/accounting/"
+      ],
+      "acceptance": "Report the destination and energy assumptions for captured waste; detect double counting."
+    },
+    {
+      "id": "ER-007",
+      "wave": 3,
+      "title": "Create dry-weather and storm cases",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-004",
+        "ER-005",
+        "ER-006"
+      ],
+      "ownedPaths": [
+        "scenarios/watershed/"
+      ],
+      "acceptance": "Use documented synthetic flow profiles with paired random inputs and all boundary conditions saved."
+    },
+    {
+      "id": "ER-008",
+      "wave": 3,
+      "title": "Compare three intervention strategies",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-004",
+        "ER-005",
+        "ER-006",
+        "ER-007"
+      ],
+      "ownedPaths": [
+        "src/evaluation/"
+      ],
+      "acceptance": "Show no intervention, source reduction and capture under equal resource assumptions, including invalid runs."
+    },
+    {
+      "id": "ER-009",
+      "wave": 3,
+      "title": "Export maps, balances and limitations",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-004",
+        "ER-005",
+        "ER-006",
+        "ER-008"
+      ],
+      "ownedPaths": [
+        "src/reports/"
+      ],
+      "acceptance": "Every figure derives from retained run data and labels simulation, source quality and unknown ecological effects."
+    },
+    {
+      "id": "ER-010",
+      "wave": 4,
+      "title": "Test particle and flow sensitivity",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-007",
+        "ER-008",
+        "ER-009"
+      ],
+      "ownedPaths": [
+        "src/analysis/"
+      ],
+      "acceptance": "Vary supported settling, fragmentation and flow parameters; identify rankings that change."
+    },
+    {
+      "id": "ER-011",
+      "wave": 4,
+      "title": "Validate resolution and numerical stability",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-007",
+        "ER-008",
+        "ER-009"
+      ],
+      "ownedPaths": [
+        "tests/validation/"
+      ],
+      "acceptance": "Run timestep/grid refinement and source/sink perturbations; reject unstable or nonconservative runs."
+    },
+    {
+      "id": "ER-012",
+      "wave": 4,
+      "title": "Create independent holdout scenarios",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-007",
+        "ER-008",
+        "ER-009"
+      ],
+      "ownedPaths": [
+        "benchmarks/"
+      ],
+      "acceptance": "Reserve public or synthetic confirmation conditions before search; state whether they validate numerics or environmental realism."
+    },
+    {
+      "id": "ER-013",
+      "wave": 5,
+      "title": "Integrate drainage and water-network adapters",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-010",
+        "ER-011",
+        "ER-012"
+      ],
+      "ownedPaths": [
+        "adapters/hydraulics/"
+      ],
+      "acceptance": "Reproduce an official example per chosen engine; do not silently equate pipe quality with treatment performance."
+    },
+    {
+      "id": "ER-014",
+      "wave": 5,
+      "title": "Add a restoration or urban-cooling case",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-010",
+        "ER-011",
+        "ER-012"
+      ],
+      "ownedPaths": [
+        "adapters/restoration/"
+      ],
+      "acceptance": "Document supported spatial scale, public inputs and ecological/thermal response limitations."
+    },
+    {
+      "id": "ER-015",
+      "wave": 5,
+      "title": "Add climate and lifecycle scenarios",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-010",
+        "ER-011",
+        "ER-012"
+      ],
+      "ownedPaths": [
+        "adapters/climate/",
+        "src/lifecycle/"
+      ],
+      "acceptance": "Separate historical data, projections and intervention assumptions; account for energy and emissions without geoengineering control."
+    },
+    {
+      "id": "ER-016",
+      "wave": 6,
+      "title": "Build source-backed hypotheses",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-013",
+        "ER-014",
+        "ER-015"
+      ],
+      "ownedPaths": [
+        "src/agents/"
+      ],
+      "acceptance": "Require evidence, a measurable outcome and a failure condition for every proposed intervention."
+    },
+    {
+      "id": "ER-017",
+      "wave": 6,
+      "title": "Compare budgeted search methods",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-013",
+        "ER-014",
+        "ER-015"
+      ],
+      "ownedPaths": [
+        "src/search/"
+      ],
+      "acceptance": "Use equal simulation budgets and the same ecological constraints; retain all proposals and failed runs."
+    },
+    {
+      "id": "ER-018",
+      "wave": 6,
+      "title": "Confirm robust intervention tradeoffs",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-013",
+        "ER-014",
+        "ER-015"
+      ],
+      "ownedPaths": [
+        "src/evaluation/"
+      ],
+      "acceptance": "Retest shortlisted strategies on holdouts; reject gains that only displace pollution across the modeled boundary."
+    },
+    {
+      "id": "ER-019",
+      "wave": 7,
+      "title": "Build a local watershed comparison view",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-016",
+        "ER-017",
+        "ER-018"
+      ],
+      "ownedPaths": [
+        "apps/workbench/"
+      ],
+      "acceptance": "Accessible maps/tables expose units, waste destinations and uncertainty without implying real-world cleanup."
+    },
+    {
+      "id": "ER-020",
+      "wave": 7,
+      "title": "Add bounded batch workers",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-016",
+        "ER-017",
+        "ER-018"
+      ],
+      "ownedPaths": [
+        "src/workers/"
+      ],
+      "acceptance": "Limit compute and storage; cancellation/recovery preserve completed evidence and mark partial studies."
+    },
+    {
+      "id": "ER-021",
+      "wave": 7,
+      "title": "Package portable environmental studies",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-016",
+        "ER-017",
+        "ER-018"
+      ],
+      "ownedPaths": [
+        "src/export/"
+      ],
+      "acceptance": "Another contributor reproduces a case offline with lawful fixtures and complete metadata."
+    },
+    {
+      "id": "ER-022",
+      "wave": 8,
+      "title": "Replicate a second catchment case",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-019",
+        "ER-020",
+        "ER-021"
+      ],
+      "ownedPaths": [
+        "benchmarks/replication/"
+      ],
+      "acceptance": "An independent contributor reproduces a new scenario and documents transfer failures."
+    },
+    {
+      "id": "ER-023",
+      "wave": 8,
+      "title": "Review environmental and usability claims",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-019",
+        "ER-020",
+        "ER-021"
+      ],
+      "ownedPaths": [
+        "docs/review/"
+      ],
+      "acceptance": "A domain reviewer checks conservation and ecological interpretation; a user completes a comparison/export workflow."
+    },
+    {
+      "id": "ER-024",
+      "wave": 8,
+      "title": "Prepare the research preview release",
+      "status": "PLANNED",
+      "dependsOn": [
+        "ER-019",
+        "ER-020",
+        "ER-021"
+      ],
+      "ownedPaths": [
+        "docs/releases/"
+      ],
+      "acceptance": "Include limitations, known invalid cases, source notices and maintainer approval; no field-deployment claim."
+    }
+  ]
+}

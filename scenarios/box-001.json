@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "study": "BOX-001",
+  "study_version": "1.0.0",
+  "source_class": "wholly_synthetic",
+  "applicability": "A0_KNOWN_ANSWER",
+  "volume": {"value": 1000, "unit": "m3"},
+  "initial_mass": {"value": 0, "unit": "kg"},
+  "segments": [
+    {"name": "dry", "duration": {"value": 3600, "unit": "s"}, "inflow": {"value": 0.1, "unit": "m3/s"}, "outflow": {"value": 0.1, "unit": "m3/s"}, "source": {"value": 0.001, "unit": "kg/s"}},
+    {"name": "storm", "duration": {"value": 1800, "unit": "s"}, "inflow": {"value": 0.5, "unit": "m3/s"}, "outflow": {"value": 0.5, "unit": "m3/s"}, "source": {"value": 0.003, "unit": "kg/s"}}
+  ],
+  "source_factor": 0.5,
+  "capture_fraction": 0.5
+}
