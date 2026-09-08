@@ -1,6 +1,6 @@
 # Concrete v0.5.0 publication decision
 
-Prepared September 8, 2026. **Source and examples are verified locally; publication is not yet authorized for these new exact v0.5 artifacts.** The earlier exact v0.1.0 release and approved native 221-task programme remain preserved. This decision does not request that authority again.
+Prepared September 8, 2026; authorized and executed later that day. **Lucas approved this exact boundary, and [v0.5.0 is public](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0) as release `384874809`. All six assets plus SHA256SUMS match the approved bytes. [Fresh public Linux evidence](evidence/v05-public-release-verification.json) records 47 expected command outcomes and 83 passing tests.** The decision text below retains the reviewed action and its boundaries as history. The earlier exact v0.1.0 release and approved native 221-task programme remain preserved. This decision does not request that authority again.
 
 ## Reviewable source and assets
 

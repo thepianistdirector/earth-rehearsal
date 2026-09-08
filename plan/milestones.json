@@ -17,7 +17,7 @@
         "W07",
         "W08"
       ],
-      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "status": "RELEASED_IN_V05_PENDING_EXTERNAL_GATES",
       "outcome": "Synthetic catchment contracts, lawful source metadata, closed/open compartment transport, independent references and conservation falsifiers"
     },
     {
@@ -26,7 +26,7 @@
         "W09",
         "W10"
       ],
-      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "status": "RELEASED_IN_V05_PENDING_EXTERNAL_GATES",
       "outcome": "Paired prevention and finite-capacity capture, storage/release/leakage, class-preserving custody and separately declared resource assumptions"
     },
     {
@@ -36,7 +36,7 @@
         "W12",
         "W13"
       ],
-      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "status": "RELEASED_IN_V05_PENDING_EXTERNAL_GATES",
       "outcome": "Dry/storm comparison, retained invalid attempts, sensitivity, timestep/grid/remapping diagnostics and reversal guards"
     },
     {
@@ -44,7 +44,7 @@
       "waves": [
         "W14"
       ],
-      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "status": "RELEASED_IN_V05_PENDING_EXTERNAL_GATES",
       "outcome": "Frozen development/confirmation studies, calibration and identifiability records, holdout consumption, accessible portable results and exact verified public release"
     }
   ],
@@ -56,5 +56,11 @@
     "No invented observations, plausible particle/fate parameters or real-world benefit"
   ],
   "executionRule": "Synthetic known-answer/manufactured implementation may progress while interpretation and publication gates remain pending. Original task completion, qualified review and public acceptance are never inferred from implementation. Long-term W15-W27 remain separately proposed research work.",
-  "evidenceScope": "Local implementation and A0 synthetic verification; original task acceptance and required human/native/public evidence remain separate."
+  "evidenceScope": "Implemented A0 synthetic controls, exact public v0.5 release and fresh public Linux verification. Independent public Mac execution, original task acceptance and required human/native evidence remain separate.",
+  "publicRelease": {
+    "version": "0.5.0",
+    "url": "https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0",
+    "sourceCommit": "f9ca645370b545e313610861bf7cd5e2ee9e7015",
+    "evidence": "docs/evidence/v05-public-release-verification.json"
+  }
 }

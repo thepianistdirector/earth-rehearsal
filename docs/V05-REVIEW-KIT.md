@@ -1,6 +1,6 @@
-# v0.5 candidate review and external first-run kit
+# v0.5 public release review and external first-run kit
 
-This form is intentionally unfilled. Agent tests and reviews do not populate human observation fields. The exact candidate/archive identities and public destination will be recorded in the v0.5 release decision after package verification. The published v0.1 release remains separately identified in [STATUS.md](../STATUS.md).
+This form is intentionally unfilled. Agent tests and reviews do not populate human observation fields. Use the [public v0.5.0 release](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0): download `earth-rehearsal-0.5.0.tar.gz` and `SHA256SUMS`. The source archive is 472594 bytes with SHA-256 `a0b0d8cfa8cddc99b66d8bf145ea508c6c93f670e4d9bf2fed08254d0a409818`, from source commit `f9ca645370b545e313610861bf7cd5e2ee9e7015`. [Study instructions](STUDIES.md) provide the command reference. Public agent execution does not fill this form. The published v0.1 release remains separately identified in [STATUS.md](../STATUS.md).
 
 ## Participant workflow
 

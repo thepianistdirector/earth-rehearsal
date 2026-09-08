@@ -4,7 +4,7 @@
 
 The v0.5 workbench adds prescribed-flow compartment networks, finite capture and storage, sensitivity campaigns, spatial/time controls and frozen synthetic calibration to the original BOX-001 reservoir benchmark. It runs locally with the Python standard library and produces offline HTML, JSON and CSV evidence.
 
-**Version 0.5.0 is the local release candidate. Publication, platform verification, human review and native Tanduna status are tracked separately in [STATUS.md](STATUS.md).** The historical [v0.1.0 release](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0) is preserved. Every bundled scenario is an `A0_KNOWN_ANSWER` manufactured control. No cleanup, disposal, lifecycle, ecological or health benefit is established.
+**[Version 0.5.0 is public](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0). Its unauthenticated public download passes 47 packaged command outcomes and 83 tests on Linux. Independent public Mac verification, human review and native Tanduna status are tracked separately in [STATUS.md](STATUS.md).** The historical [v0.1.0 release](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0) is preserved. Every bundled scenario is an `A0_KNOWN_ANSWER` manufactured control. No cleanup, disposal, lifecycle, ecological or health benefit is established.
 
 Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Public source](https://github.com/thepianistdirector/earth-rehearsal) · [Tanduna project](https://tanduna.com/projects/earth-rehearsal).
 
