@@ -1,0 +1,22 @@
+{
+  "format": "earth-rehearsal-observed-study-v1",
+  "id": "POTOMAC-DAILY-001",
+  "title": "Four years of observed Potomac flow",
+  "start_date": "2021-01-01",
+  "end_date": "2024-12-31",
+  "periods": [
+    {
+      "id": "2021-2022",
+      "start_date": "2021-01-01",
+      "end_date": "2022-12-31"
+    },
+    {
+      "id": "2023-2024",
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31"
+    }
+  ],
+  "quality_policy": "APPROVED_NOT_ESTIMATED_WITH_APPROVED_ESTIMATES_SENSITIVITY",
+  "question": "How do daily-flow distributions and seasonal coverage differ between the preselected 2021\u20132022 and 2023\u20132024 periods?",
+  "interpretation": "Descriptive comparison of observed daily means; no causal, climate-trend, flood-peak or intervention-effect claim."
+}

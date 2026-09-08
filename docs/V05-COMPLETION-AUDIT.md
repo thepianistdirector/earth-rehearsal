@@ -2,7 +2,7 @@
 
 Audit date: September 8, 2026. Published source: `f9ca645370b545e313610861bf7cd5e2ee9e7015`. Runtime source digest: `0c8aa6fd2c1dafb46834de4893eb78ebedb5cdb8931a6b3393f8ff5f1d802cae`. This audit preserves the complete native goal; it does not redefine completion as local success.
 
-**Overall: incomplete.** The substantive synthetic workbench, approved exact public release and fresh public Linux execution are complete. Fresh independent public Mac execution, actual external/human/qualified observations and accepted native Tanduna publication remain open.
+**Overall: incomplete.** The substantive synthetic workbench, approved exact public release and fresh public Linux execution are complete. Fresh independent public Mac execution is now complete; actual external/human/qualified observations and accepted native Tanduna publication remain open.
 
 | Goal requirement | Current evidence | Disposition and limit |
 | --- | --- | --- |
@@ -17,11 +17,11 @@ Audit date: September 8, 2026. Published source: `f9ca645370b545e313610861bf7cd5
 | Temporal/spatial/remapping diagnostics | Euler refinement; same-domain 1/2/4/8-cell plug-flow control; separate time/spatial/total errors; conservative overlap remap with L1 profile error | Implemented for those manufactured controls. General temporal coupling and splitting-error programme contracts remain unfinished. |
 | Frozen development/confirmation, calibration and identifiability | Frozen candidate grid and SSE/threshold; complete candidate attempts; equivalent candidate sets and incomplete-grid status | Implemented for known synthetic data. A single selected vector does not establish global identifiability. |
 | Holdout separation and consumption | Zero holdout observation opens/stats during fit; experimental-control disjointness; successful-fit receipt; durable exposure before reading; refit refusal; explicit consumption | Implemented as a software protocol. Data author/freezer sees the manufactured controls; distinct inputs do not prove blinding or statistical independence. |
-| Portable inspect/export/reproduction and replay | All five inspectors on distributed examples; CSV/HTML coherence checks; frozen replay provenance guards; matching-source reproduction | Implemented and executed from fresh public v0.5 bytes on Linux; independent public Mac receipt is pending. |
+| Portable inspect/export/reproduction and replay | All five inspectors on distributed examples; CSV/HTML coherence checks; frozen replay provenance guards; matching-source reproduction | Implemented and executed from fresh public v0.5 bytes on Linux; independent public Mac execution also passed. |
 | Exact candidate execution on claimed environments | Final source archive: 47 packaged outcomes and 83 tests on Linux x86_64/Python 3.12.14 and independent macOS arm64/Python 3.12.13, zero Mac skips | Proved for those candidate environments. Mac transfer was private SSH, not public download or a human observation. |
 | Usable offline comparisons and licensed source | Packaged report browser observations; keyboard/reflow/label checks; source manifest, original fixture notices, AGPL license and reviewed examples | Candidate evidence exists. Universal accessibility, assistive-technology and actual-human usability are not proved. |
 | Exact public v0.5 release | Concrete source/metadata commits, six assets and checksum manifest in RELEASE-V05-DECISION.md | Approved and published: release `384874809`, tag `v0.5.0` at the exact source commit above; all seven public asset hashes match. |
-| Fresh public-artifact execution | [Actual public Linux download/execution](evidence/v05-public-release-verification.json): 47 expected outcomes and 83 tests | Same-host public execution complete. MAC-005 revision 1 queues independent public Mac verification; no completed receipt yet. |
+| Fresh public-artifact execution | [Actual public Linux download/execution](evidence/v05-public-release-verification.json): 47 expected outcomes and 83 tests | Same-host public execution and fresh independent public Mac execution are complete: 47 expected outcomes and 83 tests with zero skips on each. See the [Mac record](evidence/v05-macos-public-release-verification.json). |
 | Actual external participant | Original ER-B05-05 acceptance and unfilled v0.5 review kit | Missing actual participant evidence. Agent execution cannot satisfy it. |
 | Actual human/qualified review | Original ER-B05-08 acceptance, source/applicability limits and unfilled review kit | Missing actual required review. Agent critics cannot supply it. |
 | Preserve 200–400 canonical tasks and immutable original history | 221 tasks, 27 historical identities, 28 waves and 444 links; twenty plan falsifiers and generated-view checks | Local canonical structure verified. This does not prove native publication or completion of every W06–W14 task. |
@@ -29,7 +29,7 @@ Audit date: September 8, 2026. Published source: `f9ca645370b545e313610861bf7cd5
 
 ## Remaining sequence
 
-1. Reconcile the independent Mac public v0.5 verification request against exact published source and retained command evidence. Exact publication and fresh public Linux execution are complete.
+1. Exact publication and fresh public Linux/Mac execution are complete. Preserve those records while continuing the owner-expanded v1.0 delivery.
 2. Preserve both immutable releases and record subsequent evidence separately from their frozen assets.
 3. Reconcile MAC-001 revision 2 returned successor revisions and any supported platform-semantic resolution. Require the actual passing review, any genuinely required human poll and native publication, then verify public counts/order/dependencies/scope/access.
 4. Record actual external-participant and required human/qualified review from the people performing them; keep unfilled or failed requirements visible.

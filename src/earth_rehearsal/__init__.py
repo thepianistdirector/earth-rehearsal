@@ -1,3 +1,3 @@
-"""Earth Rehearsal — synthetic accounting, AGPL-3.0-only."""
+"""Earth Rehearsal — environmental study evidence, AGPL-3.0-only."""
 
-__version__ = "0.5.0"
+__version__ = "0.6.0.dev1"

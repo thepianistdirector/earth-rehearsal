@@ -4,13 +4,25 @@
 
 The v0.5 workbench adds prescribed-flow compartment networks, finite capture and storage, sensitivity campaigns, spatial/time controls and frozen synthetic calibration to the original BOX-001 reservoir benchmark. It runs locally with the Python standard library and produces offline HTML, JSON and CSV evidence.
 
-**[Version 0.5.0 is public](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0). Its unauthenticated public download passes 47 packaged command outcomes and 83 tests on Linux. Independent public Mac verification, human review and native Tanduna status are tracked separately in [STATUS.md](STATUS.md).** The historical [v0.1.0 release](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0) is preserved. Every bundled scenario is an `A0_KNOWN_ANSWER` manufactured control. No cleanup, disposal, lifecycle, ecological or health benefit is established.
+**[Version 0.5.0 is public](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0). Its unauthenticated public download passes 47 packaged command outcomes and 83 tests on Linux. The independent public Mac run also passed all 47 outcomes and 83 tests. Human review and native Tanduna status are tracked separately in [STATUS.md](STATUS.md).** The historical [v0.1.0 release](https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0) is preserved. The public v0.5 scenarios remain `A0_KNOWN_ANSWER` manufactured controls. Current development additionally contains a separately labelled real USGS daily-flow snapshot. No cleanup, disposal, lifecycle, ecological or health benefit is established.
 
 Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Public source](https://github.com/thepianistdirector/earth-rehearsal) · [Tanduna project](https://tanduna.com/projects/earth-rehearsal).
 
+## Working toward v1.0: observed flow studies
+
+Current development is **0.6.0.dev1**, under the [v1.0 delivery contract](docs/V1-CONTRACT.md). It adds a pinned, real USGS daily-discharge record alongside the existing synthetic transport controls. These commands are available in the current development source; they are not part of the immutable v0.5 archive.
+
+```sh
+python3 earth.py observations run --out runs/potomac
+python3 earth.py observations inspect runs/potomac
+python3 earth.py observations reproduce runs/potomac --out runs/potomac-reproduced
+```
+
+Open `runs/potomac/report.html` for the 2021–2024 record, quality flags, comparisons, source bytes and CSV/JSON exports. All 1,461 requested dates are present; 30 approved estimates are shown in a separate sensitivity. The report describes observed flow; it does not infer cleanup efficacy or a climate trend. [Observed-study guide](docs/OBSERVED-STUDIES.md) · [Executed notebook](notebooks/observed-potomac.ipynb).
+
 ## First network study
 
-Use **Python 3.12 on Linux or macOS**. Version-specific verification is in [STATUS.md](STATUS.md); the earlier Mac v0.1 result does not verify v0.5. No pip install, external dataset, account or network connection is needed for a study. From this source directory:
+Use **Python 3.12 on Linux or macOS**. Version-specific verification is in [STATUS.md](STATUS.md); the earlier Mac v0.1 result does not verify v0.5. No pip install, account or network connection is needed for the bundled studies. The observed-data command has an explicit optional fetch step for a different public record. From this source directory:
 
 ```sh
 python3 earth.py catchment run --out runs/catchment
@@ -90,8 +102,8 @@ python3 tools/render_plan.py --check
 
 Tests cover independent closed forms, long transfer paths, local and whole-domain conservation, source rights, finite capacity, custody, rounding, forged evidence, ordering, interruption, frozen selection and holdout exposure. Agent review and automated verification do not replace human or qualified review.
 
-The [canonical plan](plan/tasks.json) preserves 221 tasks and all 27 historical contracts. [Milestones](plan/milestones.json) track the v0.5 implementation without rewriting that history or declaring the wider environmental programme complete. [Architecture](ARCHITECTURE.md) · [Limitations](docs/LIMITATIONS.md) · [Contributing](CONTRIBUTING.md) · [v0.5 human/external review kit](docs/V05-REVIEW-KIT.md).
+The [canonical plan](plan/tasks.json) preserves 221 tasks and all 27 historical contracts. [Milestones](plan/milestones.json) track the v1.0 delivery and preserved v0.5 implementation without rewriting that history or declaring the wider environmental programme complete. [Architecture](ARCHITECTURE.md) · [Limitations](docs/LIMITATIONS.md) · [Contributing](CONTRIBUTING.md) · [v0.5 human/external review kit](docs/V05-REVIEW-KIT.md).
 
 ## License
 
-Original source, manufactured fixtures and project-generated artifacts are **AGPL-3.0-only**; see [LICENSE](LICENSE), [NOTICE](NOTICE) and [SOURCES.md](SOURCES.md). External references retain their own terms. No third-party solver, dataset, font, model weights or production library is bundled.
+Original source, manufactured fixtures and project-generated artifacts are **AGPL-3.0-only**; see [LICENSE](LICENSE), [NOTICE](NOTICE) and [SOURCES.md](SOURCES.md). External references retain their own terms. The admitted USGS observation snapshot is US Government work in the public domain, with its original attribution and terms retained. No third-party solver, font, model weights or production library is bundled.

@@ -9,7 +9,7 @@ import sys
 import time
 import uuid
 from . import __version__
-from .bundle import atomic_write,digest_file,source_digest,BundleError,MAX_FILE_BYTES
+from .bundle import atomic_write,digest_file,source_digest,BundleError,MAX_FILE_BYTES,require_distinct_output
 from .network_study import ARMS,POLICY,identity,validate
 from .sources import canonical
 
@@ -120,11 +120,13 @@ def inspect(output):
     except (TypeError,KeyError,AttributeError,IndexError,OverflowError) as exc:raise BundleError('malformed network bundle') from exc
 
 def reproduce(output,new_output):
+    require_distinct_output(output,new_output)
     previous=inspect(output)
     if previous['provenance']['source_digest']!=source_digest():raise BundleError('source digest differs; use the exact matching source package to reproduce')
     return run(previous['study'],new_output,parent_study_id=previous['provenance']['parent_study_id'])
 
 def export(output,new_output):
+    require_distinct_output(output,new_output)
     inspect(output);source=Path(output);target=Path(new_output)
     if target.exists():raise BundleError('export output already exists')
     target.mkdir(parents=True);(target/'raw').mkdir()

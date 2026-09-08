@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "ownerInstructionDate": "2026-09-08",
-  "activeTarget": "0.5",
+  "activeTarget": "1.0",
   "goal": "GOAL.md",
   "historicalTaskAcceptancePreserved": true,
   "reviewGatesCarriedForward": [
@@ -46,6 +46,57 @@
       ],
       "status": "RELEASED_IN_V05_PENDING_EXTERNAL_GATES",
       "outcome": "Frozen development/confirmation studies, calibration and identifiability records, holdout consumption, accessible portable results and exact verified public release"
+    },
+    {
+      "version": "0.6",
+      "waves": [
+        "W07",
+        "W13",
+        "W24"
+      ],
+      "status": "IMPLEMENTED_LINUX_PACKAGE_VERIFIED_PENDING_MAC_AND_EXTERNAL_GATES",
+      "outcome": "Real USGS observations, explicit source/quality/units, descriptive comparisons, separate arithmetic reference and portable evidence"
+    },
+    {
+      "version": "0.7",
+      "waves": [
+        "W09",
+        "W10",
+        "W13",
+        "W20"
+      ],
+      "status": "PLANNED",
+      "outcome": "Conservative temporal exchange and finite capture/service/custody control"
+    },
+    {
+      "version": "0.8",
+      "waves": [
+        "W24",
+        "W26"
+      ],
+      "status": "PLANNED",
+      "outcome": "Guided offline study creation, exploration and export"
+    },
+    {
+      "version": "0.9",
+      "waves": [
+        "W21",
+        "W23",
+        "W25",
+        "W27"
+      ],
+      "status": "PLANNED",
+      "outcome": "Bounded robust execution and exact publishable study package"
+    },
+    {
+      "version": "1.0",
+      "waves": [
+        "W26",
+        "W27",
+        "W05"
+      ],
+      "status": "PLANNED",
+      "outcome": "Usable tested public release, meaningful reproducible outputs, actual required human/participant review and public native readback"
     }
   ],
   "crossCuttingRequirements": [
@@ -56,11 +107,13 @@
     "No invented observations, plausible particle/fate parameters or real-world benefit"
   ],
   "executionRule": "Synthetic known-answer/manufactured implementation may progress while interpretation and publication gates remain pending. Original task completion, qualified review and public acceptance are never inferred from implementation. Long-term W15-W27 remain separately proposed research work.",
-  "evidenceScope": "Implemented A0 synthetic controls, exact public v0.5 release and fresh public Linux verification. Independent public Mac execution, original task acceptance and required human/native evidence remain separate.",
+  "evidenceScope": "Published v0.5 source passed fresh public Linux and independent Mac verification. Current v0.6 observed-data development has local tests and browser evidence. Original task acceptance and actual human/native evidence remain separate.",
   "publicRelease": {
     "version": "0.5.0",
     "url": "https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.5.0",
     "sourceCommit": "f9ca645370b545e313610861bf7cd5e2ee9e7015",
     "evidence": "docs/evidence/v05-public-release-verification.json"
-  }
+  },
+  "v1Contract": "docs/V1-CONTRACT.md",
+  "v06Evidence": "docs/evidence/v06-preparation.json"
 }

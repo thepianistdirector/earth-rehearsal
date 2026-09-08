@@ -69,6 +69,13 @@ def main():
         ['earth.py', 'calibration', 'reproduce', 'runs/confirmation', '--out', 'runs/confirmation-portable-replay'],
         ['earth.py', 'calibration', 'export', 'runs/confirmation', '--out', 'runs/confirmation-exported'],
         ['earth.py', 'calibration', 'inspect', 'runs/confirmation-exported'],
+        ['earth.py', 'observations', 'run', '--out', 'runs/observed'],
+        ['earth.py', 'observations', 'inspect', 'runs/observed'],
+        ['earth.py', 'observations', 'run', '--split-date', '2022-01-01', '--out', 'runs/observed-changed'],
+        ['earth.py', 'observations', 'reproduce', 'runs/observed', '--out', 'runs/observed-reproduced'],
+        ['earth.py', 'observations', 'export', 'runs/observed', '--out', 'runs/observed-exported'],
+        ['earth.py', 'observations', 'inspect', 'runs/observed-exported'],
+        ['tools/verify_observed_notebook.py'],
         ['tools/manufacture_calibration.py', '--check'],
         ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
         ['tools/validate_plan.py', '--self-test'],
@@ -98,6 +105,13 @@ def main():
     assert resolution['status']=='PASSED_MANUFACTURED_REFINEMENT'
     assert fit['equivalent_candidates']==['equivalent_a','equivalent_b'] and fit['candidate_denominator']==4
     assert confirmation['status']=='PASSED_FROZEN_SYNTHETIC_CONFIRMATION' and replay['mode']=='FROZEN_SELECTION_REPLAY'
+    observed = json.loads((source/'runs/observed/summary.json').read_text())
+    observed_reproduced = json.loads((source/'runs/observed-reproduced/summary.json').read_text())
+    observed_changed = json.loads((source/'runs/observed-changed/summary.json').read_text())
+    assert observed == observed_reproduced
+    assert observed['state_counts'] == {'ACCEPTED': 1431, 'ESTIMATED': 30}
+    assert observed['period_difference'] != observed_changed['period_difference']
+    assert (source/'runs/observed/daily.json').read_bytes() == (source/'scenarios/observations/potomac-2021-2024/daily.json').read_bytes()
     default = json.loads((source / 'runs/default/result.json').read_text())
     changed = json.loads((source / 'runs/changed/result.json').read_text())
     reproduced = json.loads((source / 'runs/reproduced/result.json').read_text())
@@ -114,6 +128,7 @@ def main():
               'identical_reproduction': True, 'changed_input_changed_trajectory': True,
               'parent_identity_retained': True, 'publicly_obtained': False,
               'v05_controls': {'network_identical_reproduction':True,'all_sensitivity_attempts_retained':True,'ordering_reversal_detected':True,'spatial_time_separation':resolution['status'],'equivalent_candidates':fit['equivalent_candidates'],'frozen_confirmation':confirmation['status'],'portable_replay_is_not_fresh_holdout':True,'refit_after_exposure_rejected':True}}
+    record['observed_controls'] = {'actual_public_usgs_snapshot_retained': True, 'dates': observed['requested_days'], 'quality_states': observed['state_counts'], 'independent_decimal_reference': True, 'identical_reproduction': True, 'changed_periods_change_comparison': True, 'notebook_outputs_verified': True}
     (args.out / 'verification.json').write_text(json.dumps(record, indent=2))
     print(f"PASS: {len(observations)} isolated packaged command outcomes, source hashes, changed trajectories, identical reproduction, recovery suite")
 

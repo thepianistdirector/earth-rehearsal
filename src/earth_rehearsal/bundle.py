@@ -22,6 +22,12 @@ class BundleError(ValueError):
     """An incomplete, incompatible or altered evidence bundle."""
 
 
+def require_distinct_output(source, target):
+    """Do not let export/replay append files inside its immutable input bundle."""
+    if Path(target).resolve().is_relative_to(Path(source).resolve()):
+        raise BundleError('output must be outside the source directory; preserve the original evidence')
+
+
 def source_digest():
     package = Path(__file__).resolve().parent
     digest = hashlib.sha256()
@@ -205,6 +211,7 @@ def inspect(output):
 
 
 def reproduce(output, new_output):
+    require_distinct_output(output, new_output)
     previous = inspect(output)
     if previous['provenance']['source_digest'] != source_digest():
         raise BundleError('runtime source differs from saved bundle; use the matching source package to reproduce')

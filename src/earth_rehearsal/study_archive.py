@@ -1,7 +1,7 @@
 """Bounded append-only protocol archives, with hashes rather than authenticity claims."""
 from pathlib import Path
 from . import __version__
-from .bundle import BundleError, atomic_write, digest_file, source_digest
+from .bundle import BundleError, atomic_write, digest_file, source_digest, require_distinct_output
 from .network_bundle import _json, _read
 
 MAX_BYTES=512*1024*1024
@@ -39,6 +39,7 @@ def verify(root,kind):
     return m
 
 def export(root,target,kind,inspect):
+    require_distinct_output(root,target)
     inspect(root);root=Path(root);target=fresh(target)
     for name,path in files(root).items():
         if name=='complete.json':continue

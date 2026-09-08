@@ -65,7 +65,7 @@ try {
   await new Promise(resolve=>setTimeout(resolve,150));
   scrollCheck.after=await evaluate(`document.querySelector('.table-scroll,.table-wrap').scrollLeft`);
   layout.keyboardTableScroll=scrollCheck;
-  layout.minimumChartLabelPx=await evaluate(`Math.min(...[...document.querySelectorAll('.chart svg text')].map(x=>x.getBoundingClientRect().height))`);
+  layout.minimumChartLabelPx=await evaluate(`Math.min(...[...document.querySelectorAll('.chart svg text,.figure-scroll svg text')].map(x=>x.getBoundingClientRect().height))`);
   if(layout.bodyWidth>layout.width+1 || layout.scripts || layout.remoteResources.length || layout.tables.some(x=>!x.caption||!x.headers))throw new Error('Report structure/reflow check failed: '+JSON.stringify(layout));
   if(layout.minimumChartLabelPx && layout.minimumChartLabelPx<12)throw new Error('Chart label too small');
   evidence.push({name,width,height,scale,layout,focus});

@@ -1,0 +1,35 @@
+{
+  "format": "earth-rehearsal-usgs-source-v1",
+  "provider": "U.S. Geological Survey",
+  "kind": "OBSERVED_DAILY_DISCHARGE",
+  "site_id": "USGS-01646500",
+  "start_date": "2021-01-01",
+  "end_date": "2024-12-31",
+  "parameter_code": "00060",
+  "statistic_id": "00003",
+  "original_unit": "ft^3/s",
+  "license": "US-government-public-domain",
+  "terms_url": "https://api.waterdata.usgs.gov/ogcapi/v0/?f=html",
+  "citation": "U.S. Geological Survey, 2026, USGS Water Data for the Nation: National Water Information System database, accessed September 8, 2026, https://doi.org/10.5066/F7P55KJN. USGS-01646500 daily mean discharge, 2021\u20132024.",
+  "retrievals": {
+    "site": {
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v0/collections/monitoring-locations/items/USGS-01646500?f=json",
+      "bytes": 4889,
+      "sha256": "252094dd79c6527e3ea14cde454a82cf27d9d78f7426f2e74570348f9a95b034",
+      "retrieved_utc": "2026-09-08T16:18:12.200747+00:00",
+      "authentication_used": false
+    },
+    "daily": {
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v0/collections/daily/items?f=json&monitoring_location_id=USGS-01646500&parameter_code=00060&statistic_id=00003&datetime=2021-01-01/2024-12-31&limit=10000",
+      "bytes": 980465,
+      "sha256": "0057a418728591af3d2915f5c10df198f3e4e18189e97d726c26dc8594ee758d",
+      "retrieved_utc": "2026-09-08T16:18:14.089029+00:00",
+      "authentication_used": false
+    }
+  },
+  "limitations": [
+    "Daily mean discharge at one station; not a pollutant measurement or catchment spatial field.",
+    "USGS approval/revision flags do not validate this analysis or intervention claims.",
+    "Public-domain API data retains USGS attribution and is not relicensed as project code."
+  ]
+}

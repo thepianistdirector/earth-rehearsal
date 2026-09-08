@@ -165,5 +165,6 @@ def inspect(output):
     return summary
 
 def reproduce(output,new_output):
+    archive.require_distinct_output(output,new_output)
     inspect(output);archive.require_matching_source(archive.verify(Path(output),'campaign'))
     return run(_read(Path(output)/'protocol.json'),new_output)

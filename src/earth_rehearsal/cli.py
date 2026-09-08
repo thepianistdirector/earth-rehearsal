@@ -28,16 +28,19 @@ def _summary(result):
 
 def main(argv=None):
     args_in=list(sys.argv[1:] if argv is None else argv)
+    if args_in and args_in[0]=='observations':
+        from .observed_cli import main as observations_main
+        return observations_main(args_in[1:])
     if args_in and args_in[0]=='catchment':
         from .network_cli import main as catchment_main
         return catchment_main(args_in[1:])
     if args_in and args_in[0] in ('campaign','resolution','calibration'):
         from .protocol_cli import main as protocol_main
         return protocol_main(args_in[0],args_in[1:])
-    parser = argparse.ArgumentParser(description='Offline synthetic environmental-study controls: BOX-001, catchment, sensitivity, resolution and frozen calibration.')
+    parser = argparse.ArgumentParser(description='Offline environmental studies: observed daily flow and separately labelled synthetic transport, sensitivity and calibration controls.')
     parser.add_argument('--version', action='version', version=__version__)
     commands = parser.add_subparsers(dest='command', required=True)
-    for name,help_text in [('catchment','source-bound compartment networks and finite capture'),('campaign','frozen sensitivity samples and reversal guards'),('resolution','separate spatial/time error and conservative remapping'),('calibration','freeze, fit, confirm and consume synthetic holdouts')]:commands.add_parser(name,help=help_text,add_help=False)
+    for name,help_text in [('observations','real daily-flow data, quality, comparisons and portable evidence'),('catchment','source-bound compartment networks and finite capture'),('campaign','frozen sensitivity samples and reversal guards'),('resolution','separate spatial/time error and conservative remapping'),('calibration','freeze, fit, confirm and consume synthetic holdouts')]:commands.add_parser(name,help=help_text,add_help=False)
     run = commands.add_parser('run', help='run all three arms into a new evidence directory')
     run.add_argument('--study', type=Path, default=default_path())
     run.add_argument('--out', type=Path, required=True)
@@ -78,6 +81,7 @@ def main(argv=None):
             _summary(result)
             print('Reproduced into new bundle: ' + str(args.out))
         elif args.command == 'export':
+            bundle.require_distinct_output(args.bundle, args.out)
             import shutil
             bundle.inspect(args.bundle)
             if args.out.exists():

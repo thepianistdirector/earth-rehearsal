@@ -18,11 +18,12 @@ from earth_rehearsal import __version__
 def inputs():
     names = {name for name in ('earth.py', 'README.md', 'LICENSE', 'NOTICE', 'CONTRIBUTING.md',
                               'ARCHITECTURE.md', 'EXPERIMENTS.md', 'SOURCES.md', 'ROADMAP.md', 'TASKS.md', 'STATUS.md', 'GOAL.md', '.gitignore')}
-    for folder in ('src', 'tests', 'scenarios', 'plan', 'docs/decisions', 'docs/benchmarks'):
+    for folder in ('src', 'tests', 'scenarios', 'plan', 'docs/decisions', 'docs/benchmarks', 'notebooks'):
         names.update(str(p.relative_to(ROOT)) for p in (ROOT / folder).rglob('*')
                      if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc')
     names.update(str(p.relative_to(ROOT)) for p in (ROOT / 'tools').glob('*.py'))
     names.update(('docs/LIMITATIONS.md', 'docs/EXECUTION-PACKETS.md', 'docs/STUDIES.md', 'docs/REVIEW-KIT.md', 'docs/V05-REVIEW-KIT.md', 'docs/evidence/v05-review.md', 'docs/evidence/v05-network-review.json', 'docs/evidence/v05-protocol-review.json', 'docs/evidence/v05-package-preparation.json', 'docs/evidence/public-release-verification.json', 'docs/evidence/macos-public-release-verification.json', 'docs/evidence/tanduna-review-2026-09-08.json'))
+    names.update(('docs/V1-GOAL.md', 'docs/V1-CONTRACT.md', 'docs/V05-GOAL.md', 'docs/OBSERVED-STUDIES.md', 'docs/evidence/v05-macos-public-release-verification.json'))
     # Public planning sources and review provenance; never include downloaded HTML,
     # browser profiles/libraries, developer paths, credentials or private host output.
     for name in ('platform-capabilities.md', 'runtime-critic.md', 'verification.md', 'release-review.md'):
@@ -42,6 +43,8 @@ def main():
     args = parser.parse_args()
     content = list(inputs())
     for name, data in content:
+        if name.endswith('.py'):
+            compile(data, name, 'exec')
         if any(marker in data for marker in ((str(Path.home()) + '/').encode(), b'/' + b'Users/', b'gh' + b'p_', b'github' + b'_pat_')):
             raise ValueError(f'private path or credential-like marker in package file: {name}')
     manifest = {'version': __version__, 'files': {name: hashlib.sha256(data).hexdigest() for name, data in content}}

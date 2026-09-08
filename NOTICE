@@ -1,4 +1,4 @@
-Earth Rehearsal 0.5
+Earth Rehearsal 0.6 development
 Copyright (C) 2026 Lucas Santana and Earth Rehearsal contributors.
 
 Original code, documentation and wholly synthetic project fixtures: AGPL-3.0-only.
@@ -15,5 +15,13 @@ equations. No environmental benefit follows from these computational controls.
 
 Python 3.12 and its standard library are supplied by the user, not bundled.
 Referenced environmental model documentation and research retain their own terms;
-no upstream engine, third-party dataset or paper text is redistributed here.
+no upstream engine or paper text is redistributed here.
+
+The separately labelled observed-data snapshot under scenarios/observations/
+potomac-2021-2024 contains USGS API data: US Government work in the public domain.
+It is not relicensed as AGPL project code. U.S. Geological Survey, 2026, USGS Water
+Data for the Nation, National Water Information System database, accessed
+September 8, 2026, https://doi.org/10.5066/F7P55KJN. The source record retains exact
+requests, original bytes, quality flags, access time and terms. These observations
+are daily mean discharge, not particle measurements or intervention evidence.
 Local browser QA tools/libraries are development-only and excluded from the package.

@@ -257,6 +257,7 @@ def inspect_confirmation(output):
 
 def reproduce_fit(output,new_output):
     """Replay completed development computations without selecting new parameters."""
+    archive.require_distinct_output(output,new_output)
     source=Path(output);inspect_fit(source);archive.require_matching_source(archive.verify(source,'calibration-fit'))
     target=archive.fresh(new_output);attempts=_read(source/'attempts.json')
     successful=[a['bundle'] for c in attempts for a in c['cases'] if a['status']=='SUCCEEDED']
@@ -271,6 +272,7 @@ def reproduce_fit(output,new_output):
 
 
 def reproduce_confirmation(output,new_output):
+    archive.require_distinct_output(output,new_output)
     source=Path(output);inspect_confirmation(source);archive.require_matching_source(archive.verify(source,'calibration-confirmation'))
     target=archive.fresh(new_output);attempts=_read(source/'attempts.json');successful=[a['bundle'] for a in attempts if a['status']=='SUCCEEDED']
     for name,path in archive.files(source).items():

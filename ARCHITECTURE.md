@@ -1,6 +1,12 @@
 # Earth Rehearsal architecture
 
-Status: **v0.1.0 BOX-001 is public; the v0.5 synthetic workbench is implemented and undergoing candidate verification. Human/qualified review and native publication remain incomplete.** Owner: Lucas Santana. Foundation date: 2026-09-07. Evidence: [STATUS.md](STATUS.md).
+Status: **v0.1.0 and v0.5.0 are public and independently package-verified. Current 0.6 development adds real observed-data studies toward the v1.0 contract. Human/qualified review and native publication remain incomplete.** Owner: Lucas Santana. Foundation date: 2026-09-07. Evidence: [STATUS.md](STATUS.md).
+
+## Observed-data increment toward v1.0
+
+The [v1.0 contract](docs/V1-CONTRACT.md) defines a narrow usable study workbench. The observed-data path admits a pinned USGS daily-discharge snapshot, retains original byte/source/quality identities, normalizes one civil-date mean per point station and calculates descriptive period/month/year summaries. A separate raw-record decimal evaluator checks each metric. Its offline report, CSV, notebook and inspect/export/reproduction workflow stay distinct from synthetic transport and calibration.
+
+Observations use `OBSERVED_DESCRIPTIVE`, not the synthetic model applicability ladder. Daily flow alone supplies neither particle loads nor intervention effectiveness. The admitted public dataset adds no external executable dependency. [The source and calculation contract](docs/benchmarks/observations/USGS-DAILY-001.md) specifies quality exclusions, units, provenance, budgets and falsifiers.
 
 ## Implemented v0.5 boundary
 
