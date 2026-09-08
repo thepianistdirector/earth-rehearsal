@@ -10,7 +10,7 @@ Created and maintained by **Lucas Santana** ([thepianistdirector](https://github
 
 ## First run
 
-Use **Python 3.12**. The public source artifact is verified on Linux with CPython 3.12; other operating systems and Python versions are not yet verified. There is no pip install, external dataset, browser dependency, account or network requirement for the calculation.
+Use **Python 3.12**. The public source artifact passed isolated Linux verification with CPython 3.12.14. An independent Mac helper also recorded the documented workflow and eight recovery tests passing on macOS 26.6.2 arm64 with CPython 3.12.13; see the [Mac verification record](docs/evidence/macos-public-release-verification.json) for scope and limitations. Other environments are not yet verified. There is no pip install, external dataset, browser dependency, account or network requirement for the calculation.
 
 Download `earth-rehearsal-0.1.0.tar.gz` and `SHA256SUMS` from the release, verify the archive checksum and extract it. From the source package directory:
 

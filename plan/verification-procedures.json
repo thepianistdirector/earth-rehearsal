@@ -1,0 +1,37 @@
+{
+  "source": "Mac helper preserved six concrete corrections requested by the actual native review; these remain prospective procedures.",
+  "procedures": {
+    "ER-B01-02": [
+      "From the extracted source root run python3 -m unittest discover -s tests -p test_study.py -v. All quantity, unsupported-field and fixed-volume tests must pass; retain the command, Python version and full output.",
+      "In a standard-library Python script from the extracted source root, add src to sys.path and independently load scenarios/box-001.json with earth_rehearsal.study.load, then validate separate deep copies with volume.unit set to litres, volume.value set to True, float(\"inf\") and float(\"nan\"), and an extra root settling field. Each must raise InvalidStudy, identify the offending volume or study field path, and produce no completed run. The unchanged fixture must validate. Preserve each input and actual error; accepting any malformed input fails this check."
+    ],
+    "ER-B05-04": [
+      "Obtain the public v0.1.0 source archive and SHA256SUMS, verify the published source checksum, and extract into a fresh folder. Record the existing Python version and OS. Use only the standard library; missing compatible Python is a prerequisite blocker, not permission to install.",
+      "From the extracted root, run python3 earth.py run --out runs/first, python3 earth.py inspect runs/first, python3 earth.py run --source-factor 0.25 --out runs/changed, and python3 earth.py reproduce runs/first --out runs/reproduced. Expect successful completion, inspect success, a changed source-reduction trajectory with other arms preserved, and reproduced retained results matching the original. Verify study.json, manifest.json, result.json, raw-result.json, trajectories.csv, report.html and complete.json are present in the completed bundle.",
+      "Run python3 earth.py negative-control --kind conservation --out runs/conservation.json and python3 earth.py negative-control --kind disposal --out runs/disposal.json. These test commands may exit successfully because the falsifiers worked; the retained evaluator outcome must reject the corrupted conservation and invented disposal respectively. A valid benefit result for either invalid control fails packaging acceptance.",
+      "Run python3 -m unittest discover -s tests -p test_bundle.py -v. Retain all recovery results and any skip reason. A package that cannot reopen/export/reproduce the original bundle or that activates a partial bundle fails."
+    ],
+    "ER-001": [
+      "Review the successor deliverable under docs/benchmarks/ against the unchanged historical acceptance criteria. Identify the exact document version and source references; record a pass/fail row with a section reference for each of the following checks.",
+      "Verify that the document defines the synthetic catchment geometry and support, each particle class and its units, initial stocks, every open/closed boundary and forcing, and each omission. Fail any undefined quantity, missing boundary or implication that synthetic inputs are observations.",
+      "Verify that analytic references include their equations, assumptions and validity envelope, and that the mass-accounting equation explicitly reconciles initial stock, sources, outlet transport, retained/captured material and terminal custody without double counting. Check dimensional consistency and a hand-computable limiting case. Missing terms, incompatible dimensions or an untraceable reference fail.",
+      "Record unresolved prerequisites as blocked. Document review does not establish simulator accuracy, environmental efficacy, a human interpretation review, or completion of a narrower successor. Retain the original frozen ER-001 acceptance history."
+    ],
+    "ER-P22-01": [
+      "Before running, retain a versioned policy-set manifest identifying each fixed transparent policy, parameters, scenario suite, seeds, evaluator version, and the already approved run/evaluation/time budget. The reviewer must be able to reproduce the policy choices without an adaptive or model-generated policy.",
+      "Using the implementation entry point documented in the delivered benchmark reproduction note, run every policy on the same declared scenario/seed set within the approved budget. Retain the exact invocation and environment, per-policy evaluation counts, elapsed time, objective measurements, validity/constraint outcomes, failed attempts and termination reasons.",
+      "Recompute the reported comparison from retained measurements and check every policy/attempt is accounted for. Pass only if execution respects the declared budget and reports reproducible baseline measurements, including failures. Measured superiority over another method is not required. Missing executable entry point, omitted attempts or unsupported performance claims fail."
+    ],
+    "ER-P24-06": [
+      "On the delivered comparison interface, record OS, browser, assistive technology and build. Use keyboard only to enter the report, select two retained runs, inspect comparison metrics and warnings, open export, cancel it, reopen it and complete an export. Repeat using a screen reader with a real human tester; an agent walkthrough is separate evidence.",
+      "Check visible focus on every control, logical Tab/Shift-Tab order, Enter/Space activation, no keyboard trap, and focus returning to the invoking control after closing/cancelling. Confirm controls have specific accessible names and roles, selected runs and metric units are announced, and warnings/status changes can be discovered without color alone.",
+      "Exercise the implemented missing-run and export-failure path without altering real user data. The error must be understandable, selection must survive, retry/cancel must remain keyboard accessible, and a successful exported bundle must match the chosen runs with limitations intact. Record steps, expected/actual results and defects; missing human coverage remains pending."
+    ],
+    "ER-P26-07": [
+      "Ask an actual consenting participant to open the delivered report, find two retained runs, identify which inputs differ, compare a named supported metric with its units and limitations, and export that comparison. Observe without performing the participant actions and record assistance separately.",
+      "Have the participant reopen the exported evidence, locate the selected run identities, source/study provenance, comparison measurements and limitations, and explain the distinction between a valid result and an invalid attempt. Expect the exported evidence to match the selected runs and preserve both warnings and failed-attempt context.",
+      "Retain a non-sensitive observation report with build/environment, task sequence, completion/abandonment, assistance, errors, exported evidence checks and participant-reported uncertainty. Do not place private participant identities in public evidence. An agent simulation does not satisfy the participant requirement.",
+      "This observation task permits reporting defects only. Implementation fixes require a separately scoped and reviewed follow-up; it grants no open-ended bounded-fixes authority. Missing participant evidence stays pending, and an incorrect or unreopenable export fails the workflow check."
+    ]
+  }
+}

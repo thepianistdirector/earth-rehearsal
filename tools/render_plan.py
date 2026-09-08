@@ -57,9 +57,11 @@ def render(plan):
     # Placeholders are conspicuous, not fabricated server IDs. This is never directly submitted.
     ids=plan['publication']['platformMapping']
     def native(tid): return ids.get(tid) or '${TASK_ID:'+tid+'}'
+    observed_waves=plan['publication'].get('platformWaveMapping', {})
     template={'projectSlug':plan['project'],'proposalId':plan['publication'].get('targetProposalId') or '${PROPOSAL_ID:EXPANDED_BOX_001_PROGRAMME}',
-              'expectedRevision':None,'plan':{'optionKey':None,
-                'waves':[{'name':w['title'],'taskIds':[native(t) for t in w['tasks']]} for w in plan['waves']],
+              'expectedRevision':plan['publication'].get('draftRevision'),'plan':{'optionKey':plan['publication'].get('optionKey'),
+                'waves':[{**({'id':observed_waves[w['id']]} if w['id'] in observed_waves else {}),
+                          'name':w['title'],'taskIds':[native(t) for t in w['tasks']]} for w in plan['waves']],
                 'unassignedTaskIds':[],
                 'dependencies':[{'taskId':native(t['id']),'dependsOnTaskIds':[native(d) for d in t['dependsOn']]} for t in plan['tasks']]}}
     task_templates=[]
@@ -79,12 +81,18 @@ def render(plan):
             'allowedPaths':t.get('ownedPaths',[]),'prohibitedPaths':['.git/','.env','.cache/'],
             'requiredCommands':[],'networkPolicy':'none','secretScope':[],
             'maxExecutionPermissions':[],'expectedArtifactType':'Scoped outcome evidence; see canonical contract'}}})
-    instruction=('Generated native task/create and save_draft argument templates, NOT ready to submit. First read all owner-visible tasks, including unpublished drafts, and reuse matching source identities; do not duplicate unseen drafts. '
-                 'Create a new expanded-programme proposal through the supported workflow, preserving the original discussion proposal in source history. '
+    instruction=('Generated native task/create and save_draft argument templates, NOT ready to submit. Existing mapped tasks must be updated through supported controls, never recreated from task/create templates. '
+                 'Saved IDs and revisions are observations, not a guarantee they remain current; read back before every update. '
+                 'Use plan/tanduna-preparation.json for the owner-defined scopes and verification procedures when present; it is a tool-neutral preparation overlay, not a completed-review claim. '
+                 'First read all owner-visible tasks, including unpublished drafts, and reuse matching source identities; do not duplicate unseen drafts. '
+                 'Only when no target proposal has already been mapped, create a new expanded-programme proposal through the supported workflow, preserving the original discussion proposal in source history. '
                  'Resolve every ${PROPOSAL_ID:...} and ${TASK_ID:...} through supported creation/readback, '
                  'read the current saved draft revision and optionKey, preserve server-issued wave IDs on updates, and obtain required authorization. '
                  'Null repository/base values and empty execution permissions are deliberately unready, not fabricated execution authority. Complete required preparation through the supported workflow before requesting review. '
                  'Save/submit only prepares review; it does not establish accepted publication. Read back public counts/dependencies/status separately.\n')
+    if plan['publication'].get('targetProposalId'):
+        instruction += ('Current corrected proposal: '+plan['publication']['targetProposalId']+'. Reuse it and its mapped successor tasks and wave IDs. '
+                        'Preserve the original discussion and frozen rejected submission. Do not create another proposal or corrected copy unless the supported review workflow requires one after a new actual review.\n')
     return {'TASKS.md':''.join(task_lines),'ROADMAP.md':''.join(road),'plan/publication.json':dumps(export),
             'plan/tanduna-save-draft.template.json':dumps(template),
             'plan/tanduna-tasks.template.json':dumps({'notReadyToSubmit':True,'tasks':task_templates}),

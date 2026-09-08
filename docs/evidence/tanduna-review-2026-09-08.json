@@ -1,0 +1,3226 @@
+{
+  "observed_utc": "2026-09-08T13:31:18.838708+00:00",
+  "evidence_kind": "Authenticated Mac helper receipt; owner reconciled all returned IDs and graph against canonical source",
+  "receipt_sha256": "1c926e4bd85dcf0e5c8e439afd24a80f61835e55e95bd3ffabc170b565167bf8",
+  "original_discussion": {
+    "id": "prp_fe895b39cfcb4edf458ef951c2234dab",
+    "revision": 1,
+    "status": "DISCUSSION",
+    "accepted": false
+  },
+  "submitted_proposal": {
+    "id": "prp_8cb755228075738f6b3ee24241772ebb",
+    "revision": 1,
+    "status": "DISCUSSION",
+    "url": "https://tanduna.com/p/earth-rehearsal/proposals/prp_8cb755228075738f6b3ee24241772ebb"
+  },
+  "submission": {
+    "publication_id": "tpub_e25ee5a06b97506c66550bf154795beb",
+    "request_id": "tpr_d127fc24477901c486b78b93f7c8e4a9",
+    "status": "SUBMITTED",
+    "review_attempt": "tpra_b8a72d2d7cb3e3896dc22cdf58243c5e",
+    "review_status": "CHANGES_REQUESTED",
+    "review_reason": "Structured preparation and concrete verification changes required by actual provider review.",
+    "submitted_at_utc": "2026-09-08T13:03:28.079000+00:00",
+    "published_at": null,
+    "latest_ui_review_status": "CHANGES_REQUESTED",
+    "latest_ui_observed_utc": "2026-09-08T13:10:00.988066+00:00",
+    "server_retry_time": "2026-09-08T13:10:17.533Z"
+  },
+  "review": {
+    "requestId": "tpr_d127fc24477901c486b78b93f7c8e4a9",
+    "snapshotHash": "da23670e0b16c2eef86468e3eaa9d50ab6f21f62870c9ad3cd51fb08f83959e5",
+    "scope": "TEXTUAL_PREPUBLICATION_REVIEW",
+    "requestedModel": "gpt-6-astra",
+    "verdict": "CHANGES_REQUESTED",
+    "reviewedTaskIds": [
+      "tsk_5e48cfc7417c9bb3ae29344e3514da71",
+      "tsk_77248a73538fe52a75f629bdf08d862b",
+      "tsk_2b26a28a8ca9292c34ab576df5f6467c",
+      "tsk_5cd2d4784e94f03519b95e99c6c027b5",
+      "tsk_a8f35fcf4922abf51de6386c0d3f7c84",
+      "tsk_5e32c410f239022dbae9ef1028ff8c23",
+      "tsk_b9159f6cbf1ffe0587f3a73fcb12e992",
+      "tsk_ab56d56829343a75ace058324d73cd3b",
+      "tsk_4fe7282b63c5a98457a02ed89570378a",
+      "tsk_c17f8039ae0414af41668e19c8e81001",
+      "tsk_4abbde1f756b8de2f1a0ca20ed5798d5",
+      "tsk_5cf15c5cc845ac0b0f3445010ec96aa4",
+      "tsk_f7c62024030bdbaba527a685058be208",
+      "tsk_2c143b288202b7ca0c3de569bca7d6ad",
+      "tsk_14d492c775172be232663269239bdfef",
+      "tsk_1e2b0c56132bd3c06515ce707afbec8e",
+      "tsk_16b1e1ffb00e18e8797999f67163b95b",
+      "tsk_471c8adc10af8591c1b224cf698e0d98",
+      "tsk_32efffb6158f51ee9c92269211231977",
+      "tsk_10f4329bdbe26c398e4bc9093133b80a",
+      "tsk_ee7678f479b230ae7c3da2d39173707e",
+      "tsk_961d63fc0b0b0df6339f139de2865bf9",
+      "tsk_a1cc64651badc5c4bcaf9ec9cf4facf2",
+      "tsk_acdf85cb55e48fa9cb20eb23ab6208f5",
+      "tsk_9c0133063e8884b81cbc8420212426da",
+      "tsk_9442c0a59c249b3a7b3a28f39b14c0f5",
+      "tsk_39669f2194214fac34a09a95cba7cc4f",
+      "tsk_a402972644cca8f7ab8444dd95b3413c",
+      "tsk_a24f3afa3a06ff1b81faad4265d6e243",
+      "tsk_121fa827bf1cc02bd8cc32b9d6b87116",
+      "tsk_e39ab61eac93ddc77e9c81282d046674",
+      "tsk_c72c5e2600e9c9eb9878318eff5f6fb8",
+      "tsk_2ea650c6df393f08d7397a67bf5c135c",
+      "tsk_4d47b67d091e949d0f3e2890c74036a3",
+      "tsk_30878fbc5ba622554793004040fa4841",
+      "tsk_4e106a642bdd039b28cfa02a0677cab9",
+      "tsk_7f99840e439939a7006955d54bfec97e",
+      "tsk_c1e778ab297ce251b06b1a4d2723edf3",
+      "tsk_83a8d9014587361eee5772e4ecd8cb8e",
+      "tsk_5a988463164df88538d6c4864a616842",
+      "tsk_8e2d70165ef3191674d892394bbcaf0c",
+      "tsk_bd5cf1bbe92a71fe369c965923b7e02b",
+      "tsk_d8e609fe7940fe0792a42b208c5a7832",
+      "tsk_2fa461202c3cf9fd2461058ec7ae8067",
+      "tsk_fa3532c1814763b03214da7d56badd75",
+      "tsk_5c03750aa62c07d0ab051c22ebb74558",
+      "tsk_f3bd0f293f33267dabd2eaee25d5dc10",
+      "tsk_3e9f83c4637ef506c7f4268d5713ff34",
+      "tsk_de7c50e39be76bbc490465a7dbe11c35",
+      "tsk_6295fa1f3a961a95a2e40b83d2e0444c",
+      "tsk_17f6ed84a3d0ea99a2773998b12ec2c5",
+      "tsk_52f4460da792389bb1cf0e38bcb34b31",
+      "tsk_f37d73acbe6042a3da582b2a9853d4b4",
+      "tsk_e4aaa7fdaf97d9680c5da1192ebf2ce7",
+      "tsk_b16660e1774ca6664cc6956ff0ac135e",
+      "tsk_acdf14fe09de01cb6667888ef70673dc",
+      "tsk_e89a2c6e5331df89c0a0b30af592e878",
+      "tsk_7a7de8c39ecf5369e7c30d099dcea428",
+      "tsk_9eba033fce58668087cb6a1725b0d8ea",
+      "tsk_7b2456f0b5556cc097f01b78f26770bb",
+      "tsk_b64f5de6789918dd9284efd41f80a766",
+      "tsk_6fefe2bb3c87ca50ed7f5c062f25c162",
+      "tsk_03aaf88a8deb207a4d5f471e2e932161",
+      "tsk_7dbd14e14455b766fb0e7a03e7f18279",
+      "tsk_0f767733997f49e19a571c8887ab2991",
+      "tsk_e6df34778d9aa8016252007c12585dad",
+      "tsk_a54070819adb5dc76d974d4089fa673e",
+      "tsk_a975b29b63b484a6776e361c95ff8c58",
+      "tsk_d8063d5cd20b15946fc7010701d8969c",
+      "tsk_38b7352240e0f345d924722d991def48",
+      "tsk_caf338cb369fcbf3402b7164e6e22da1",
+      "tsk_c42bee701b5dc2467b5be77d0e97e805",
+      "tsk_77ea181bb36f8ad08d5af067313fb514",
+      "tsk_cd1c344edc9a2678cb643605069101bf",
+      "tsk_d2e54d791d2936ababeeb7613e4abc95",
+      "tsk_c8ac989c110ded0014926ea488e53de7",
+      "tsk_8eb54fd64f53e858a12a1fd2c1e02303",
+      "tsk_f1dc5aa5410ff4b4da5379aa4548d2c8",
+      "tsk_81cbb2a8e77d9ad0cd0b1456ae3f1ceb",
+      "tsk_e7f9be61b12c9eb7ba93040ae3d53366",
+      "tsk_4c0ba66a9d147afc7295c2d639c50a7d",
+      "tsk_a2e6bf9012517ca022c453f14b26d25c",
+      "tsk_358a61db15e0917b92dcd96c05ba1188",
+      "tsk_2eb4fd38a6777686182ce73f21efbd43",
+      "tsk_ed406badda565904889cd016a040bbe0",
+      "tsk_76e2e6e8e6b3d470c12e26671e15ef2d",
+      "tsk_58c2debd953af78728097ad304433db6",
+      "tsk_1a3dca92996e728675c87aaab877592b",
+      "tsk_f1a52da80a3276c35d5fa6574e45c5d9",
+      "tsk_f5b3b9f4f01be92768302f7b5110e3b7",
+      "tsk_12075c250160ff202ce5f7bbcedc5a12",
+      "tsk_13cb81479f9d59e0bbeaf9f2cd9c8f1e",
+      "tsk_d5a78dbc1efc457a4d17cd3cdec5c266",
+      "tsk_991b9ecca56515d3e42a9930754d6636",
+      "tsk_76458e4603d904733ab2110e299e039d",
+      "tsk_f1ac937f732b25242305bf5086564adc",
+      "tsk_526cd0e86942e83cbf2cbdf3ea88004b",
+      "tsk_df5e65338f422ae17c5f2536cdf44b35",
+      "tsk_5a9dd8b57bb85579da5cdf7e5c379da2",
+      "tsk_267834f80cd26a1f7330a25b8d03c597",
+      "tsk_9a0b799d3186fcf88615530c0edcf35b",
+      "tsk_7222d3225db7c9367c3a3b552326da1d",
+      "tsk_ab5a5855a10845637e6643414a8fae83",
+      "tsk_68b0fedc01da4f674cdc550b59caa599",
+      "tsk_b4ce1bcbf6e3c8ac4a25c96aef27e67a",
+      "tsk_c33b523b9d6de1f71cf3664baa845a04",
+      "tsk_d1b3db745e3bf0ff829cf8d4e5da4548",
+      "tsk_62edc925667aa2dd3c5ad2582affeb14",
+      "tsk_9fa31b69908f164b58e7ad283aa2ab1b",
+      "tsk_8dd12d3d3e9a169f08a0de30b4f6d87b",
+      "tsk_a54ff5d7a158d50664417d1f2f953d91",
+      "tsk_03623ba3122fc97f3e4420d294d585e2",
+      "tsk_4ec06d04a83292978b7b29158742b362",
+      "tsk_95ed234ee164677cc6df12eee88e3c32",
+      "tsk_87674f1cea004b67a1a543263fdb42c5",
+      "tsk_b2475d32cda53653bfcccc8c1581978a",
+      "tsk_27d1387775cd9d7685510e2a43411d7e",
+      "tsk_f56595407ed42f4765216591f1ef628f",
+      "tsk_f32be2f40dab22d9d046b6d414cf74eb",
+      "tsk_14987d8f6686ee660edecd3a19f165fd",
+      "tsk_8e2cc2cae173a1a130ab893fc2c45ca2",
+      "tsk_0cc4c6af5136ec59d40321b375ba6ee0",
+      "tsk_278f576c7d9f63a9329950a630ec254d",
+      "tsk_5cbabc4556fe9f074f008bb7692ef54a",
+      "tsk_22313aa1b35f1ea62de9205121e630ec",
+      "tsk_ad516ef53401769cecc43493cc8557a8",
+      "tsk_e9ca4d4d61a301a713c31970e35a8b9c",
+      "tsk_52e3e3c7118e409c3a082b655192d98f",
+      "tsk_6cdd7d698939af1578aa1fadc321e0d2",
+      "tsk_ddeaa1486947cc7b29141a6a3c37c9e0",
+      "tsk_c074aa40e911292bea47975819a66830",
+      "tsk_26e3c4f8ba9db3f192938d9f5703d391",
+      "tsk_3684f658073173e60ed66a6b4279d619",
+      "tsk_f9595966b955a0bf402e6f6b85683e6e",
+      "tsk_bbc264eddf01aeb6e7243d62e7cd14f2",
+      "tsk_0942ccfd2b63575f29a4de63e72bfba6",
+      "tsk_f7071c5e95d745d33892de91bbccc3e9",
+      "tsk_ce690aa30c638d8a8bd82145ea556d1d",
+      "tsk_bec880e0eb084b191474624f2c967339",
+      "tsk_3c3986b9b5dfacbbd08e4bc7ea54b657",
+      "tsk_3a827cbd321a17b33bf5b6a10675211f",
+      "tsk_6403ab691bc070a22ef2b5de65ddc17b",
+      "tsk_07ded88d436e45b1ed32a0e79b03e6b2",
+      "tsk_4cfbb9618cfc6d30a3edc9dd96a10cf2",
+      "tsk_a1f7e35cbf6476f52e8cbd1ecf0476c6",
+      "tsk_1dc93a642ca0557ebf5f7918f91d5844",
+      "tsk_c71d7f9f5bfc77c1f8f7d0a9c82cc1a6",
+      "tsk_455e440c7f76a6e1f58389573fb72f0f",
+      "tsk_b79b964a8bc075200a3fd31e303b9945",
+      "tsk_e5b82484f40fbfa412a39393cee87979",
+      "tsk_973c734a30db3e08faca97b29ce14455",
+      "tsk_9364acec314cc3ee58e555c25a2daa13",
+      "tsk_69e2a3cab483d8f3bc4ecf6d38301ddf",
+      "tsk_95c552c3c53fb61c6a8fcccce579a2cd",
+      "tsk_c775de89b082d94b874f4af886534bec",
+      "tsk_6db19ac36c1754d41c7b86aab90d6ba4",
+      "tsk_7f310e2053a164a532f133c1e92d4c6e",
+      "tsk_32cf35ec88932ee1d276658ccfaa8811",
+      "tsk_6db78d032f56228b983ea5b665e5e29c",
+      "tsk_b7f1523e73569561fd60ff91597e567b",
+      "tsk_e63f82a4202adc925d01bcec3eebdd5e",
+      "tsk_2f8b948d679514c524620f15724fff60",
+      "tsk_866774eab9a062656de6c17b757448dc",
+      "tsk_a108fdb4389effc8ad83a34b75623e17",
+      "tsk_2cc979b3f7eae646aa3083c465431228",
+      "tsk_2f9021ff5b747e7a8921f1c0c7b819c0",
+      "tsk_6d37cc897e1d9dbe8179bb85bdfe94c4",
+      "tsk_ff36af44840f438fedc311320f9dcf4c",
+      "tsk_4551a2e39a072c2ca49baa9b889b8f08",
+      "tsk_0cdb90ad7bb2f59aed0609a954c476a0",
+      "tsk_11f4268af6a146ae67d14a01c7a66af9",
+      "tsk_83b65268874aafea936efc42c904ebc4",
+      "tsk_e0c0749e756c32b1b57ffae2f127248e",
+      "tsk_37e0bc2fb24c8a89ab0edeeee4be5daf",
+      "tsk_d535ffd02f75d29045f1cc2d8cf3e1d4",
+      "tsk_bd25a01ad32b798a98b01161a5656ed4",
+      "tsk_f34c42ac63ab17b8af77b8a8bd8f376b",
+      "tsk_f68ce91d921333815c207a0c636b68de",
+      "tsk_61f7802bdfc4d96f62113ddc0af1cab6",
+      "tsk_dadb0c0a69a49d618c3e8ca21b93a61a",
+      "tsk_e2aa2d3e1bc7914a4cd7de980ccf3938",
+      "tsk_1a59ff2036235cf1d9174444bada2a4f",
+      "tsk_3c8995feddc674c4bc01d17f7b79a84c",
+      "tsk_1b4fa6486d0f70ddd9bb75dab384f7ef",
+      "tsk_cdfea454d477c51bade3700629ffcdd8",
+      "tsk_2a7eb9d26c399d596686cde4ce9a206e",
+      "tsk_aa2f9066a7c64050ac7c4a5eebc752c3",
+      "tsk_4539b984f255c9868527b8fae32024b9",
+      "tsk_8c2241a9eb251b16be6bef7014585c9c",
+      "tsk_785dd0992f88e83b11e02d74951c4ffa",
+      "tsk_5ae1680864e9584e1e2e810fd94d31f8",
+      "tsk_77f0aabf200f34e2daca444255a235a4",
+      "tsk_bbaab7c67e4480c4ef2076e59a7d6c32",
+      "tsk_104437a34a0646afe4e1751d9a5e63de",
+      "tsk_2e539079237ce575aa2b8da52b78d435",
+      "tsk_933cfcd553d26079b8340bdd4fb2a509",
+      "tsk_c04985547968bac358868ffb965f37d8",
+      "tsk_998035a7bdb0480528fd796355353a24",
+      "tsk_a1a23cc0625e4721e2feeb3abe92b1f7",
+      "tsk_338dd0da63926c45a093ad7f5770ab6d",
+      "tsk_082f9dfbc3a2974429d4f87d9c72bbf9",
+      "tsk_648abc85c827f80fe2c0ecb408f13837",
+      "tsk_aecda0ee3603b7cfbebcf6c48a69ed42",
+      "tsk_2ff6a165899480e6cfc3c1c7ef46f41f",
+      "tsk_929aef6e08842c7818407291b956456b",
+      "tsk_e6e33fbe4c1349ec54ad23531d72accf",
+      "tsk_973abb7054be7345457fce253560869f",
+      "tsk_65b154d634a4ebb6f8934568cbb70ac0",
+      "tsk_fab26e1680b7878adec4b476605d3334",
+      "tsk_ddf3d153d464969488d30dc173c91ce3",
+      "tsk_54bd020e82a2eb24cea5698397f85d8a",
+      "tsk_3ec07f27533af50759ec8d4b409476e9",
+      "tsk_ffa4785557e037d13179409861f4f5c5",
+      "tsk_c93945da9ca6d438885ad6a772db7995",
+      "tsk_a4d21a4f5578c10dd99514db46282622",
+      "tsk_da8d65fc73cb121d63eb8e5574c5d209",
+      "tsk_437c75d3b03984ca77c1805e618a9e18",
+      "tsk_199ab369ca227df684d42af3cb2a49b9",
+      "tsk_0f9cf672b1ea14ae39abe9fcdcf56d5e",
+      "tsk_ac0279f7070efeed332978c40817c2b3",
+      "tsk_824f0dc67fdb18fb40eafacb9dbb79d7"
+    ],
+    "summary": "Maintainer, changes are required before voting: complete the expanded tasks' V3 planning contracts and source observations, and supply usable task-specific QA. Submit a corrected revision for review; preserve the existing frozen record and historical acceptance history.",
+    "limitations": [
+      "Textual screening only, based exclusively on the supplied snapshot; no tools, execution, browsing, delegation or external verification were used.",
+      "This is not a code audit, completed QA, confirmation of historical review or release evidence, or a guarantee of safety.",
+      "Repository observations and requested model settings do not establish implementation prerequisites or the model actually executed."
+    ],
+    "findings": [
+      {
+        "taskId": null,
+        "category": "model_requirements",
+        "severity": "blocking",
+        "detail": "The expanded V3 tasks ER-B01-02 through ER-B01-08, ER-B02-01 through ER-B05-08 (all supplied B02\u2013B05 tasks), and ER-P06-01 through ER-P27-07 (all seven supplied tasks in each P06\u2013P27 group) have null planningRequirements and planningSourceEvidence. They therefore lack structured repository/branch/full base, preferred/fallback model and effort, deliverable, acceptance workflow, verification and skill declarations, plus required source observations. The shared promise to bind these before execution does not satisfy V3 publication requirements. Populate these fields for each named task, using public pinned references for any required skills and observed repository evidence. Explicitly declare no fallback or no required skills where applicable. Preserve the historical ER-F01\u2013ER-F03 and ER-001\u2013ER-024 records rather than rewriting their acceptance history."
+      },
+      {
+        "taskId": "tsk_a8f35fcf4922abf51de6386c0d3f7c84",
+        "category": "acceptance",
+        "severity": "blocking",
+        "detail": "ER-B01-02 \u2014 Declare supported quantity grammar states rejection outcomes but supplies neither a command nor a specific manual verification procedure. requiredCommands is empty, and the generic tests/ evidence reference does not identify how to check the parser. Add a test command or manual steps submitting representative incompatible units, booleans, nonfinite values and unknown fields, with the expected field-path errors."
+      },
+      {
+        "taskId": "tsk_83a8d9014587361eee5772e4ecd8cb8e",
+        "category": "acceptance",
+        "severity": "blocking",
+        "detail": "ER-B05-04 \u2014 Package standard-library first run says only that a 'clean packaged run passes'; it provides no task-specific invocation or expected output establishing that result. Add the clean-environment setup, packaged CLI command and observable expected artifacts/results, including how the included invalid controls must fail."
+      },
+      {
+        "taskId": "tsk_2fa461202c3cf9fd2461058ec7ae8067",
+        "category": "acceptance",
+        "severity": "blocking",
+        "detail": "ER-001 \u2014 Specify the first pollutant scenario lists required document content but defers exact validation commands and provides no specific manual QA procedure. 'Provide reproducible evidence' is not a usable check. Add a manual document review identifying the deliverable and verifying the synthetic catchment, particle classes, boundary conditions, analytic references and mass-accounting equation, with explicit pass/fail expectations. This can be added in a successor review contract while retaining the historical record."
+      },
+      {
+        "taskId": "tsk_e0c0749e756c32b1b57ffae2f127248e",
+        "category": "acceptance",
+        "severity": "blocking",
+        "detail": "ER-P22-01 \u2014 Implement fixed-policy benchmark provides only 'A frozen transparent policy set establishes baseline search performance.' It does not identify the benchmark procedure, reported measurements or expected verification result. Specify the policy-set deliverable and a command or manual check showing that the frozen policies run under the declared budget and produce the required retained measurements; measured superiority need not be required."
+      },
+      {
+        "taskId": "tsk_104437a34a0646afe4e1751d9a5e63de",
+        "category": "acceptance",
+        "severity": "blocking",
+        "detail": "ER-P24-06 \u2014 Test keyboard and assistive workflow requires recorded human checks but omits the actual steps and expected behavior. Add a specific navigation/comparison/export sequence, the keyboard and assistive checks to perform, and expected focus, labels and recovery results. Merely recording that checks covered these topics cannot establish acceptance."
+      },
+      {
+        "taskId": "tsk_ffa4785557e037d13179409861f4f5c5",
+        "category": "acceptance",
+        "severity": "blocking",
+        "detail": "ER-P26-07 \u2014 Observe comparison and export usability says a real user completes 'the workflow' without specifying that workflow or its expected result; 'bounded fixes' also has no stated boundary. Define the participant's comparison/export steps, expected exported evidence and observation deliverable. State the permitted fix scope or require a separately reviewed follow-up for fixes."
+      }
+    ]
+  },
+  "review_model_evidence": {
+    "source": "Native review details UI",
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "low",
+    "observed_model": "Not reported by CLI",
+    "run_id": "01a0811f-66a7-7492-b9fb-9bac11190755",
+    "cli_version": "0.153.4",
+    "limitation": "Requested model is not attestation of observed provider model; helper actual model separately verified."
+  },
+  "corrected_draft": {
+    "proposal_id": "prp_2dd555b565fdf25a2e24a62f5f709717",
+    "url": "https://tanduna.com/p/earth-rehearsal/proposals/prp_2dd555b565fdf25a2e24a62f5f709717/tasks",
+    "saved_revision": 1,
+    "verification": {
+      "checked_utc": "2026-09-08T13:29:56.641534+00:00",
+      "successor_rows": 221,
+      "waves": 28,
+      "dependencies": 444,
+      "saved_plan_revision": 1,
+      "source_observations": 221,
+      "astra_only_model_requirements": 221,
+      "predecessor_revisions_and_acceptance_preserved": 221,
+      "task_specific_verification_procedures": 7,
+      "incomplete_tasks": 221,
+      "incomplete_field_counts": {
+        "models.fallback": 221,
+        "verification": 214,
+        "requiredSkills": 221,
+        "fields.allowedPaths": 194,
+        "verification.manual.evidence": 6
+      },
+      "published_plans": 0
+    }
+  },
+  "source_identity_history": {
+    "ER-F01": {
+      "predecessor": {
+        "id": "tsk_5e48cfc7417c9bb3ae29344e3514da71",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_475d84db15ebc3c93d3e66d156707953",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873809485
+      }
+    },
+    "ER-F02": {
+      "predecessor": {
+        "id": "tsk_77248a73538fe52a75f629bdf08d862b",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_27d90e877fd9c218c63eced274e2734c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-F03": {
+      "predecessor": {
+        "id": "tsk_2b26a28a8ca9292c34ab576df5f6467c",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_03a7b456dd59b801e3b7a84c6e4eab8a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-01": {
+      "predecessor": {
+        "id": "tsk_5cd2d4784e94f03519b95e99c6c027b5",
+        "revision": 3,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_92811de9b01ca2b367ede1f7041a9f00",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-02": {
+      "predecessor": {
+        "id": "tsk_a8f35fcf4922abf51de6386c0d3f7c84",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8fa6400604c88fc7f4cb698dcaca676a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-03": {
+      "predecessor": {
+        "id": "tsk_5e32c410f239022dbae9ef1028ff8c23",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_b5f6c9bfa6a249dc7e9478a9e7353ed5",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-04": {
+      "predecessor": {
+        "id": "tsk_b9159f6cbf1ffe0587f3a73fcb12e992",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_599514e9dae0646319e705cbab32bc55",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-05": {
+      "predecessor": {
+        "id": "tsk_ab56d56829343a75ace058324d73cd3b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_48a509cea9727c0163915d3b0b783598",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-06": {
+      "predecessor": {
+        "id": "tsk_4fe7282b63c5a98457a02ed89570378a",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_c3de958b6691d65492b5066805c1c73a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-07": {
+      "predecessor": {
+        "id": "tsk_c17f8039ae0414af41668e19c8e81001",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_b05f5cf297e9cd47be7fec3ff3075a77",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B01-08": {
+      "predecessor": {
+        "id": "tsk_4abbde1f756b8de2f1a0ca20ed5798d5",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f04a53ad0c9762e308d4171a8faf23bf",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-01": {
+      "predecessor": {
+        "id": "tsk_5cf15c5cc845ac0b0f3445010ec96aa4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9b19e4a2e258a24b1669d28123399e80",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-02": {
+      "predecessor": {
+        "id": "tsk_f7c62024030bdbaba527a685058be208",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_c4a96d4f99d0b305cb1848d72dd09c0d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-03": {
+      "predecessor": {
+        "id": "tsk_2c143b288202b7ca0c3de569bca7d6ad",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_35d75499c1c851ea4aeec039a879c69b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-04": {
+      "predecessor": {
+        "id": "tsk_14d492c775172be232663269239bdfef",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_b600a86b87337a57577cc72c2feb9dd7",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-05": {
+      "predecessor": {
+        "id": "tsk_1e2b0c56132bd3c06515ce707afbec8e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_2f267d4091d9a80a2438f2a21a8a3f63",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-06": {
+      "predecessor": {
+        "id": "tsk_16b1e1ffb00e18e8797999f67163b95b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_1905118ad5be083bcb7ee75e65dbdee0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-07": {
+      "predecessor": {
+        "id": "tsk_471c8adc10af8591c1b224cf698e0d98",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_26d8f4993316b569887cbb2844c43bcd",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B02-08": {
+      "predecessor": {
+        "id": "tsk_32efffb6158f51ee9c92269211231977",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5c28902692e82bc31bfd56465b6b0026",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-01": {
+      "predecessor": {
+        "id": "tsk_10f4329bdbe26c398e4bc9093133b80a",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_1c739e1db199857d8a162df9ee8d6405",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-02": {
+      "predecessor": {
+        "id": "tsk_ee7678f479b230ae7c3da2d39173707e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_640266b53c7da3adacda4083e44be875",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-03": {
+      "predecessor": {
+        "id": "tsk_961d63fc0b0b0df6339f139de2865bf9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9b34f126184987e5e5cdcf0245f08e37",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-04": {
+      "predecessor": {
+        "id": "tsk_a1cc64651badc5c4bcaf9ec9cf4facf2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a87f5bed82d821a20e7de3d3b67c4976",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-05": {
+      "predecessor": {
+        "id": "tsk_acdf85cb55e48fa9cb20eb23ab6208f5",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_dfd4f6f97cac399f7aba578f2bb1435e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-06": {
+      "predecessor": {
+        "id": "tsk_9c0133063e8884b81cbc8420212426da",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6ef3293d2741cc2b9758e4a5efc5bbb3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-07": {
+      "predecessor": {
+        "id": "tsk_9442c0a59c249b3a7b3a28f39b14c0f5",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_bf49ff5a7e506de01a54554e1b422a6c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B03-08": {
+      "predecessor": {
+        "id": "tsk_39669f2194214fac34a09a95cba7cc4f",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_c7cd4cd8b5626c23ef1b37c03d9cdf48",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-01": {
+      "predecessor": {
+        "id": "tsk_a402972644cca8f7ab8444dd95b3413c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a7e452a7623f4d21a8b675983fa831b5",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-02": {
+      "predecessor": {
+        "id": "tsk_a24f3afa3a06ff1b81faad4265d6e243",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_d8c5fe341b3c36897ae6da7fd67c0268",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-03": {
+      "predecessor": {
+        "id": "tsk_121fa827bf1cc02bd8cc32b9d6b87116",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_ee76702c826c705c530a8f4582ff72e4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-04": {
+      "predecessor": {
+        "id": "tsk_e39ab61eac93ddc77e9c81282d046674",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5d0863168038c4572d3d7e808286f38c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-05": {
+      "predecessor": {
+        "id": "tsk_c72c5e2600e9c9eb9878318eff5f6fb8",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6eb1d2c042359ec2cc5f5eb4c6f5c3eb",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-06": {
+      "predecessor": {
+        "id": "tsk_2ea650c6df393f08d7397a67bf5c135c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_b970421b37bb3d664d7c28d98b561bb8",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-07": {
+      "predecessor": {
+        "id": "tsk_4d47b67d091e949d0f3e2890c74036a3",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f14c4164b9abc3c988d44e0bab9d829b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B04-08": {
+      "predecessor": {
+        "id": "tsk_30878fbc5ba622554793004040fa4841",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_750fbfdba5e9a7eaeb62c18c62d19cb8",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-01": {
+      "predecessor": {
+        "id": "tsk_4e106a642bdd039b28cfa02a0677cab9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_efde47dd50dda4f96165a5dc27da648b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-02": {
+      "predecessor": {
+        "id": "tsk_7f99840e439939a7006955d54bfec97e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_118d495c72554b7eb8fda86d12204122",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-03": {
+      "predecessor": {
+        "id": "tsk_c1e778ab297ce251b06b1a4d2723edf3",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8c77777d713f32da409c394675f1a844",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-04": {
+      "predecessor": {
+        "id": "tsk_83a8d9014587361eee5772e4ecd8cb8e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0fcec1f9ac856af698d6337d76dac97f",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-08": {
+      "predecessor": {
+        "id": "tsk_5a988463164df88538d6c4864a616842",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8657bc96f576f4dbe93493ca4852ee69",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-06": {
+      "predecessor": {
+        "id": "tsk_8e2d70165ef3191674d892394bbcaf0c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9eebc2486857718eded231600a35b73e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-05": {
+      "predecessor": {
+        "id": "tsk_bd5cf1bbe92a71fe369c965923b7e02b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_56d2d3a19f6df63f0e3dc5b2dd62206e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-B05-07": {
+      "predecessor": {
+        "id": "tsk_d8e609fe7940fe0792a42b208c5a7832",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_72ae3df00697caf6cdbd7ce983b84698",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-001": {
+      "predecessor": {
+        "id": "tsk_2fa461202c3cf9fd2461058ec7ae8067",
+        "revision": 2,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_3a2d9f677c0f73e69e98540a1569fba9",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-01": {
+      "predecessor": {
+        "id": "tsk_fa3532c1814763b03214da7d56badd75",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0fd07b90d3cbca282f89ee114614fedf",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-02": {
+      "predecessor": {
+        "id": "tsk_5c03750aa62c07d0ab051c22ebb74558",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_1d90a6ae93e0f092e1d56e3bdc9f3c01",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-03": {
+      "predecessor": {
+        "id": "tsk_f3bd0f293f33267dabd2eaee25d5dc10",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_685e27ca1872093ff3e4918074458227",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-04": {
+      "predecessor": {
+        "id": "tsk_3e9f83c4637ef506c7f4268d5713ff34",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_b368cbdb94fe9b714a507dd7f9642691",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-05": {
+      "predecessor": {
+        "id": "tsk_de7c50e39be76bbc490465a7dbe11c35",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f6178d9a43f8abe2389dfdaae3005bfd",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-06": {
+      "predecessor": {
+        "id": "tsk_6295fa1f3a961a95a2e40b83d2e0444c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_c2bad4cb362eac1a2c482e3e23804702",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P06-07": {
+      "predecessor": {
+        "id": "tsk_17f6ed84a3d0ea99a2773998b12ec2c5",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_12c4797d71ee2e4d380a7300c62c380a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-002": {
+      "predecessor": {
+        "id": "tsk_52f4460da792389bb1cf0e38bcb34b31",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_85a6d48410e5857be61c9944903ac388",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-01": {
+      "predecessor": {
+        "id": "tsk_f37d73acbe6042a3da582b2a9853d4b4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5cae73c290621f1b676b619562cd32cd",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-02": {
+      "predecessor": {
+        "id": "tsk_e4aaa7fdaf97d9680c5da1192ebf2ce7",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_cde49e7605d07710acad61d3c71a3fb1",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-03": {
+      "predecessor": {
+        "id": "tsk_b16660e1774ca6664cc6956ff0ac135e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6c81dd18545ab1d4585a2e8cce103558",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-04": {
+      "predecessor": {
+        "id": "tsk_acdf14fe09de01cb6667888ef70673dc",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_cfa11fcff343f38e7a6f940bf348bb55",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-05": {
+      "predecessor": {
+        "id": "tsk_e89a2c6e5331df89c0a0b30af592e878",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_515dcdca711d2e14a977193bd3b1e419",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-06": {
+      "predecessor": {
+        "id": "tsk_7a7de8c39ecf5369e7c30d099dcea428",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_d692099eb0d3f3505d360ef0e4dbecff",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P07-07": {
+      "predecessor": {
+        "id": "tsk_9eba033fce58668087cb6a1725b0d8ea",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_be4fd29202cd1f8be3f486a028b1fba3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-003": {
+      "predecessor": {
+        "id": "tsk_7b2456f0b5556cc097f01b78f26770bb",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_4b54cc7df67d73a70a305e22ff0624d3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-01": {
+      "predecessor": {
+        "id": "tsk_b64f5de6789918dd9284efd41f80a766",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_3238b297fd23c644f2ac8b9cf3bbcad9",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-004": {
+      "predecessor": {
+        "id": "tsk_6fefe2bb3c87ca50ed7f5c062f25c162",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_2e3e539c7c0f1d0e1972b89dd4432869",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-02": {
+      "predecessor": {
+        "id": "tsk_03aaf88a8deb207a4d5f471e2e932161",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_b49ffa104b65d4cc81422f72dc487fbd",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-03": {
+      "predecessor": {
+        "id": "tsk_7dbd14e14455b766fb0e7a03e7f18279",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_1ecf43abdc4f7ad4be4900ca9ce15e8a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-04": {
+      "predecessor": {
+        "id": "tsk_0f767733997f49e19a571c8887ab2991",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_55b8f45593aea6906ae1675aa08531e1",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-05": {
+      "predecessor": {
+        "id": "tsk_e6df34778d9aa8016252007c12585dad",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_7b58ac6b5dfe76d88f5d07bb195b05c7",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-06": {
+      "predecessor": {
+        "id": "tsk_a54070819adb5dc76d974d4089fa673e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a30300b10505595ca3f442599f92a5eb",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P08-07": {
+      "predecessor": {
+        "id": "tsk_a975b29b63b484a6776e361c95ff8c58",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_38c166b9753a5683731bbccc1c13691b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-005": {
+      "predecessor": {
+        "id": "tsk_d8063d5cd20b15946fc7010701d8969c",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_c84fe9570c76ae77c1a7e2f771e446b5",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-01": {
+      "predecessor": {
+        "id": "tsk_38b7352240e0f345d924722d991def48",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_81d14e6366e0959c6d4eaf8fb82f2c66",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-02": {
+      "predecessor": {
+        "id": "tsk_caf338cb369fcbf3402b7164e6e22da1",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_ca4ccfc9ceda2a465203c79f92a1703b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-03": {
+      "predecessor": {
+        "id": "tsk_c42bee701b5dc2467b5be77d0e97e805",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_c8bb30a7ef27dd90b9ad29afd09a906b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-04": {
+      "predecessor": {
+        "id": "tsk_77ea181bb36f8ad08d5af067313fb514",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a02868912389352f3125a07ffeb6c61d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-05": {
+      "predecessor": {
+        "id": "tsk_cd1c344edc9a2678cb643605069101bf",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_7e6918d925b1155bed1a11ce264dbd72",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-06": {
+      "predecessor": {
+        "id": "tsk_d2e54d791d2936ababeeb7613e4abc95",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_32d8ce58fb48770193ccd0a5faec9808",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P09-07": {
+      "predecessor": {
+        "id": "tsk_c8ac989c110ded0014926ea488e53de7",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_462b93dc66afdb73ff51d014cb6e89dc",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-006": {
+      "predecessor": {
+        "id": "tsk_8eb54fd64f53e858a12a1fd2c1e02303",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_abdcb862ed6132fd539d7caeb37e0eb5",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-01": {
+      "predecessor": {
+        "id": "tsk_f1dc5aa5410ff4b4da5379aa4548d2c8",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_e157bb232f6bdfe688eed83f0f2e67c7",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-02": {
+      "predecessor": {
+        "id": "tsk_81cbb2a8e77d9ad0cd0b1456ae3f1ceb",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_25d243ac878aad821aa6c50c9cc7cd2b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-03": {
+      "predecessor": {
+        "id": "tsk_e7f9be61b12c9eb7ba93040ae3d53366",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9edae0e1e01c846e08fc79bbf587399d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-04": {
+      "predecessor": {
+        "id": "tsk_4c0ba66a9d147afc7295c2d639c50a7d",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6abe228340f831cf673284f9e37344f4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-05": {
+      "predecessor": {
+        "id": "tsk_a2e6bf9012517ca022c453f14b26d25c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6630a45de8a00fdf0cdf8eb49f87ff62",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-06": {
+      "predecessor": {
+        "id": "tsk_358a61db15e0917b92dcd96c05ba1188",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6c91997ceb90b548b966c7ec363b237d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P10-07": {
+      "predecessor": {
+        "id": "tsk_2eb4fd38a6777686182ce73f21efbd43",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6d4522d9c3fd052bd35732e4adcbd66d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-007": {
+      "predecessor": {
+        "id": "tsk_ed406badda565904889cd016a040bbe0",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_c556606c3a1d4c361ca6d550f9fca41d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-01": {
+      "predecessor": {
+        "id": "tsk_76e2e6e8e6b3d470c12e26671e15ef2d",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_42ee89e568d1b4221bf55e4f093699f2",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-008": {
+      "predecessor": {
+        "id": "tsk_58c2debd953af78728097ad304433db6",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_57c90050c61d1b583bc33b7354f65056",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-02": {
+      "predecessor": {
+        "id": "tsk_1a3dca92996e728675c87aaab877592b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5e78f85e81a15f4c03086cc4a6ffce72",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-03": {
+      "predecessor": {
+        "id": "tsk_f1a52da80a3276c35d5fa6574e45c5d9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f39a0954364b87670c7ecd55b16c29c3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-04": {
+      "predecessor": {
+        "id": "tsk_f5b3b9f4f01be92768302f7b5110e3b7",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_818516933cb3b400ac56e35bf163c45b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-05": {
+      "predecessor": {
+        "id": "tsk_12075c250160ff202ce5f7bbcedc5a12",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9c41f25dd383c5dddb7f5c5223ab465f",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-06": {
+      "predecessor": {
+        "id": "tsk_13cb81479f9d59e0bbeaf9f2cd9c8f1e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8461c0381d87a15ad8ec74eec0e66f12",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-009": {
+      "predecessor": {
+        "id": "tsk_d5a78dbc1efc457a4d17cd3cdec5c266",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_1b1d8ed4006ec00ba3696af99e9e2713",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P11-07": {
+      "predecessor": {
+        "id": "tsk_991b9ecca56515d3e42a9930754d6636",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_bfcc23db43b6b5ad27a6ba6a60a476eb",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-010": {
+      "predecessor": {
+        "id": "tsk_76458e4603d904733ab2110e299e039d",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_aa2e04b455358e68a2c7cbfa45fcb02b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-01": {
+      "predecessor": {
+        "id": "tsk_f1ac937f732b25242305bf5086564adc",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_428543de3e1648ef9a470e6305453efa",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-02": {
+      "predecessor": {
+        "id": "tsk_526cd0e86942e83cbf2cbdf3ea88004b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_ed63239f20eecfb4dcff34179ac19b1d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-03": {
+      "predecessor": {
+        "id": "tsk_df5e65338f422ae17c5f2536cdf44b35",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_3b06b1874a2b5e65ca5c220d58d3350d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-04": {
+      "predecessor": {
+        "id": "tsk_5a9dd8b57bb85579da5cdf7e5c379da2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0ed1b7c73a04d9ae59cf9dd51333f9a5",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-05": {
+      "predecessor": {
+        "id": "tsk_267834f80cd26a1f7330a25b8d03c597",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_971868859d71ca551c289725f2413909",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-06": {
+      "predecessor": {
+        "id": "tsk_9a0b799d3186fcf88615530c0edcf35b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_c3e41a54957cf118148daccad189f8c4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P12-07": {
+      "predecessor": {
+        "id": "tsk_7222d3225db7c9367c3a3b552326da1d",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_20ff3ee477ad3936c51a6e0e7accc257",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-011": {
+      "predecessor": {
+        "id": "tsk_ab5a5855a10845637e6643414a8fae83",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_3dae6e38552d18c0ce85f1281d0c079c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-01": {
+      "predecessor": {
+        "id": "tsk_68b0fedc01da4f674cdc550b59caa599",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5e294fb21ed474548de2f24ff25c8923",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-02": {
+      "predecessor": {
+        "id": "tsk_b4ce1bcbf6e3c8ac4a25c96aef27e67a",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_03f7fd50167a60c6ba9b4719aafa075e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-03": {
+      "predecessor": {
+        "id": "tsk_c33b523b9d6de1f71cf3664baa845a04",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_3468ae69200562a6d69f00719e534623",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-04": {
+      "predecessor": {
+        "id": "tsk_d1b3db745e3bf0ff829cf8d4e5da4548",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f8be9f1b7ed3f95754ce05da7e0fda58",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-05": {
+      "predecessor": {
+        "id": "tsk_62edc925667aa2dd3c5ad2582affeb14",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_3e1847cf95b41a85db84186ca1a7433d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-06": {
+      "predecessor": {
+        "id": "tsk_9fa31b69908f164b58e7ad283aa2ab1b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9a2df6174c15c4be55be9940751a4e71",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P13-07": {
+      "predecessor": {
+        "id": "tsk_8dd12d3d3e9a169f08a0de30b4f6d87b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_384b803449a0de231d4b773fa8f522b4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-012": {
+      "predecessor": {
+        "id": "tsk_a54ff5d7a158d50664417d1f2f953d91",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_040e028edf7fd7fdcab58eaec941e63e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-01": {
+      "predecessor": {
+        "id": "tsk_03623ba3122fc97f3e4420d294d585e2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_fc026d849226567830a7f6e20b73255f",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-02": {
+      "predecessor": {
+        "id": "tsk_4ec06d04a83292978b7b29158742b362",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_3508394030ed0b0a7b4e17cb2c495f79",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-03": {
+      "predecessor": {
+        "id": "tsk_95ed234ee164677cc6df12eee88e3c32",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_40ffa128f4d489fecec4a8484abbc331",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-04": {
+      "predecessor": {
+        "id": "tsk_87674f1cea004b67a1a543263fdb42c5",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_af3d8b934caa45a248c2d2fd3f583545",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-05": {
+      "predecessor": {
+        "id": "tsk_b2475d32cda53653bfcccc8c1581978a",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f70e3dad0792421484333e0bc4083ab3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-06": {
+      "predecessor": {
+        "id": "tsk_27d1387775cd9d7685510e2a43411d7e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_28f5818587f93850704415f057381769",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P14-07": {
+      "predecessor": {
+        "id": "tsk_f56595407ed42f4765216591f1ef628f",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_e606e66e75126a05b9dc59f45ef00f5c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-013": {
+      "predecessor": {
+        "id": "tsk_f32be2f40dab22d9d046b6d414cf74eb",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_244675243530413ff343536f78ca8f9c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-01": {
+      "predecessor": {
+        "id": "tsk_14987d8f6686ee660edecd3a19f165fd",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9b5752e6c629ecbbba1d427e7b3cb225",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-02": {
+      "predecessor": {
+        "id": "tsk_8e2cc2cae173a1a130ab893fc2c45ca2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_2ed1621dc2e11186e32556398d60d9ad",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-03": {
+      "predecessor": {
+        "id": "tsk_0cc4c6af5136ec59d40321b375ba6ee0",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_bc98d293a7597fe8a4d93fab3aee76ef",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-04": {
+      "predecessor": {
+        "id": "tsk_278f576c7d9f63a9329950a630ec254d",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5f0ed9d3ad8015709638c7e04774ff55",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-05": {
+      "predecessor": {
+        "id": "tsk_5cbabc4556fe9f074f008bb7692ef54a",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_1b680f7fbcf4b26dfee12a278068f1d8",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-06": {
+      "predecessor": {
+        "id": "tsk_22313aa1b35f1ea62de9205121e630ec",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_db1d98de3c5f093cc00a3bdd458129b3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P15-07": {
+      "predecessor": {
+        "id": "tsk_ad516ef53401769cecc43493cc8557a8",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9e9f2fa4fbc01c2734f8966a06e914fe",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-01": {
+      "predecessor": {
+        "id": "tsk_e9ca4d4d61a301a713c31970e35a8b9c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_de21f6b419f017d7a26ca984a8c563d1",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-02": {
+      "predecessor": {
+        "id": "tsk_52e3e3c7118e409c3a082b655192d98f",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_45e458fd2483be338cdb452aa14a56e0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-03": {
+      "predecessor": {
+        "id": "tsk_6cdd7d698939af1578aa1fadc321e0d2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_533f3aa5d20f852f07be9b131f20d1ff",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-04": {
+      "predecessor": {
+        "id": "tsk_ddeaa1486947cc7b29141a6a3c37c9e0",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0d6e50f6682e96d07108cc7927e90df7",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-05": {
+      "predecessor": {
+        "id": "tsk_c074aa40e911292bea47975819a66830",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_388703c0863d440242eab5c8cf4c5d31",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-06": {
+      "predecessor": {
+        "id": "tsk_26e3c4f8ba9db3f192938d9f5703d391",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_de13a4e3bbcb0aba375da54349963eb4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P16-07": {
+      "predecessor": {
+        "id": "tsk_3684f658073173e60ed66a6b4279d619",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_06f716c7e119e5531a3dbfa49f5346e4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-014": {
+      "predecessor": {
+        "id": "tsk_f9595966b955a0bf402e6f6b85683e6e",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_54373c10ec58a080c35a33900e4ced01",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-01": {
+      "predecessor": {
+        "id": "tsk_bbc264eddf01aeb6e7243d62e7cd14f2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_fadab7930d77845594bd863b903902b0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-02": {
+      "predecessor": {
+        "id": "tsk_0942ccfd2b63575f29a4de63e72bfba6",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8f0bbbe084666ebaaeb0c6e4a338fdfa",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-03": {
+      "predecessor": {
+        "id": "tsk_f7071c5e95d745d33892de91bbccc3e9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a3583814b78b576a7f27647003e5fdc0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-04": {
+      "predecessor": {
+        "id": "tsk_ce690aa30c638d8a8bd82145ea556d1d",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_9f25c4dffa296b905a72264c93b8678f",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-05": {
+      "predecessor": {
+        "id": "tsk_bec880e0eb084b191474624f2c967339",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_05c27c498e433089fcc9db4edae1267d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-06": {
+      "predecessor": {
+        "id": "tsk_3c3986b9b5dfacbbd08e4bc7ea54b657",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_632abd1a294e850f37935993d9f29f87",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P17-07": {
+      "predecessor": {
+        "id": "tsk_3a827cbd321a17b33bf5b6a10675211f",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a52fb60932b01e265bd85265639b436a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-01": {
+      "predecessor": {
+        "id": "tsk_6403ab691bc070a22ef2b5de65ddc17b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_383da75397883051a73abc66eeeb2d5c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-02": {
+      "predecessor": {
+        "id": "tsk_07ded88d436e45b1ed32a0e79b03e6b2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_34f8c3d0ac169b80b92ff5fca1243dba",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-03": {
+      "predecessor": {
+        "id": "tsk_4cfbb9618cfc6d30a3edc9dd96a10cf2",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_de70778e20e8e3f32b892822af0e82c6",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-04": {
+      "predecessor": {
+        "id": "tsk_a1f7e35cbf6476f52e8cbd1ecf0476c6",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_27592660ca450c0a88ee9ea61f090840",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-05": {
+      "predecessor": {
+        "id": "tsk_1dc93a642ca0557ebf5f7918f91d5844",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8b29d0f430fdb7641941cf8fbfb91d22",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-06": {
+      "predecessor": {
+        "id": "tsk_c71d7f9f5bfc77c1f8f7d0a9c82cc1a6",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_e2784269443d19e4604cde88bbc8da49",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P18-07": {
+      "predecessor": {
+        "id": "tsk_455e440c7f76a6e1f58389573fb72f0f",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_4c46576f5f12fe849d4c23f54d299a35",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-015": {
+      "predecessor": {
+        "id": "tsk_b79b964a8bc075200a3fd31e303b9945",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_6bab45c863ca267fdcebb39c20a5fdff",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-01": {
+      "predecessor": {
+        "id": "tsk_e5b82484f40fbfa412a39393cee87979",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8a5f60dcf67a6b356c57880d567d9e1e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-02": {
+      "predecessor": {
+        "id": "tsk_973c734a30db3e08faca97b29ce14455",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a85c392d6e7681949a93a3f634b409c6",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-03": {
+      "predecessor": {
+        "id": "tsk_9364acec314cc3ee58e555c25a2daa13",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0219904e05007dce357cd9dad55dc89a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-04": {
+      "predecessor": {
+        "id": "tsk_69e2a3cab483d8f3bc4ecf6d38301ddf",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6a10f6de7eb0d5bb2aa37e303fa2238a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-05": {
+      "predecessor": {
+        "id": "tsk_95c552c3c53fb61c6a8fcccce579a2cd",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_23b72ab694d55cffd08dc8db38755bb7",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-06": {
+      "predecessor": {
+        "id": "tsk_c775de89b082d94b874f4af886534bec",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_2854c402346109c5307ef382b663f29d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P19-07": {
+      "predecessor": {
+        "id": "tsk_6db19ac36c1754d41c7b86aab90d6ba4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_4db3ffac08bd11a4b6296417a8979298",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-01": {
+      "predecessor": {
+        "id": "tsk_7f310e2053a164a532f133c1e92d4c6e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_48c5047747f75e9d90fac1ed39648f6a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-02": {
+      "predecessor": {
+        "id": "tsk_32cf35ec88932ee1d276658ccfaa8811",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_ca415e5c6b18b6d1e2464d38297f6565",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-03": {
+      "predecessor": {
+        "id": "tsk_6db78d032f56228b983ea5b665e5e29c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5ebc3a09b853e420395ced47827381e3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-04": {
+      "predecessor": {
+        "id": "tsk_b7f1523e73569561fd60ff91597e567b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_31dd06db5704ba3ca3bfd31c5d2d2516",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-05": {
+      "predecessor": {
+        "id": "tsk_e63f82a4202adc925d01bcec3eebdd5e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_385a8d85ed8b83c6f8292d7e4b9a5c67",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-06": {
+      "predecessor": {
+        "id": "tsk_2f8b948d679514c524620f15724fff60",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0e5814e03801008e5a8bbd813423e136",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P20-07": {
+      "predecessor": {
+        "id": "tsk_866774eab9a062656de6c17b757448dc",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_98a593d4c458d8f4d82c4549d0b11223",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-016": {
+      "predecessor": {
+        "id": "tsk_a108fdb4389effc8ad83a34b75623e17",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_0210bbab6ba22a3361cefc9fc29dea50",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-01": {
+      "predecessor": {
+        "id": "tsk_2cc979b3f7eae646aa3083c465431228",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_23dff929c8391b39f47053892f946abe",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-02": {
+      "predecessor": {
+        "id": "tsk_2f9021ff5b747e7a8921f1c0c7b819c0",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_4178b242067cb297a69ff20128b7ee75",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-03": {
+      "predecessor": {
+        "id": "tsk_6d37cc897e1d9dbe8179bb85bdfe94c4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_7bfbcb271c8a6488ba878a1f002fd0c3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-04": {
+      "predecessor": {
+        "id": "tsk_ff36af44840f438fedc311320f9dcf4c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_845ba2038aacd5e7b08bffa02d2df243",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-05": {
+      "predecessor": {
+        "id": "tsk_4551a2e39a072c2ca49baa9b889b8f08",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_e0dde7922d984b5b5fda1041a84d76b4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-06": {
+      "predecessor": {
+        "id": "tsk_0cdb90ad7bb2f59aed0609a954c476a0",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_56673d090912fb49c49f35541dc0ff33",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P21-07": {
+      "predecessor": {
+        "id": "tsk_11f4268af6a146ae67d14a01c7a66af9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_41ae173d1f50d207dd497d2311bf0123",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-017": {
+      "predecessor": {
+        "id": "tsk_83b65268874aafea936efc42c904ebc4",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_5353070e1961a527803d715ec7a0c6ec",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-01": {
+      "predecessor": {
+        "id": "tsk_e0c0749e756c32b1b57ffae2f127248e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_693ae9f84b1c18000c03b34b5b801e16",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-02": {
+      "predecessor": {
+        "id": "tsk_37e0bc2fb24c8a89ab0edeeee4be5daf",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_09e88a472d7b256f9db33b150261a18f",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-03": {
+      "predecessor": {
+        "id": "tsk_d535ffd02f75d29045f1cc2d8cf3e1d4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_541024fe25c22125f427d5e2b7d40654",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-04": {
+      "predecessor": {
+        "id": "tsk_bd25a01ad32b798a98b01161a5656ed4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5fa684eb865d26453309d3a867c00746",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-05": {
+      "predecessor": {
+        "id": "tsk_f34c42ac63ab17b8af77b8a8bd8f376b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_4ef4910824459e9df3c36131ee4f6ef0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-06": {
+      "predecessor": {
+        "id": "tsk_f68ce91d921333815c207a0c636b68de",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_790802f29f6093589ecaa372dbec4c6e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P22-07": {
+      "predecessor": {
+        "id": "tsk_61f7802bdfc4d96f62113ddc0af1cab6",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_e3e330b299b50e67017f70ca87c50fa4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-018": {
+      "predecessor": {
+        "id": "tsk_dadb0c0a69a49d618c3e8ca21b93a61a",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_65ed771e88092011239c012744ea94a9",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-01": {
+      "predecessor": {
+        "id": "tsk_e2aa2d3e1bc7914a4cd7de980ccf3938",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_d01903a1e9ec9760bf5b5684fb150b76",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-02": {
+      "predecessor": {
+        "id": "tsk_1a59ff2036235cf1d9174444bada2a4f",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_39d96d7fd7e093940a208050aacb2800",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-03": {
+      "predecessor": {
+        "id": "tsk_3c8995feddc674c4bc01d17f7b79a84c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5e32e0e2180402354d244777905b091b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-04": {
+      "predecessor": {
+        "id": "tsk_1b4fa6486d0f70ddd9bb75dab384f7ef",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_d2ee26eb87916ad20a98cbd31632bc01",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-05": {
+      "predecessor": {
+        "id": "tsk_cdfea454d477c51bade3700629ffcdd8",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_351160fe90eb65115dbf462956390f00",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-06": {
+      "predecessor": {
+        "id": "tsk_2a7eb9d26c399d596686cde4ce9a206e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_bdc3675f0f529e734ef07218d56523f5",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P23-07": {
+      "predecessor": {
+        "id": "tsk_aa2f9066a7c64050ac7c4a5eebc752c3",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_90e6fe0fecc757fabd189ec6e7e4760b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-019": {
+      "predecessor": {
+        "id": "tsk_4539b984f255c9868527b8fae32024b9",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_6245f4b749fd70e91be08f7342fcabd4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-01": {
+      "predecessor": {
+        "id": "tsk_8c2241a9eb251b16be6bef7014585c9c",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_954eaad99e818bea7cc36ab3b433f448",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-02": {
+      "predecessor": {
+        "id": "tsk_785dd0992f88e83b11e02d74951c4ffa",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_30f6e0e668b568c863c74162b8d12b16",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-03": {
+      "predecessor": {
+        "id": "tsk_5ae1680864e9584e1e2e810fd94d31f8",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_ddbf37f56f547c0b55f9f18a1d2b870d",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-04": {
+      "predecessor": {
+        "id": "tsk_77f0aabf200f34e2daca444255a235a4",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_2d7468d1669b0ec7c481b187432d9df0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-05": {
+      "predecessor": {
+        "id": "tsk_bbaab7c67e4480c4ef2076e59a7d6c32",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_4876c8f58024a3eeae3665000ea3d5f7",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-06": {
+      "predecessor": {
+        "id": "tsk_104437a34a0646afe4e1751d9a5e63de",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f3ebb39893547869b45ea690ddd9ff46",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P24-07": {
+      "predecessor": {
+        "id": "tsk_2e539079237ce575aa2b8da52b78d435",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_4ae11f7da509f623643df42a33eb2112",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-020": {
+      "predecessor": {
+        "id": "tsk_933cfcd553d26079b8340bdd4fb2a509",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_72055d070fc168eff831f12b70b35b18",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-01": {
+      "predecessor": {
+        "id": "tsk_c04985547968bac358868ffb965f37d8",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_af3dd97b9577b1c484f5e00dee214f25",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-02": {
+      "predecessor": {
+        "id": "tsk_998035a7bdb0480528fd796355353a24",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_dd75648bd8c8dd0fb4667b13d18bdbc2",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-03": {
+      "predecessor": {
+        "id": "tsk_a1a23cc0625e4721e2feeb3abe92b1f7",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_cb00039fe044442747b6a680cffa808b",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-04": {
+      "predecessor": {
+        "id": "tsk_338dd0da63926c45a093ad7f5770ab6d",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_5bad356f6855186a8180ba6d0ebe7ab6",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-05": {
+      "predecessor": {
+        "id": "tsk_082f9dfbc3a2974429d4f87d9c72bbf9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8c187aaa6d573148c2577ba628c4cbdc",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-06": {
+      "predecessor": {
+        "id": "tsk_648abc85c827f80fe2c0ecb408f13837",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_ec29d698bc73e8b6d03e8be8b4751fbe",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P25-07": {
+      "predecessor": {
+        "id": "tsk_aecda0ee3603b7cfbebcf6c48a69ed42",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_a1191f8a5bc19a5efe768f1612b5d88a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-021": {
+      "predecessor": {
+        "id": "tsk_2ff6a165899480e6cfc3c1c7ef46f41f",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_84aefe1f717c56ffb6dcd158a100ad10",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-01": {
+      "predecessor": {
+        "id": "tsk_929aef6e08842c7818407291b956456b",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_20fb06a0690b35d522854dedbddf4d02",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-022": {
+      "predecessor": {
+        "id": "tsk_e6e33fbe4c1349ec54ad23531d72accf",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_ae9504d5c91508303504be59ebcc61d6",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-023": {
+      "predecessor": {
+        "id": "tsk_973abb7054be7345457fce253560869f",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_534f362b54541d6323c9459dfd1e694e",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-02": {
+      "predecessor": {
+        "id": "tsk_65b154d634a4ebb6f8934568cbb70ac0",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_0a38cd27dfa2bd198d7d37cdfa745f78",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-03": {
+      "predecessor": {
+        "id": "tsk_fab26e1680b7878adec4b476605d3334",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_53613fd6e37fdec441cd5fadf5abcee0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-04": {
+      "predecessor": {
+        "id": "tsk_ddf3d153d464969488d30dc173c91ce3",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_6a5e1971f01fdac1148d830a16f877f3",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-05": {
+      "predecessor": {
+        "id": "tsk_54bd020e82a2eb24cea5698397f85d8a",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_84568cfb426bb975d0aa6a578d348855",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-06": {
+      "predecessor": {
+        "id": "tsk_3ec07f27533af50759ec8d4b409476e9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_17a3d0d94657426a4bc1939c54d92a3f",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P26-07": {
+      "predecessor": {
+        "id": "tsk_ffa4785557e037d13179409861f4f5c5",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_f88d9cb7897f7124497c0862c95026a4",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-024": {
+      "predecessor": {
+        "id": "tsk_c93945da9ca6d438885ad6a772db7995",
+        "revision": 1,
+        "origin": "reused existing draft"
+      },
+      "successor": {
+        "id": "tsk_bfadd3e4c2b833056ca32e2e2fcc59cd",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-01": {
+      "predecessor": {
+        "id": "tsk_a4d21a4f5578c10dd99514db46282622",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_fb20cdcb5234d1fd2a6fe5f471b13dcf",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-02": {
+      "predecessor": {
+        "id": "tsk_da8d65fc73cb121d63eb8e5574c5d209",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_d1aaa9914212e823870209a4ac54f7b0",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-03": {
+      "predecessor": {
+        "id": "tsk_437c75d3b03984ca77c1805e618a9e18",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_197de01b31ede5452fadf289ca6b0a8c",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-04": {
+      "predecessor": {
+        "id": "tsk_199ab369ca227df684d42af3cb2a49b9",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_2db87a96caf0f2a9e3c6513e9cdfd85a",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-05": {
+      "predecessor": {
+        "id": "tsk_0f9cf672b1ea14ae39abe9fcdcf56d5e",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_79b31fa2421bbd2dc6ba7d43a058f956",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-06": {
+      "predecessor": {
+        "id": "tsk_ac0279f7070efeed332978c40817c2b3",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_27f156f4dbfcb5a1a2df669fae8030f6",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    },
+    "ER-P27-07": {
+      "predecessor": {
+        "id": "tsk_824f0dc67fdb18fb40eafacb9dbb79d7",
+        "revision": 1,
+        "origin": "created through authenticated MCP"
+      },
+      "successor": {
+        "id": "tsk_8de50423ba0b8a2babe33f4f5c72db72",
+        "revision": 3,
+        "supersession": null,
+        "source_observed_at": 1788873925805
+      }
+    }
+  },
+  "unresolved_gates": [
+    "Platform currently rejects explicitly empty requiredSkills on all 221 tasks and null fallback on all 221 tasks. Lucas chose no mandatory skills and Astra only; owner resolves explicit-none support.",
+    "194 successor tasks have no approved allowedPaths; 214 need task-specific structured verification; six manual procedures still lack the evidence references required by the validator. These are retained incomplete rather than filled with invented scope or evidence.",
+    "Corrected draft has not been resubmitted. It requires completed preparation and a new actual passing review, then any genuinely separate human poll action and supported publication.",
+    "No public roadmap/task publication or native runner-reviewed completion has occurred."
+  ],
+  "publication_verified": false
+}

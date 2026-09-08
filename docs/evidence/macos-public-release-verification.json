@@ -1,0 +1,210 @@
+{
+  "evidence_kind": "Agent-run verification on independent Mac; no human participant observation",
+  "observer": "GPT-6 Astra Mac helper; signed-out public artifact download and independent-machine execution reported in atomic receipt",
+  "source_url": "https://github.com/thepianistdirector/earth-rehearsal/releases/download/v0.1.0/earth-rehearsal-0.1.0.tar.gz",
+  "archive_sha256": "5607260a25f7defb71b646b21ea99ef30c8c2640e6f4d5687f5c3133c697415c",
+  "archive_bytes": 237807,
+  "environment": {
+    "macos": "26.6.2",
+    "machine": "arm64",
+    "kernel": "25.6.0",
+    "python": "Python 3.12.13"
+  },
+  "started_utc": "2026-09-08T12:46:29.039993+00:00",
+  "completed_utc": "2026-09-08T12:46:31.470154+00:00",
+  "receipt_sha256": "218696f5ef2634148aaae837f8aaf60edff349a1156ca2511bb9936a45d0232c",
+  "commands": [
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "run",
+        "--out",
+        "runs/first"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "inspect",
+        "runs/first"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "run",
+        "--source-factor",
+        "0.25",
+        "--out",
+        "runs/changed"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "conservation",
+        "--out",
+        "runs/conservation.json"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "disposal",
+        "--out",
+        "runs/disposal.json"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "reproduce",
+        "runs/first",
+        "--out",
+        "runs/reproduced"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "export",
+        "runs/first",
+        "--out",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "inspect",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_bundle.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "export",
+        "runs/first",
+        "--out",
+        "runs/incomplete-demo"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "-c",
+        "from pathlib import Path; Path('runs/incomplete-demo/complete.json').unlink()"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "inspect",
+        "runs/incomplete-demo"
+      ],
+      "exit_code": 2,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "run",
+        "--study",
+        "runs/incomplete-demo/study.json",
+        "--out",
+        "runs/recovered-demo"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "inspect",
+        "runs/recovered-demo"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    },
+    {
+      "command": [
+        "python3.12",
+        "earth.py",
+        "inspect",
+        "runs/first"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true
+    }
+  ],
+  "reported_observations": [
+    "Downloaded source artifact and SHA256SUMS directly from public release",
+    "SHA-256 matches user-provided value and public checksum file",
+    "Extracted into fresh local test folder",
+    "Located existing Python 3.12 runtime",
+    "15 documented workflow steps met their expected outcomes",
+    "8 packaged recovery test methods passed, including real SIGKILL before calculation and activation; no skips",
+    "Conservation and disposal negative controls produced EXPECTED_REJECTION",
+    "Reproduction runs and evaluation exactly match original",
+    "Source factor 0.25 changed finest-grid source-reduction final stock from 2.397300262308644 to 1.198650131154322 kg; other arms unchanged",
+    "Incomplete-marker demo correctly rejected with exit 2; recovery and original reinspection passed",
+    "Rendered original and changed report on Mac; confirmed mass tables, A0_KNOWN_ANSWER, NOT_EVALUATED warnings and actual Python/darwin/arm64 provenance"
+  ],
+  "limitations": [
+    "Agent-run independent Mac evidence; not a human participant or qualified review.",
+    "The transferred receipt records command outcomes. Original full logs remain on the Mac and have been requested for durable review.",
+    "Only the documented workflow and eight bundle recovery tests were reported on this Mac; the full 36-test suite was previously executed on Linux.",
+    "First scheduled heartbeat execution has not yet been observed."
+  ]
+}

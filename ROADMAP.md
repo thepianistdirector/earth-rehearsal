@@ -377,6 +377,6 @@ Release horizon: long-term.
 
 ## Publication gate
 
-No authenticated supported Tanduna writer available; save/submit creates review state, not public acceptance.
+Corrected native draft is saved, not published. Complete task-specific preparation and resolve explicit no-fallback/no-required-skills validation, then obtain actual review and supported approval/publication. Human observations remain pending.
 
-Public v0.1.0: https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0. Download earth-rehearsal-0.1.0.tar.gz and SHA256SUMS, verify and extract. With Python 3.12 run python3 earth.py run --out runs/first; inspect with python3 earth.py inspect runs/first; change --source-factor 0.25 into a fresh directory; reproduce with python3 earth.py reproduce runs/first --out runs/reproduced. Public download and isolated Linux execution verified; human participant and macOS evidence remain pending.
+Public v0.1.0: https://github.com/thepianistdirector/earth-rehearsal/releases/tag/v0.1.0. Download earth-rehearsal-0.1.0.tar.gz and SHA256SUMS, verify and extract. With Python 3.12 run python3 earth.py run --out runs/first; inspect with python3 earth.py inspect runs/first; change --source-factor 0.25 into a fresh directory; reproduce with python3 earth.py reproduce runs/first --out runs/reproduced. Public download and isolated Linux execution verified. An independent Mac helper reports 15 workflow steps and 8 recovery tests passed on macOS 26.6.2 arm64 with Python 3.12.13; human participant evidence remains pending.

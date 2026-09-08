@@ -443,7 +443,7 @@ Generated from `plan/tasks.json`; edit the canonical ledger, then run `python3 t
 - Acceptance: Versioned archive includes executable CLI, exact fixture, notices and invalid controls; clean packaged run passes.
 - Sources: owner-launch, BOX-001, ER-021, ER-023, ER-024, decision-runtime, decision-numerics.
 - Evidence needs: Actual external observation and destination-specific publication authority.
-- Recorded evidence: ["docs/evidence/verification.md", "tests/", "docs/decisions/0002-numerical-policy.md"].
+- Recorded evidence: ["docs/evidence/verification.md", "tests/", "docs/decisions/0002-numerical-policy.md", "docs/evidence/public-release-verification.json", "docs/evidence/macos-public-release-verification.json"].
 
 ### ER-B05-08 — Review released interpretation
 
@@ -487,7 +487,7 @@ Generated from `plan/tasks.json`; edit the canonical ledger, then run `python3 t
 - Acceptance: Public readback verifies actual wave/task counts, order, dependencies, scope and access instructions against the canonical export.
 - Sources: owner-launch, BOX-001, ER-021, ER-023, ER-024, decision-runtime, decision-numerics.
 - Evidence needs: Actual external observation and destination-specific publication authority.
-- Recorded evidence: ["STATUS.md#unresolved-release-gates"].
+- Recorded evidence: ["docs/evidence/tanduna-review-2026-09-08.json", "https://tanduna.com/p/earth-rehearsal/proposals/prp_2dd555b565fdf25a2e24a62f5f709717/tasks", "STATUS.md#unresolved-release-gates"].
 
 ## W06 — Catchment scenarios have explicit boundaries
 
