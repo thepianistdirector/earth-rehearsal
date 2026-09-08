@@ -1,0 +1,524 @@
+{
+  "observer": "automated Chromium CDP; no human observation",
+  "evidence": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "scale": 1,
+      "layout": {
+        "title": "Earth Rehearsal \u00b7 CATCHMENT-001 evidence",
+        "width": 1440,
+        "bodyWidth": 1425,
+        "headings": [
+          "Follow the mass,through the whole study.",
+          "The same forcing. Three different controls.",
+          "A prescribed-flow network",
+          "Independent trajectories",
+          "Capture is a transfer, not disappearance",
+          "Inspect the evidence"
+        ],
+        "scripts": 0,
+        "remoteResources": [],
+        "tables": [
+          {
+            "caption": true,
+            "headers": 7
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 8
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 3
+          }
+        ],
+        "charts": [
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          }
+        ],
+        "keyboardTableScroll": {
+          "before": 0,
+          "max": 0,
+          "after": 0
+        },
+        "minimumChartLabelPx": 16
+      },
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Skip to evidence",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Study",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Full result",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Download CSV",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Manifest",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Complete final mass balance \u00b7 finest numerical gridArmInitia",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Prescribed-flow compartment networkDirected edges connect fi",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Exact directed water forcingEdgeFromTodry m\u00b3/sstorm m\u00b3/sinfl",
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "layout": {
+        "title": "Earth Rehearsal \u00b7 CATCHMENT-001 evidence",
+        "width": 390,
+        "bodyWidth": 375,
+        "headings": [
+          "Follow the mass,through the whole study.",
+          "The same forcing. Three different controls.",
+          "A prescribed-flow network",
+          "Independent trajectories",
+          "Capture is a transfer, not disappearance",
+          "Inspect the evidence"
+        ],
+        "scripts": 0,
+        "remoteResources": [],
+        "tables": [
+          {
+            "caption": true,
+            "headers": 7
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 8
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 3
+          }
+        ],
+        "charts": [
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          }
+        ],
+        "keyboardTableScroll": {
+          "before": 0,
+          "max": 558,
+          "after": 160
+        },
+        "minimumChartLabelPx": 14
+      },
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Skip to evidence",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Study",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Full result",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Download CSV",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Manifest",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Complete final mass balance \u00b7 finest numerical gridArmInitia",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Prescribed-flow compartment networkDirected edges connect fi",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Exact directed water forcingEdgeFromTodry m\u00b3/sstorm m\u00b3/sinfl",
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 780,
+      "scale": 1,
+      "layout": {
+        "title": "Earth Rehearsal \u00b7 CATCHMENT-001 evidence",
+        "width": 320,
+        "bodyWidth": 305,
+        "headings": [
+          "Follow the mass,through the whole study.",
+          "The same forcing. Three different controls.",
+          "A prescribed-flow network",
+          "Independent trajectories",
+          "Capture is a transfer, not disappearance",
+          "Inspect the evidence"
+        ],
+        "scripts": 0,
+        "remoteResources": [],
+        "tables": [
+          {
+            "caption": true,
+            "headers": 7
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 8
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 3
+          }
+        ],
+        "charts": [
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          }
+        ],
+        "keyboardTableScroll": {
+          "before": 0,
+          "max": 628,
+          "after": 156
+        },
+        "minimumChartLabelPx": 14
+      },
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Skip to evidence",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Study",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Full result",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Download CSV",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Manifest",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Complete final mass balance \u00b7 finest numerical gridArmInitia",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Prescribed-flow compartment networkDirected edges connect fi",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Exact directed water forcingEdgeFromTodry m\u00b3/sstorm m\u00b3/sinfl",
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "name": "zoom",
+      "width": 720,
+      "height": 900,
+      "scale": 2,
+      "layout": {
+        "title": "Earth Rehearsal \u00b7 CATCHMENT-001 evidence",
+        "width": 720,
+        "bodyWidth": 705,
+        "headings": [
+          "Follow the mass,through the whole study.",
+          "The same forcing. Three different controls.",
+          "A prescribed-flow network",
+          "Independent trajectories",
+          "Capture is a transfer, not disappearance",
+          "Inspect the evidence"
+        ],
+        "scripts": 0,
+        "remoteResources": [],
+        "tables": [
+          {
+            "caption": true,
+            "headers": 7
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 5
+          },
+          {
+            "caption": true,
+            "headers": 8
+          },
+          {
+            "caption": true,
+            "headers": 3
+          },
+          {
+            "caption": true,
+            "headers": 3
+          }
+        ],
+        "charts": [
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          },
+          {
+            "role": "img",
+            "title": true,
+            "desc": true
+          }
+        ],
+        "keyboardTableScroll": {
+          "before": 0,
+          "max": 580,
+          "after": 79.5
+        },
+        "minimumChartLabelPx": 29
+      },
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Skip to evidence",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Study",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Full result",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Download CSV",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "text": "Manifest",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Complete final mass balance \u00b7 finest numerical gridArmInitia",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Prescribed-flow compartment networkDirected edges connect fi",
+          "outline": "solid"
+        },
+        {
+          "tag": "DIV",
+          "text": "Exact directed water forcingEdgeFromTodry m\u00b3/sstorm m\u00b3/sinfl",
+          "outline": "solid"
+        }
+      ]
+    }
+  ],
+  "runtime_source_digest": "0c8aa6fd2c1dafb46834de4893eb78ebedb5cdb8931a6b3393f8ff5f1d802cae",
+  "report_sha256": "7d779019ee03f3edc417039d49a86502eeebe0241ef75aa0441e0026dbcd82f5",
+  "scope": "Actual packaged catchment report in existing Chromium; CSS zoom approximation, not human/assistive-technology validation"
+}

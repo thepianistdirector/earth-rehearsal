@@ -203,8 +203,9 @@
   ],
   "limitations": [
     "Agent-run independent Mac evidence; not a human participant or qualified review.",
-    "The transferred receipt records command outcomes. Original full logs remain on the Mac and have been requested for durable review.",
     "Only the documented workflow and eight bundle recovery tests were reported on this Mac; the full 36-test suite was previously executed on Linux.",
-    "First scheduled heartbeat execution has not yet been observed."
-  ]
+    "Retained command logs were transferred as clearly labelled home-prefix-redacted derivatives; their hashes and byte counts were independently read back."
+  ],
+  "retained_logs": "macos-v01-logs/manifest.json",
+  "retained_logs_scope": "Transferred existing home-prefix-redacted command logs with hash and byte readback; agent-run independent Mac v0.1 evidence only"
 }

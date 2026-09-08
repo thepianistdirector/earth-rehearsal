@@ -17,17 +17,18 @@ from earth_rehearsal import __version__
 
 def inputs():
     names = {name for name in ('earth.py', 'README.md', 'LICENSE', 'NOTICE', 'CONTRIBUTING.md',
-                              'ARCHITECTURE.md', 'EXPERIMENTS.md', 'SOURCES.md', 'ROADMAP.md', 'TASKS.md', 'STATUS.md', '.gitignore')}
-    for folder in ('src', 'tests', 'scenarios', 'plan', 'docs/decisions'):
+                              'ARCHITECTURE.md', 'EXPERIMENTS.md', 'SOURCES.md', 'ROADMAP.md', 'TASKS.md', 'STATUS.md', 'GOAL.md', '.gitignore')}
+    for folder in ('src', 'tests', 'scenarios', 'plan', 'docs/decisions', 'docs/benchmarks'):
         names.update(str(p.relative_to(ROOT)) for p in (ROOT / folder).rglob('*')
                      if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc')
     names.update(str(p.relative_to(ROOT)) for p in (ROOT / 'tools').glob('*.py'))
-    names.update(('docs/LIMITATIONS.md', 'docs/EXECUTION-PACKETS.md'))
+    names.update(('docs/LIMITATIONS.md', 'docs/EXECUTION-PACKETS.md', 'docs/STUDIES.md', 'docs/REVIEW-KIT.md', 'docs/V05-REVIEW-KIT.md', 'docs/evidence/v05-review.md', 'docs/evidence/v05-network-review.json', 'docs/evidence/v05-protocol-review.json', 'docs/evidence/v05-package-preparation.json', 'docs/evidence/public-release-verification.json', 'docs/evidence/macos-public-release-verification.json', 'docs/evidence/tanduna-review-2026-09-08.json'))
     # Public planning sources and review provenance; never include downloaded HTML,
     # browser profiles/libraries, developer paths, credentials or private host output.
     for name in ('platform-capabilities.md', 'runtime-critic.md', 'verification.md', 'release-review.md'):
         p = ROOT / 'docs/evidence' / name
         if p.is_file(): names.add(str(p.relative_to(ROOT)))
+    names.update(str(p.relative_to(ROOT)) for p in (ROOT/'docs/evidence/macos-v01-logs').glob('*') if p.is_file())
     for name in sorted(names):
         p = ROOT / name
         if p.is_symlink(): raise ValueError(f'refuse symlink in source package: {name}')

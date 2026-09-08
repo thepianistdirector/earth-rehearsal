@@ -1,0 +1,750 @@
+{
+  "observer": "Astra automated local archive extraction; not an external human/environment",
+  "archive_sha256": "702edc233269d58d5c5573e67b3397c391b98a92bd90505067795a0ea450d790",
+  "version": "0.5.0",
+  "runtime_source_digest": "0c8aa6fd2c1dafb46834de4893eb78ebedb5cdb8931a6b3393f8ff5f1d802cae",
+  "python": "3.12.14",
+  "platform": "linux",
+  "source_files_verified": 103,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "run",
+        "--out",
+        "runs/default"
+      ],
+      "exit_code": 0,
+      "seconds": 0.10916829400230199,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nComplete bundle: runs/default\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "run",
+        "--source-factor",
+        "0.25",
+        "--out",
+        "runs/changed"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13863859098637477,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              1.198650131    1.051349869    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nComplete bundle: runs/changed\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "inspect",
+        "runs/default"
+      ],
+      "exit_code": 0,
+      "seconds": 0.04188929102383554,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nVERIFIED: retained evidence, hashes and independently recomputed balances\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "reproduce",
+        "runs/default",
+        "--out",
+        "runs/reproduced"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1280817849910818,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nReproduced into new bundle: runs/reproduced\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "export",
+        "runs/default",
+        "--out",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "seconds": 0.05318561400054023,
+      "stdout": "Exported verified evidence: runs/exported\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "inspect",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "seconds": 0.042189449013676494,
+      "stdout": "BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                       In reservoir kg     Escaped kg    Captured kg\nBASELINE                      4.794600525    4.205399475    0.000000000\nSOURCE_REDUCTION              2.397300262    2.102699738    0.000000000\nOUTLET_CAPTURE                4.794600525    2.102699738    2.102699738\nCaptured mass is transferred through storage to destination_unknown.\nDisposal, lifecycle, ecological and health benefit: NOT_EVALUATED.\nVERIFIED: retained evidence, hashes and independently recomputed balances\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "conservation",
+        "--out",
+        "runs/conservation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.024761214037425816,
+      "stdout": "EXPECTED_REJECTION: step mass balance: mismatch (-0.1 versus 0)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "disposal",
+        "--out",
+        "runs/disposal.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.044858656998258084,
+      "stdout": "EXPECTED_REJECTION: unsupported disposal/lifecycle/ecological/health claim\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "source",
+        "--out",
+        "runs/source.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.024311385990586132,
+      "stdout": "EXPECTED_REJECTION: source flux: mismatch (0.12 versus 0.06)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "custody",
+        "--out",
+        "runs/custody.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.03412854700582102,
+      "stdout": "EXPECTED_REJECTION: missing custody transfer records for OUTLET_CAPTURE/4/capture-total\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "run",
+        "--out",
+        "runs/catchment"
+      ],
+      "exit_code": 0,
+      "seconds": 1.412011589971371,
+      "stdout": "CATCHMENT-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                      In compartments kg     Stored kg    Unknown kg    Escaped kg\nBASELINE                        8.566290453   0.000000000   0.000000000   0.433709547\nSOURCE_REDUCTION                4.283145226   0.000000000   0.000000000   0.216854774\nOUTLET_CAPTURE                  8.358061751   0.342126993   0.048227506   0.251583751\nCapture and handling quantities are transfers. All disposal/lifecycle/ecological/health benefit: NOT_EVALUATED.\nComplete bundle: runs/catchment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "run",
+        "--source-factor",
+        "0.25",
+        "--out",
+        "runs/catchment-changed"
+      ],
+      "exit_code": 0,
+      "seconds": 1.5826400879886933,
+      "stdout": "CATCHMENT-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                      In compartments kg     Stored kg    Unknown kg    Escaped kg\nBASELINE                        8.566290453   0.000000000   0.000000000   0.433709547\nSOURCE_REDUCTION                2.141572613   0.000000000   0.000000000   0.108427387\nOUTLET_CAPTURE                  8.358061751   0.342126993   0.048227506   0.251583751\nCapture and handling quantities are transfers. All disposal/lifecycle/ecological/health benefit: NOT_EVALUATED.\nComplete bundle: runs/catchment-changed\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "run",
+        "--capture-capacity",
+        "0.1",
+        "--out",
+        "runs/catchment-capacity"
+      ],
+      "exit_code": 0,
+      "seconds": 1.4275907539995387,
+      "stdout": "CATCHMENT-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                      In compartments kg     Stored kg    Unknown kg    Escaped kg\nBASELINE                        8.566290453   0.000000000   0.000000000   0.433709547\nSOURCE_REDUCTION                4.283145226   0.000000000   0.000000000   0.216854774\nOUTLET_CAPTURE                  8.528019960   0.078441702   0.017965249   0.375573090\nCapture and handling quantities are transfers. All disposal/lifecycle/ecological/health benefit: NOT_EVALUATED.\nComplete bundle: runs/catchment-capacity\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "inspect",
+        "runs/catchment"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9493517779628746,
+      "stdout": "CATCHMENT-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                      In compartments kg     Stored kg    Unknown kg    Escaped kg\nBASELINE                        8.566290453   0.000000000   0.000000000   0.433709547\nSOURCE_REDUCTION                4.283145226   0.000000000   0.000000000   0.216854774\nOUTLET_CAPTURE                  8.358061751   0.342126993   0.048227506   0.251583751\nCapture and handling quantities are transfers. All disposal/lifecycle/ecological/health benefit: NOT_EVALUATED.\nVERIFIED: hashes, retained raw paths and independently reconstructed balances\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "reproduce",
+        "runs/catchment",
+        "--out",
+        "runs/catchment-reproduced"
+      ],
+      "exit_code": 0,
+      "seconds": 2.069136942969635,
+      "stdout": "CATCHMENT-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                      In compartments kg     Stored kg    Unknown kg    Escaped kg\nBASELINE                        8.566290453   0.000000000   0.000000000   0.433709547\nSOURCE_REDUCTION                4.283145226   0.000000000   0.000000000   0.216854774\nOUTLET_CAPTURE                  8.358061751   0.342126993   0.048227506   0.251583751\nCapture and handling quantities are transfers. All disposal/lifecycle/ecological/health benefit: NOT_EVALUATED.\nReproduced into new bundle: runs/catchment-reproduced\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "export",
+        "runs/catchment",
+        "--out",
+        "runs/catchment-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8451694039977156,
+      "stdout": "Exported verified evidence: runs/catchment-exported\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "inspect",
+        "runs/catchment-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8926104070269503,
+      "stdout": "CATCHMENT-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.5.0\nArm                      In compartments kg     Stored kg    Unknown kg    Escaped kg\nBASELINE                        8.566290453   0.000000000   0.000000000   0.433709547\nSOURCE_REDUCTION                4.283145226   0.000000000   0.000000000   0.216854774\nOUTLET_CAPTURE                  8.358061751   0.342126993   0.048227506   0.251583751\nCapture and handling quantities are transfers. All disposal/lifecycle/ecological/health benefit: NOT_EVALUATED.\nVERIFIED: hashes, retained raw paths and independently reconstructed balances\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "campaign",
+        "run",
+        "--out",
+        "runs/campaign"
+      ],
+      "exit_code": 0,
+      "seconds": 6.971237423014827,
+      "stdout": "PROTOCOL_COMPLETED\nRetained sample counts: {'SUCCEEDED': 5, 'INVALID': 1, 'FAILED': 0, 'NOT_RUN_BUDGET': 0}\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/campaign\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "campaign",
+        "inspect",
+        "runs/campaign"
+      ],
+      "exit_code": 0,
+      "seconds": 3.8135212549823336,
+      "stdout": "PROTOCOL_COMPLETED\nRetained sample counts: {'SUCCEEDED': 5, 'INVALID': 1, 'FAILED': 0, 'NOT_RUN_BUDGET': 0}\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "campaign",
+        "reproduce",
+        "runs/campaign",
+        "--out",
+        "runs/campaign-reproduced"
+      ],
+      "exit_code": 0,
+      "seconds": 10.800508220039774,
+      "stdout": "PROTOCOL_COMPLETED\nRetained sample counts: {'SUCCEEDED': 5, 'INVALID': 1, 'FAILED': 0, 'NOT_RUN_BUDGET': 0}\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/campaign-reproduced\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "campaign",
+        "export",
+        "runs/campaign",
+        "--out",
+        "runs/campaign-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 4.576361093961168,
+      "stdout": "EXPORTED_VERIFIED_PROTOCOL\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/campaign-exported\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "campaign",
+        "inspect",
+        "runs/campaign-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 3.796245613018982,
+      "stdout": "PROTOCOL_COMPLETED\nRetained sample counts: {'SUCCEEDED': 5, 'INVALID': 1, 'FAILED': 0, 'NOT_RUN_BUDGET': 0}\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "resolution",
+        "run",
+        "--out",
+        "runs/resolution"
+      ],
+      "exit_code": 0,
+      "seconds": 2.8787523659993894,
+      "stdout": "PASSED_MANUFACTURED_REFINEMENT\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/resolution\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "resolution",
+        "inspect",
+        "runs/resolution"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6636353699723259,
+      "stdout": "PASSED_MANUFACTURED_REFINEMENT\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "resolution",
+        "reproduce",
+        "runs/resolution",
+        "--out",
+        "runs/resolution-reproduced"
+      ],
+      "exit_code": 0,
+      "seconds": 4.983144422003534,
+      "stdout": "PASSED_MANUFACTURED_REFINEMENT\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/resolution-reproduced\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "resolution",
+        "export",
+        "runs/resolution",
+        "--out",
+        "runs/resolution-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8020629080128856,
+      "stdout": "EXPORTED_VERIFIED_PROTOCOL\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/resolution-exported\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "resolution",
+        "inspect",
+        "runs/resolution-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7719492830219679,
+      "stdout": "PASSED_MANUFACTURED_REFINEMENT\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "negative-control",
+        "--kind",
+        "conservation",
+        "--out",
+        "runs/network-conservation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.4259960050112568,
+      "stdout": "EXPECTED_REJECTION: compartment/class interval balance: mismatch (0.16 versus 0.06)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "negative-control",
+        "--kind",
+        "source",
+        "--out",
+        "runs/network-source.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.4338110800017603,
+      "stdout": "EXPECTED_REJECTION: source flux: mismatch (0.16 versus 0.06)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "negative-control",
+        "--kind",
+        "exchange",
+        "--out",
+        "runs/network-exchange.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.39497978100553155,
+      "stdout": "EXPECTED_REJECTION: independent donor advection flux: mismatch (0.1 versus 0)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "negative-control",
+        "--kind",
+        "custody",
+        "--out",
+        "runs/network-custody.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5398096850258298,
+      "stdout": "EXPECTED_REJECTION: cumulative ledger decreased: unknown\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "negative-control",
+        "--kind",
+        "capacity",
+        "--out",
+        "runs/network-capacity.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5236976600135677,
+      "stdout": "EXPECTED_REJECTION: independent finite-capacity capture: mismatch (0.6 versus 0)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "catchment",
+        "negative-control",
+        "--kind",
+        "disposal",
+        "--out",
+        "runs/network-disposal.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.449942302017007,
+      "stdout": "EXPECTED_REJECTION: trajectory schema or unsupported benefit claim\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "freeze",
+        "--out",
+        "runs/cohort"
+      ],
+      "exit_code": 0,
+      "seconds": 0.062086238991469145,
+      "stdout": "FROZEN_KNOWN_SYNTHETIC_COHORT\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/cohort\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "fit",
+        "runs/cohort",
+        "--out",
+        "runs/fit"
+      ],
+      "exit_code": 0,
+      "seconds": 8.007852758979425,
+      "stdout": "UNRESOLVED_INCOMPLETE_GRID\nEquivalent candidates: equivalent_a, equivalent_b\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/fit\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "inspect",
+        "runs/fit"
+      ],
+      "exit_code": 0,
+      "seconds": 4.0502067930065095,
+      "stdout": "UNRESOLVED_INCOMPLETE_GRID\nEquivalent candidates: equivalent_a, equivalent_b\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "confirm",
+        "runs/cohort",
+        "--fit",
+        "runs/fit",
+        "--out",
+        "runs/confirmation"
+      ],
+      "exit_code": 0,
+      "seconds": 9.477122523006983,
+      "stdout": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION\nFIRST_RECORDED_HOLDOUT_EVALUATION\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/confirmation\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "inspect",
+        "runs/confirmation"
+      ],
+      "exit_code": 0,
+      "seconds": 4.334354342019651,
+      "stdout": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION\nFIRST_RECORDED_HOLDOUT_EVALUATION\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "confirm",
+        "runs/cohort",
+        "--fit",
+        "runs/fit",
+        "--replay",
+        "--out",
+        "runs/confirmation-explicit-replay"
+      ],
+      "exit_code": 0,
+      "seconds": 8.916273670969531,
+      "stdout": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION\nFROZEN_SELECTION_REPLAY\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/confirmation-explicit-replay\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "reproduce",
+        "runs/confirmation",
+        "--out",
+        "runs/confirmation-portable-replay"
+      ],
+      "exit_code": 0,
+      "seconds": 34.47110501700081,
+      "stdout": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION\nFROZEN_SELECTION_REPLAY\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/confirmation-portable-replay\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "export",
+        "runs/confirmation",
+        "--out",
+        "runs/confirmation-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 4.822288902010769,
+      "stdout": "EXPORTED_VERIFIED_PROTOCOL\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\nEvidence: runs/confirmation-exported\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "inspect",
+        "runs/confirmation-exported"
+      ],
+      "exit_code": 0,
+      "seconds": 4.079234044998884,
+      "stdout": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION\nFIRST_RECORDED_HOLDOUT_EVALUATION\nWholly synthetic controls only. Environmental, ecological, health, disposal and lifecycle benefits: NOT_EVALUATED.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "tools/manufacture_calibration.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.42587919801007956,
+      "stdout": "PASS: original independent-reference calibration controls match tracked fixtures\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 24.997417485981714,
+      "stdout": "",
+      "stderr": "test_caught_interruption_preserves_prior_evidence (test_bundle.BundleTests.test_caught_interruption_preserves_prior_evidence) ... ok\ntest_complete_inspect_does_not_execute_numerics (test_bundle.BundleTests.test_complete_inspect_does_not_execute_numerics) ... ok\ntest_failed_evaluation_keeps_raw_evidence_without_complete_marker (test_bundle.BundleTests.test_failed_evaluation_keeps_raw_evidence_without_complete_marker) ... ok\ntest_hash_and_missing_marker_rejected (test_bundle.BundleTests.test_hash_and_missing_marker_rejected) ... ok\ntest_interrupt_after_activation_leaves_complete_result (test_bundle.BundleTests.test_interrupt_after_activation_leaves_complete_result) ... ok\ntest_process_death_before_calculation_and_activation (test_bundle.BundleTests.test_process_death_before_calculation_and_activation) ... ok\ntest_reproduce_and_supported_change_produce_real_results (test_bundle.BundleTests.test_reproduce_and_supported_change_produce_real_results) ... ok\ntest_reproduce_requires_matching_runtime (test_bundle.BundleTests.test_reproduce_requires_matching_runtime) ... ok\ntest_analytic_gate_is_independent_of_conservation (test_evaluator.EvaluatorTests.test_analytic_gate_is_independent_of_conservation) ... ok\ntest_conserving_wrong_source_and_outlet_cannot_pass (test_evaluator.EvaluatorTests.test_conserving_wrong_source_and_outlet_cannot_pass) ... ok\ntest_custody_does_not_allow_disposal_or_duplicate_terminal_stock (test_evaluator.EvaluatorTests.test_custody_does_not_allow_disposal_or_duplicate_terminal_stock) ... ok\ntest_custom_cap_bound_grid_really_refines (test_evaluator.EvaluatorTests.test_custom_cap_bound_grid_really_refines) ... ok\ntest_default_independent_reference_and_refinement (test_evaluator.EvaluatorTests.test_default_independent_reference_and_refinement) ... ok\ntest_reject_malformed_runs_and_nonfinite_fields (test_evaluator.EvaluatorTests.test_reject_malformed_runs_and_nonfinite_fields) ... ok\ntest_reject_mass_water_and_time_corruption (test_evaluator.EvaluatorTests.test_reject_mass_water_and_time_corruption) ... ok\ntest_reject_missing_duplicate_extra_and_reordered_steps (test_evaluator.EvaluatorTests.test_reject_missing_duplicate_extra_and_reordered_steps) ... ok\ntest_stationary_control_does_not_claim_observed_order (test_evaluator.EvaluatorTests.test_stationary_control_does_not_claim_observed_order) ... ok\ntest_zero_segment_and_extreme_capture_controls (test_evaluator.EvaluatorTests.test_zero_segment_and_extreme_capture_controls) ... ok\ntest_edits_preserve_ordered_source_identity (test_network.NetworkContract.test_edits_preserve_ordered_source_identity) ... ok\ntest_excessive_budget_and_nonadvancing_time_reject (test_network.NetworkContract.test_excessive_budget_and_nonadvancing_time_reject) ... ok\ntest_invalid_units_missing_classes_and_rights (test_network.NetworkContract.test_invalid_units_missing_classes_and_rights) ... ok\ntest_source_missingness_and_flags_survive_scaling (test_network.NetworkContract.test_source_missingness_and_flags_survive_scaling) ... ok\ntest_unbalanced_water_and_missing_provenance_reject (test_network.NetworkContract.test_unbalanced_water_and_missing_provenance_reject) ... ok\ntest_closed_zero_flow_is_separate_accumulation (test_network.NetworkControls.test_closed_zero_flow_is_separate_accumulation) ... ok\ntest_default_refines_and_preserves_paired_sources (test_network.NetworkControls.test_default_refines_and_preserves_paired_sources) ... ok\ntest_equal_rate_cascade_matches_independent_formula (test_network.NetworkControls.test_equal_rate_cascade_matches_independent_formula) ... ok\ntest_finite_capacity_event_has_closed_form_time (test_network.NetworkControls.test_finite_capacity_event_has_closed_form_time) ... ok\ntest_leakage_returns_to_named_compartment (test_network.NetworkControls.test_leakage_returns_to_named_compartment) ... ok\ntest_mass_conserving_class_conversion (test_network.NetworkControls.test_mass_conserving_class_conversion) ... ok\ntest_scalar_reference_matches_closed_form (test_network.NetworkControls.test_scalar_reference_matches_closed_form) ... ok\ntest_storage_release_matches_convolution (test_network.NetworkControls.test_storage_release_matches_convolution) ... ok\ntest_conserving_wrong_advection_fails (test_network.NetworkFalsifiers.test_conserving_wrong_advection_fails) ... ok\ntest_conserving_wrong_source_fails (test_network.NetworkFalsifiers.test_conserving_wrong_source_fails) ... ok\ntest_custody_capacity_and_benefit_falsifiers (test_network.NetworkFalsifiers.test_custody_capacity_and_benefit_falsifiers) ... ok\ntest_evaluation_does_not_execute_either_solver (test_network.NetworkFalsifiers.test_evaluation_does_not_execute_either_solver) ... ok\ntest_missing_duplicate_reordered_malformed_records (test_network.NetworkFalsifiers.test_missing_duplicate_reordered_malformed_records) ... ok\ntest_reference_cannot_replace_numerical_path (test_network.NetworkFalsifiers.test_reference_cannot_replace_numerical_path) ... ok\ntest_attempt_export_and_provenance_validation (test_network_review.ReviewFalsifiers.test_attempt_export_and_provenance_validation) ... ok\ntest_clean_inflow_cannot_acquire_small_pollutant_ledger (test_network_review.ReviewFalsifiers.test_clean_inflow_cannot_acquire_small_pollutant_ledger) ... ok\ntest_csv_and_report_cannot_contradict_retained_network (test_network_review.ReviewFalsifiers.test_csv_and_report_cannot_contradict_retained_network) ... ok\ntest_cumulative_roundoff_after_twenty_efolds (test_network_review.ReviewFalsifiers.test_cumulative_roundoff_after_twenty_efolds) ... ok\ntest_custody_reclassification_beside_large_unrelated_stock (test_network_review.ReviewFalsifiers.test_custody_reclassification_beside_large_unrelated_stock) ... ok\ntest_large_class_cannot_hide_erased_small_class (test_network_review.ReviewFalsifiers.test_large_class_cannot_hide_erased_small_class) ... ok\ntest_long_transfer_path_and_near_simultaneous_events (test_network_review.ReviewFalsifiers.test_long_transfer_path_and_near_simultaneous_events) ... ok\ntest_missing_moved_and_false_event_state (test_network_review.ReviewFalsifiers.test_missing_moved_and_false_event_state) ... ok\ntest_no_derivative_rights_edit (test_network_review.ReviewFalsifiers.test_no_derivative_rights_edit) ... ok\ntest_relabelled_euler_is_not_reference (test_network_review.ReviewFalsifiers.test_relabelled_euler_is_not_reference) ... ok\ntest_tiny_positive_capacity_fails_admission (test_network_review.ReviewFalsifiers.test_tiny_positive_capacity_fails_admission) ... ok\ntest_cap_bound_grid_actually_refines (test_numerics.NumericsTests.test_cap_bound_grid_actually_refines) ... ok\ntest_default_independent_reference (test_numerics.NumericsTests.test_default_independent_reference) ... ok\ntest_hand_controls (test_numerics.NumericsTests.test_hand_controls) ... ok\ntest_independent_numerics_refine_and_capture_preserves_dynamics (test_numerics.NumericsTests.test_independent_numerics_refine_and_capture_preserves_dynamics) ... ok\ntest_small_time_outlet_retains_positive_second_order_term (test_numerics.NumericsTests.test_small_time_outlet_retains_positive_second_order_term) ... ok\ntest_zero_segment_and_nonzero_initial_source_control (test_numerics.NumericsTests.test_zero_segment_and_nonzero_initial_source_control) ... ok\ntest_changed_holdout_fails_after_durable_exposure (test_protocols.CalibrationControls.test_changed_holdout_fails_after_durable_exposure) ... ok\ntest_explicit_consumption_retains_old_evidence (test_protocols.CalibrationControls.test_explicit_consumption_retains_old_evidence) ... ok\ntest_failed_confirmation_is_retained_not_relabelled (test_protocols.CalibrationControls.test_failed_confirmation_is_retained_not_relabelled) ... ok\ntest_fit_never_reads_holdout_and_confirmation_locks_fitting (test_protocols.CalibrationControls.test_fit_never_reads_holdout_and_confirmation_locks_fitting) ... ok\ntest_interruption_after_exposure_before_read_is_consumed (test_protocols.CalibrationControls.test_interruption_after_exposure_before_read_is_consumed) ... ok\ntest_forged_summary_fails_even_after_rehash (test_protocols.CampaignControls.test_forged_summary_fails_even_after_rehash) ... ok\ntest_interruption_preserves_first_raw_and_denominator (test_protocols.CampaignControls.test_interruption_preserves_first_raw_and_denominator) ... ok\ntest_invalid_and_budget_samples_stay_in_denominator (test_protocols.CampaignControls.test_invalid_and_budget_samples_stay_in_denominator) ... ok\ntest_completed_campaign_sample_cannot_be_omitted_as_budget (test_protocols.ProtocolFalsifiers.test_completed_campaign_sample_cannot_be_omitted_as_budget) ... ok\ntest_completed_fit_candidate_cannot_be_omitted_as_budget (test_protocols.ProtocolFalsifiers.test_completed_fit_candidate_cannot_be_omitted_as_budget) ... ok\ntest_confirmation_requires_original_successful_fit_receipt (test_protocols.ProtocolFalsifiers.test_confirmation_requires_original_successful_fit_receipt) ... ok\ntest_csv_cannot_disagree_with_reconstructed_campaign (test_protocols.ProtocolFalsifiers.test_csv_cannot_disagree_with_reconstructed_campaign) ... ok\ntest_fit_loss_csv_cannot_disagree_with_retained_candidates (test_protocols.ProtocolFalsifiers.test_fit_loss_csv_cannot_disagree_with_retained_candidates) ... ok\ntest_holdout_support_is_not_new_after_metadata_or_parameter_edit (test_protocols.ProtocolFalsifiers.test_holdout_support_is_not_new_after_metadata_or_parameter_edit) ... ok\ntest_portable_replay_cannot_be_relabelled_first_confirmation (test_protocols.ProtocolFalsifiers.test_portable_replay_cannot_be_relabelled_first_confirmation) ... ok\ntest_conserved_mass_is_not_profile_accuracy (test_protocols.RemapControls.test_conserved_mass_is_not_profile_accuracy) ... ok\ntest_resolution_separates_spatial_and_time_reference (test_protocols.RemapControls.test_resolution_separates_spatial_and_time_reference) ... ok\ntest_complete_exact_comparison_and_offline_semantics (test_report.ReportTests.test_complete_exact_comparison_and_offline_semantics) ... ok\ntest_csv_preserves_every_finest_step_and_forcing (test_report.ReportTests.test_csv_preserves_every_finest_step_and_forcing) ... ok\ntest_large_chart_is_bounded_without_losing_segment_boundary (test_report.ReportTests.test_large_chart_is_bounded_without_losing_segment_boundary) ... ok\ntest_supplied_metadata_is_escaped (test_report.ReportTests.test_supplied_metadata_is_escaped) ... ok\ntest_zero_trajectory_has_finite_accessible_chart (test_report.ReportTests.test_zero_trajectory_has_finite_accessible_chart) ... ok\ntest_nested_json_has_a_useful_bounded_failure (test_study.StudyTests.test_nested_json_has_a_useful_bounded_failure) ... ok\ntest_positive_duration_cannot_disappear_from_time_grid (test_study.StudyTests.test_positive_duration_cannot_disappear_from_time_grid) ... ok\ntest_reject_budget_before_calculation (test_study.StudyTests.test_reject_budget_before_calculation) ... ok\ntest_reject_invalid_quantities_and_units (test_study.StudyTests.test_reject_invalid_quantities_and_units) ... ok\ntest_reject_nonfixed_volume_and_negative_forcing (test_study.StudyTests.test_reject_nonfixed_volume_and_negative_forcing) ... ok\ntest_reject_unsupported_fields_and_factor (test_study.StudyTests.test_reject_unsupported_fields_and_factor) ... ok\ntest_zero_duration_segment_allowed_but_not_empty_study (test_study.StudyTests.test_zero_duration_segment_allowed_but_not_empty_study) ... ok\n\n----------------------------------------------------------------------\nRan 83 tests in 24.724s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "tools/validate_plan.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.36328766896622255,
+      "stdout": "PASS: 20 negative probes: missing original, frozen acceptance, missing mapping, dangling dependency, dependency cycle, wrong project, duplicate outcome, orphan task, release scope, coverage mismatch, task order, wave order, false completion, duplicate acceptance, malformed dependency, count drift, lost successor, immutable history tamper, generated view drift, non-object plan\nPASS: 221 tasks, 28 active waves, 444 links; lineage, mappings, scope, DAG and generated views\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "tools/render_plan.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.025731099012773484,
+      "stdout": "PASS: generated views match\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "earth.py",
+        "calibration",
+        "fit",
+        "runs/cohort",
+        "--out",
+        "runs/forbidden-refit"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stdout": "",
+      "stderr": "ERROR: holdout already exposed; further fitting against this cohort is refused\n"
+    }
+  ],
+  "identical_reproduction": true,
+  "changed_input_changed_trajectory": true,
+  "parent_identity_retained": true,
+  "publicly_obtained": false,
+  "v05_controls": {
+    "network_identical_reproduction": true,
+    "all_sensitivity_attempts_retained": true,
+    "ordering_reversal_detected": true,
+    "spatial_time_separation": "PASSED_MANUFACTURED_REFINEMENT",
+    "equivalent_candidates": [
+      "equivalent_a",
+      "equivalent_b"
+    ],
+    "frozen_confirmation": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION",
+    "portable_replay_is_not_fresh_holdout": true,
+    "refit_after_exposure_rejected": true
+  },
+  "scope": "Preparation archive: 47 isolated command outcomes and 83 tests; final distribution checksum and verification are detached release artifacts. Runtime source digest is the exact numerical/CLI identity."
+}

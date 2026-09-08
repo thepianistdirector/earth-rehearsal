@@ -50,3 +50,12 @@ Original repository content is AGPL-3.0-only. Referenced code, documentation, da
 ## September 7 runtime source review
 
 Fresh official EPA [model guidance](https://www.epa.gov/measurements-modeling/guidance-development-evaluation-and-application-environmental-models) and [SWMM overview](https://www.epa.gov/water-research/storm-water-management-model-swmm) were inspected during launch. They support explicit evaluation/applicability and the separation of later runoff, routing and water-quality domains. No EPA model code, dataset or manual is bundled or used for BOX constants. The exact wholly synthetic fixture derives from this repository's EXPERIMENTS.md at a7e2fe7bc47726798ef01364f692a4ceb53f36e1 under AGPL-3.0-only. Analytic equations and Euler implementation are original project code. Python 3.12 standard library is the only runtime requirement; no third-party production dependency has been adopted.
+
+## September 8 manufactured-network reference
+
+Al-Mohy and Higham (2011), [Computing the Action of the Matrix Exponential](https://eprints.maths.manchester.ac.uk/1591/), supports exponential-action methods using Taylor approximation and scaling, including affine augmentation. Earth Rehearsal uses its own small, fixed-degree bounded implementation and elementary remainder bound; it does not copy or claim the full paper algorithm. The [EPA model-evaluation guidance](https://www.epa.gov/measurements-modeling/guidance-development-evaluation-and-application-environmental-models) continues to inform the distinction between numerical checks and fit-for-purpose environmental interpretation. These references supply no catchment, particle, capacity or fate parameters. All CATCHMENT-001 quantities are original synthetic controls under this repository license. No external runtime dependency, solver, dataset or model code is adopted.
+
+
+## v0.5 manufactured protocols
+
+The normalized plug-flow mass formula, donor-cell controls, overlap remapping, finite candidate-grid loss calculation and evidence protocols are original project derivations/code. They adopt no external implementation or parameters. Calibration observations are explicitly known synthetic reference outputs with the truth and generator documented in [their fixture notice](scenarios/calibration/README.md). A reserved synthetic input is not an independent field dataset. Reference certificates and review-driven numerical corrections are documented in the benchmark; the small implementation does not claim to reproduce the full Al-Mohy–Higham algorithm.

@@ -1,0 +1,121 @@
+{
+  "evidence_kind": "Bounded independent Astra code/physics critique and closure; not human/domain review",
+  "recorded_date": "2026-09-08",
+  "source_hashes": {
+    "src/earth_rehearsal/sources.py": "7a56891f70125266afba99e1fde8151c52f21cc2bd5edcf0b19046dec8e7a48f",
+    "src/earth_rehearsal/network_study.py": "314a3cb25a31340dbda7fb8fc2db54fa85af185fdd7d487d0afdbdd738a80a01",
+    "src/earth_rehearsal/network_layout.py": "cc5b6c0f44df74b153752dc5d6898af16af3fd11dddc3cda2177182a1a24f1f9",
+    "src/earth_rehearsal/network_numerical.py": "888e3593981f3a73215d05fda166ac575f447d46835f1fd4bd2bc1b8024bc1e1",
+    "src/earth_rehearsal/network_analytic.py": "216e383811516da2165bca6d77e5faf3a366bcdadb2041a3e30aefc20b5e6821",
+    "src/earth_rehearsal/network_evaluator.py": "cef4801a0f1a21b5916cd7cb577432b268449fb2e6055690d1277c1dee8c47e9",
+    "src/earth_rehearsal/network_bundle.py": "4300e9af7f6d21eaf516b8592d8c18e84f037007daedb075ada0870c59631bc7",
+    "src/earth_rehearsal/network_report.py": "82f7b236827de44fbe0ba38b861e0cf6be39b248fb82b1e052bc99e830b5d2e4",
+    "src/earth_rehearsal/network_cli.py": "cbb2bc243144ed7917225e8cff7422bff00dbd424d8350331d5541c6b74f5b9b",
+    "docs/benchmarks/CATCHMENT-001.md": "12212688eac0d61de96ddf0669842ac501a0af5dd894dae0478dc0315d2a9c66",
+    "tests/test_network.py": "737c4479f0b01b10ae908bb536f370fc290619d4a37dfd1f84a40632ea987795",
+    "scenarios/catchment-001.json": "81c1ad6679abfa6c6076270c2d08df093d00c884b2ff9af0b6620bc4fce60ef9",
+    "src/earth_rehearsal/reference_certificate.py": "ba051b4259d48eef6712f08aa219eb1f9e2eb362ae39d847b51b6ab7a09ee169",
+    "tests/test_network_review.py": "fd070cd24642506e50d135c58323824775e9fb59848f15beffbfaa87ba2339d7"
+  },
+  "closure_controls": [
+    {
+      "probe": "20 e-fold scalar decay with cumulative edge ledgers",
+      "outcome": {
+        "status": "VALID_SYNTHETIC_COMPARISON",
+        "closed_form_final_kg": 4.122307244877116e-09
+      }
+    },
+    {
+      "probe": "false pollutant edge transfer on pure water inlet",
+      "exception": "NetworkEvaluationError",
+      "message": "outside inflow has no implicit pollutant: mismatch (0.0001 versus 0)"
+    },
+    {
+      "probe": "long directed cycle with ordered class conversions",
+      "outcome": {
+        "validation": "ADMITTED",
+        "grid_counts": [
+          1
+        ],
+        "n0_gamma_at_15s": 4.609052193620052e-67,
+        "evaluation": "VALID_SYNTHETIC_COMPARISON"
+      }
+    },
+    {
+      "probe": "exactly simultaneous capacities",
+      "outcome": {
+        "status": "VALID_SYNTHETIC_COMPARISON",
+        "events": [
+          {
+            "capture": "a_cap",
+            "t": 512.9329438755053,
+            "captured_kg": 0.1
+          },
+          {
+            "capture": "b_cap",
+            "t": 512.9329438755053,
+            "captured_kg": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "probe": "near-simultaneous capacities delta1e-12",
+      "outcome": {
+        "status": "VALID_SYNTHETIC_COMPARISON",
+        "events": [
+          {
+            "capture": "a_cap",
+            "t": 512.9329438755053,
+            "captured_kg": 0.1
+          },
+          {
+            "capture": "b_cap",
+            "t": 512.9329438807684,
+            "captured_kg": 0.10000000000100001
+          }
+        ]
+      }
+    },
+    {
+      "probe": "near-simultaneous capacities delta1e-14",
+      "outcome": {
+        "status": "VALID_SYNTHETIC_COMPARISON",
+        "events": [
+          {
+            "capture": "a_cap",
+            "t": 512.9329438755053,
+            "captured_kg": 0.1
+          },
+          {
+            "capture": "b_cap",
+            "t": 512.9329438755053,
+            "captured_kg": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "probe": "second device zero flux",
+      "outcome": {
+        "status": "VALID_SYNTHETIC_COMPARISON",
+        "events": [
+          {
+            "capture": "a_cap",
+            "t": 512.9329438755053,
+            "captured_kg": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "exception": "NetworkEvaluationError",
+      "message": "storage interval balance: mismatch (5.964e-06 versus 5.892e-06)"
+    }
+  ],
+  "limits": [
+    "Targeted synthetic controls, not exhaustive graph or environment coverage",
+    "Later report/CSV consistency work was reviewed separately",
+    "No environmental, participant or qualified-review acceptance"
+  ]
+}

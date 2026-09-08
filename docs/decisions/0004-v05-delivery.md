@@ -1,0 +1,11 @@
+# Decision 0004: v0.2 through v0.5 delivery boundary
+
+Owner requested continued implementation through v0.5 on September 8, 2026. The native goal was replaced through the documented app-server goal API and read back as ACTIVE. The previous v0.1 goal was not marked complete. [GOAL.md](../../GOAL.md) carries its unfinished requirements into the expanded objective.
+
+The [milestone allocation](../../plan/milestones.json) turns the existing near-term W06-W14 roadmap into working increments. It preserves all 221 source identities, 27 original acceptance histories and current native predecessor/successor IDs. A release label is not a scientific evidence level. The exact v0.1.0 source and assets remain immutable; later runtime changes have new version/digest identities.
+
+The first spatial study is a manufactured directed compartment network with prescribed, locally balanced water flow. It is not a rainfall-runoff model or hydraulic solver. Conservative classes, capture capacities, class transfers, storage leakage/release and resource factors are explicitly synthetic computational controls. No plausible microplastic constants, settling law, disposal effectiveness or site interpretation is inferred. Independently justified physical interpretation, external data adoption and qualified reviews remain separate gates.
+
+The owner's instruction authorizes continued synthetic implementation while review and platform work proceed. It does not make a missing human observation true. Tasks whose original acceptance requires qualified or actual-user evidence keep that gap visible even after their software is implemented. No original graph dependency or acceptance is silently deleted to claim completion.
+
+v0.2 establishes the strict contract, source record validation and independent network references. v0.3 adds finite-capacity interventions and custody. v0.4 adds paired campaign and sensitivity/resolution evidence. v0.5 adds frozen confirmation/calibration records and completes the portable user workflow. The final exact release remains subject to applicable destination-specific publication authority and all original completion gates. Later external engines and long-term research domains are not adopted by this decision.

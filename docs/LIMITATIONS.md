@@ -1,4 +1,20 @@
-# Scope and limitations of 0.1
+# Scope and limitations
+
+## v0.5 synthetic workbench
+
+The implemented catchment is a prescribed-flow compartment network. It does not solve rainfall/runoff, channel momentum or hydraulic depth. Synthetic mobility/conversion classes have no asserted relationship to real particle size, density, settling, fragmentation or toxicity. Capture capacity and release/leakage rates are manufactured controls. Handling energy is an assumption, not a lifecycle result.
+
+Water and mass accounting, independent reference certificates, normalized grid convergence, source declarations and frozen synthetic confirmation verify software behavior within their contracts. None establishes environmental applicability. No ecological, health, disposal or lifecycle benefit is evaluated. The wider hydraulic, restoration, climate and treatment domains remain planned.
+
+Source records preserve declared permissions, current variable identity and transformation linkage. They do not independently establish external rights, original ancestry or truth. No third-party production solver or dataset is adopted. Known synthetic observation files are authored from the independent reference; the freezer and data author see them. The fitter's exclusion of holdout observation bytes is a software property, not blinded scientific validation.
+
+The calibration grid can be incomplete or contain equivalent candidate vectors. Its reported selection is reproducible but cannot establish global parameter identifiability. Distinct holdout inputs are not proof of statistical independence. Exposure is conservatively recorded before reading the holdout, and an interrupted exposure remains consumed. Replay never becomes fresh holdout evidence.
+
+All numerical, artifact and checkpoint budgets are defined in [STUDIES.md](STUDIES.md) and [CATCHMENT-001](benchmarks/CATCHMENT-001.md). They bound admitted work and retained artifacts, not OS-level memory, CPU or filesystem quotas. POSIX cohort locking targets Linux/macOS with Python 3.12. Version-specific package tests, browser checks and independent-machine observations must be read in [STATUS.md](../STATUS.md); earlier v0.1 evidence does not verify v0.5.
+
+Offline reports are regenerated during inspection to check consistency with retained evidence. Hashes and self-contained receipts cannot authenticate an author who controls all files. A valid completion marker proves protocol completion only after inspection; a completed protocol can still report failed scientific thresholds or invalid samples.
+
+## Preserved v0.1 BOX-001 scope
 
 BOX-001 tests an accounting calculation for one fictional fixed-volume mixed reservoir. The exact study has a dry segment and a storm segment, conservative pollutant, equal inflow/outflow and three paired arms. The first-order numerical method approximates its closed-form solution; numerical error is reported and refinement is checked. Neither method establishes environmental realism.
 

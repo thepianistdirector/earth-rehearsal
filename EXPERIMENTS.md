@@ -1,5 +1,8 @@
 # Earth Rehearsal experiment and evaluation contract
 
+Current implementation: BOX-001 remains the preserved reservoir benchmark. v0.5 additionally implements [CATCHMENT-001](docs/benchmarks/CATCHMENT-001.md), [frozen campaign/confirmation decisions](docs/decisions/0005-study-campaigns.md) and [the executable study workflows](docs/STUDIES.md). All are original A0 manufactured controls; the later environmental experiments below retain their separate evidence gates.
+
+
 Status: accepted architecture-foundation requirements; the narrow BOX-001 runtime now has local numerical and recovery evidence. Public release and human review remain pending; see STATUS.md.
 
 ## Research programme contract

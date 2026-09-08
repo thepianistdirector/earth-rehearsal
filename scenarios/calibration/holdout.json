@@ -1,0 +1,31 @@
+{
+  "format": "earth-rehearsal-observations-v1",
+  "split": "holdout",
+  "classification": "wholly_synthetic_reference",
+  "cases": [
+    {
+      "id": "confirmation_shorter_storm",
+      "input_study_id": "77857e585661482c9b83044b82540b88b146a9af2d6f47c434626df06fef56d2",
+      "observations": [
+        {
+          "observable": "prevention_escape",
+          "value": 0.04099619586011406,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        },
+        {
+          "observable": "capture_storage",
+          "value": 0.24628507262639876,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        },
+        {
+          "observable": "capture_unknown",
+          "value": 0.011278170246684574,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        }
+      ]
+    }
+  ]
+}

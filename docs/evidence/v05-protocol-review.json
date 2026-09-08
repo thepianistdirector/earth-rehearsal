@@ -1,0 +1,98 @@
+{
+  "evidence_kind": "Bounded independent Astra protocol critique and closure; not human/domain review",
+  "recorded_date": "2026-09-08",
+  "closure_results": {
+    "closure/results.json": {
+      "campaign_omission": {
+        "error": "BundleError",
+        "message": "unrun sample retains child computation artifacts"
+      },
+      "duplicate_holdout_support": {
+        "error": "ValueError",
+        "message": "holdout must use distinct experimental controls; metadata or fitted-value edits do not create unseen support"
+      },
+      "selection_tamper": {
+        "error": "BundleError",
+        "message": "unrun candidate retains computation artifacts"
+      },
+      "source_end": {
+        "calibration": "19e369c9303b7aaf382b52076344a578ced0c126939a5f28774f4b1492c977c1",
+        "campaign": "3d53bb06cb9817cbf9173f5b45275f488d3193eab63e51d34b665e3048b6d0ec",
+        "cohort": "51b4de3d49142f50c44ceb28e1d19a6fd124537ae455e3b4a04c4f634190d36e",
+        "study_archive": "3e9a72c7c7e591a443618c914a7e2b319501b3001c78b6fd17718cf0a481fc08"
+      },
+      "source_start": {
+        "calibration": "19e369c9303b7aaf382b52076344a578ced0c126939a5f28774f4b1492c977c1",
+        "campaign": "3d53bb06cb9817cbf9173f5b45275f488d3193eab63e51d34b665e3048b6d0ec",
+        "cohort": "51b4de3d49142f50c44ceb28e1d19a6fd124537ae455e3b4a04c4f634190d36e",
+        "study_archive": "3e9a72c7c7e591a443618c914a7e2b319501b3001c78b6fd17718cf0a481fc08"
+      }
+    },
+    "surface-fixed-result.json": {
+      "rejected": true,
+      "error": "BundleError",
+      "message": "summary.csv: CSV differs from reconstructed evidence"
+    },
+    "replay-fixed-result.json": {
+      "rejected": true,
+      "error": "BundleError",
+      "message": "portable replay cannot become first holdout evidence"
+    },
+    "guards-fixed/guard-results.json": {
+      "development_only_and_budget": {
+        "attempt_statuses": [
+          "SUCCEEDED",
+          "NOT_RUN_BUDGET",
+          "NOT_RUN_BUDGET"
+        ],
+        "holdout_operations": {
+          "open": 0,
+          "stat": 0
+        },
+        "inspect_matches": true,
+        "selection": {
+          "candidate_denominator": 3,
+          "equivalent_candidates": [
+            "lower"
+          ],
+          "minimum_loss_kg2": 0.002024999999999994,
+          "scope": "Finite tested candidate grid only. Equivalent vectors remain unresolved; selection order breaks ties for reproducibility, not identifiability. No environmental validation is established.",
+          "selected": {
+            "id": "lower",
+            "values": {
+              "factor": 0.25
+            }
+          },
+          "status": "UNRESOLVED_INCOMPLETE_GRID"
+        }
+      },
+      "exposure_interruption": {
+        "attempts": [
+          {
+            "id": "hold",
+            "status": "NOT_RUN_INTERRUPTION"
+          },
+          {
+            "id": "hold2",
+            "status": "NOT_RUN_INTERRUPTION"
+          }
+        ],
+        "complete_exists": false,
+        "exposure_durable": true,
+        "observations_read_into_confirmation": false,
+        "refit_rejected": "BundleError: holdout already exposed; further fitting against this cohort is refused",
+        "scheduled_holdout_cases": 2
+      },
+      "threshold_guard": {
+        "before": "FAILED_FROZEN_SYNTHETIC_CONFIRMATION",
+        "forged_summary": "PASSED_FROZEN_SYNTHETIC_CONFIRMATION",
+        "rejection": "BundleError: confirmation selection differs from retained development evidence"
+      }
+    }
+  },
+  "limits": [
+    "Hashes and receipts do not authenticate an author controlling every file",
+    "No OS or power-loss stress test",
+    "Final packaged-runtime evidence is separate"
+  ]
+}

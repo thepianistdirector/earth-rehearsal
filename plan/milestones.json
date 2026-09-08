@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "ownerInstructionDate": "2026-09-08",
+  "activeTarget": "0.5",
+  "goal": "GOAL.md",
+  "historicalTaskAcceptancePreserved": true,
+  "reviewGatesCarriedForward": [
+    "ER-B05-05",
+    "ER-B05-07",
+    "ER-B05-08"
+  ],
+  "milestones": [
+    {
+      "version": "0.2",
+      "waves": [
+        "W06",
+        "W07",
+        "W08"
+      ],
+      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "outcome": "Synthetic catchment contracts, lawful source metadata, closed/open compartment transport, independent references and conservation falsifiers"
+    },
+    {
+      "version": "0.3",
+      "waves": [
+        "W09",
+        "W10"
+      ],
+      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "outcome": "Paired prevention and finite-capacity capture, storage/release/leakage, class-preserving custody and separately declared resource assumptions"
+    },
+    {
+      "version": "0.4",
+      "waves": [
+        "W11",
+        "W12",
+        "W13"
+      ],
+      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "outcome": "Dry/storm comparison, retained invalid attempts, sensitivity, timestep/grid/remapping diagnostics and reversal guards"
+    },
+    {
+      "version": "0.5",
+      "waves": [
+        "W14"
+      ],
+      "status": "IMPLEMENTED_PENDING_RELEASE_AND_EXTERNAL_GATES",
+      "outcome": "Frozen development/confirmation studies, calibration and identifiability records, holdout consumption, accessible portable results and exact verified public release"
+    }
+  ],
+  "crossCuttingRequirements": [
+    "Offline inspect/export/reproduction and interruption recovery",
+    "Independent packaged execution on every claimed environment",
+    "Actual required human/qualified review and external participant evidence",
+    "Accepted public native roadmap/task readback",
+    "No invented observations, plausible particle/fate parameters or real-world benefit"
+  ],
+  "executionRule": "Synthetic known-answer/manufactured implementation may progress while interpretation and publication gates remain pending. Original task completion, qualified review and public acceptance are never inferred from implementation. Long-term W15-W27 remain separately proposed research work.",
+  "evidenceScope": "Local implementation and A0 synthetic verification; original task acceptance and required human/native/public evidence remain separate."
+}

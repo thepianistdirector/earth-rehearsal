@@ -1,0 +1,16 @@
+$ <MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12 -m unittest discover -s tests -p test_bundle.py -v
+test_caught_interruption_preserves_prior_evidence (test_bundle.BundleTests.test_caught_interruption_preserves_prior_evidence) ... ok
+test_complete_inspect_does_not_execute_numerics (test_bundle.BundleTests.test_complete_inspect_does_not_execute_numerics) ... ok
+test_failed_evaluation_keeps_raw_evidence_without_complete_marker (test_bundle.BundleTests.test_failed_evaluation_keeps_raw_evidence_without_complete_marker) ... ok
+test_hash_and_missing_marker_rejected (test_bundle.BundleTests.test_hash_and_missing_marker_rejected) ... ok
+test_interrupt_after_activation_leaves_complete_result (test_bundle.BundleTests.test_interrupt_after_activation_leaves_complete_result) ... ok
+test_process_death_before_calculation_and_activation (test_bundle.BundleTests.test_process_death_before_calculation_and_activation) ... ok
+test_reproduce_and_supported_change_produce_real_results (test_bundle.BundleTests.test_reproduce_and_supported_change_produce_real_results) ... ok
+test_reproduce_requires_matching_runtime (test_bundle.BundleTests.test_reproduce_requires_matching_runtime) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.975s
+
+OK
+
+EXIT=0

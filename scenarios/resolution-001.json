@@ -1,0 +1,15 @@
+{
+  "format": "earth-rehearsal-resolution-v1",
+  "id": "normalized-channel-001",
+  "total_volume_m3": 1000,
+  "flow_m3_s": 1,
+  "initial_mass_kg": 1,
+  "duration_s": 500,
+  "cells": [1,2,4,8],
+  "remap": {
+    "source_edges": [0,0.25,0.5,0.75,1],
+    "target_edges": [0,0.5,1],
+    "source_mass_kg": [0,0.1,0.3,0.6],
+    "profile": "piecewise_constant_cell_average"
+  }
+}

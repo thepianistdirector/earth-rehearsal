@@ -1,0 +1,55 @@
+{
+  "format": "earth-rehearsal-observations-v1",
+  "split": "development",
+  "classification": "wholly_synthetic_reference",
+  "cases": [
+    {
+      "id": "development_dry",
+      "input_study_id": "7ec93d135abbb4005bf072f29e133d6c3b1ed5c1e292f6e34048965814929349",
+      "observations": [
+        {
+          "observable": "prevention_escape",
+          "value": 0.0028070757444185273,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        },
+        {
+          "observable": "capture_storage",
+          "value": 0.03480057334181074,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        },
+        {
+          "observable": "capture_unknown",
+          "value": 0.0033233047682283325,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        }
+      ]
+    },
+    {
+      "id": "development_storm",
+      "input_study_id": "5d815e06f7c7bf59c7656e5b3eecc7671abe22b3737d181c3cb121981d2787fe",
+      "observations": [
+        {
+          "observable": "prevention_escape",
+          "value": 0.21929421939018567,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        },
+        {
+          "observable": "capture_storage",
+          "value": 0.828483972361542,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        },
+        {
+          "observable": "capture_unknown",
+          "value": 0.06609913582546792,
+          "unit": "kg",
+          "quality": "SYNTHETIC_CONTROL"
+        }
+      ]
+    }
+  ]
+}

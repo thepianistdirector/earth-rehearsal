@@ -27,9 +27,17 @@ def _summary(result):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description='Reproduce a fictional mixed-reservoir accounting experiment, offline.')
+    args_in=list(sys.argv[1:] if argv is None else argv)
+    if args_in and args_in[0]=='catchment':
+        from .network_cli import main as catchment_main
+        return catchment_main(args_in[1:])
+    if args_in and args_in[0] in ('campaign','resolution','calibration'):
+        from .protocol_cli import main as protocol_main
+        return protocol_main(args_in[0],args_in[1:])
+    parser = argparse.ArgumentParser(description='Offline synthetic environmental-study controls: BOX-001, catchment, sensitivity, resolution and frozen calibration.')
     parser.add_argument('--version', action='version', version=__version__)
     commands = parser.add_subparsers(dest='command', required=True)
+    for name,help_text in [('catchment','source-bound compartment networks and finite capture'),('campaign','frozen sensitivity samples and reversal guards'),('resolution','separate spatial/time error and conservative remapping'),('calibration','freeze, fit, confirm and consume synthetic holdouts')]:commands.add_parser(name,help=help_text,add_help=False)
     run = commands.add_parser('run', help='run all three arms into a new evidence directory')
     run.add_argument('--study', type=Path, default=default_path())
     run.add_argument('--out', type=Path, required=True)
@@ -48,7 +56,7 @@ def main(argv=None):
     negative = commands.add_parser('negative-control', help='demonstrate rejection of an invalid conservation or disposal record')
     negative.add_argument('--kind', choices=('conservation', 'disposal', 'source', 'custody'), default='conservation')
     negative.add_argument('--out', type=Path, required=True, help='new JSON diagnostic file')
-    args = parser.parse_args(argv)
+    args = parser.parse_args(args_in)
     try:
         if args.command == 'run':
             study = load(args.study)

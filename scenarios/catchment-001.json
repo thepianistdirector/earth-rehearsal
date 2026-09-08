@@ -1,0 +1,689 @@
+{
+  "schema_version": 1,
+  "study": "CATCHMENT-001",
+  "study_version": "1.0.0",
+  "source_class": "wholly_synthetic",
+  "applicability": "A0_KNOWN_ANSWER",
+  "support": {
+    "coordinate_reference": "LOCAL_SYNTHETIC",
+    "spatial_extent": "Three fictional well-mixed control volumes in a directed chain; diagram positions have no geographic interpretation.",
+    "temporal": "Relative elapsed seconds, one declared dry interval followed by one declared storm interval."
+  },
+  "classes": [
+    {
+      "id": "mobile",
+      "mobility": {
+        "value": 1,
+        "unit": "1",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "mobile_mobility"
+        }
+      }
+    },
+    {
+      "id": "retained",
+      "mobility": {
+        "value": 0,
+        "unit": "1",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "retained_mobility"
+        }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "headwater",
+      "volume": {
+        "value": 1000,
+        "unit": "m3",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "headwater_volume"
+        }
+      },
+      "initial_mass": {
+        "mobile": {
+          "value": 0,
+          "unit": "kg",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "headwater_initial_mobile"
+          }
+        },
+        "retained": {
+          "value": 0,
+          "unit": "kg",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "headwater_initial_retained"
+          }
+        }
+      },
+      "position": {
+        "x": 0.1,
+        "y": 0.5
+      }
+    },
+    {
+      "id": "middle",
+      "volume": {
+        "value": 1000,
+        "unit": "m3",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "middle_volume"
+        }
+      },
+      "initial_mass": {
+        "mobile": {
+          "value": 0,
+          "unit": "kg",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "middle_initial_mobile"
+          }
+        },
+        "retained": {
+          "value": 0,
+          "unit": "kg",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "middle_initial_retained"
+          }
+        }
+      },
+      "position": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "id": "outlet",
+      "volume": {
+        "value": 1000,
+        "unit": "m3",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "outlet_volume"
+        }
+      },
+      "initial_mass": {
+        "mobile": {
+          "value": 0,
+          "unit": "kg",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "outlet_initial_mobile"
+          }
+        },
+        "retained": {
+          "value": 0,
+          "unit": "kg",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "outlet_initial_retained"
+          }
+        }
+      },
+      "position": {
+        "x": 0.9,
+        "y": 0.5
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "inflow",
+      "from": "outside",
+      "to": "headwater"
+    },
+    {
+      "id": "head_to_middle",
+      "from": "headwater",
+      "to": "middle"
+    },
+    {
+      "id": "middle_to_outlet",
+      "from": "middle",
+      "to": "outlet"
+    },
+    {
+      "id": "escape",
+      "from": "outlet",
+      "to": "outside"
+    }
+  ],
+  "segments": [
+    {
+      "id": "dry",
+      "duration": {
+        "value": 3600,
+        "unit": "s",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "dry_duration"
+        }
+      },
+      "flows": {
+        "inflow": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "dry_flow_inflow"
+          }
+        },
+        "head_to_middle": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "dry_flow_head_to_middle"
+          }
+        },
+        "middle_to_outlet": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "dry_flow_middle_to_outlet"
+          }
+        },
+        "escape": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "dry_flow_escape"
+          }
+        }
+      },
+      "sources": {
+        "headwater": {
+          "mobile": {
+            "value": 0.001,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "dry_source_headwater_mobile"
+            }
+          },
+          "retained": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "dry_source_headwater_retained"
+            }
+          }
+        },
+        "middle": {
+          "mobile": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "dry_source_middle_mobile"
+            }
+          },
+          "retained": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "dry_source_middle_retained"
+            }
+          }
+        },
+        "outlet": {
+          "mobile": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "dry_source_outlet_mobile"
+            }
+          },
+          "retained": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "dry_source_outlet_retained"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "storm",
+      "duration": {
+        "value": 1800,
+        "unit": "s",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "storm_duration"
+        }
+      },
+      "flows": {
+        "inflow": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "storm_flow_inflow"
+          }
+        },
+        "head_to_middle": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "storm_flow_head_to_middle"
+          }
+        },
+        "middle_to_outlet": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "storm_flow_middle_to_outlet"
+          }
+        },
+        "escape": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "source": {
+            "record": "manufactured_catchment",
+            "variable": "storm_flow_escape"
+          }
+        }
+      },
+      "sources": {
+        "headwater": {
+          "mobile": {
+            "value": 0.003,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "storm_source_headwater_mobile"
+            }
+          },
+          "retained": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "storm_source_headwater_retained"
+            }
+          }
+        },
+        "middle": {
+          "mobile": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "storm_source_middle_mobile"
+            }
+          },
+          "retained": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "storm_source_middle_retained"
+            }
+          }
+        },
+        "outlet": {
+          "mobile": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "storm_source_outlet_mobile"
+            }
+          },
+          "retained": {
+            "value": 0,
+            "unit": "kg/s",
+            "source": {
+              "record": "manufactured_catchment",
+              "variable": "storm_source_outlet_retained"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "conversions": [
+    {
+      "id": "retention_control",
+      "node": "headwater",
+      "from_class": "mobile",
+      "to_class": "retained",
+      "rate": {
+        "value": 1e-05,
+        "unit": "1/s",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "retention_rate"
+        }
+      }
+    },
+    {
+      "id": "return_control",
+      "node": "headwater",
+      "from_class": "retained",
+      "to_class": "mobile",
+      "rate": {
+        "value": 2e-06,
+        "unit": "1/s",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "return_rate"
+        }
+      }
+    }
+  ],
+  "capture": [
+    {
+      "id": "interceptor",
+      "edge": "middle_to_outlet",
+      "fraction": {
+        "value": 0.6,
+        "unit": "1",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "capture_fraction"
+        }
+      },
+      "capacity": {
+        "value": 0.4,
+        "unit": "kg",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "capture_capacity"
+        }
+      },
+      "release_rate": {
+        "value": 0.0001,
+        "unit": "1/s",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "storage_release"
+        }
+      },
+      "leak_rate": {
+        "value": 2e-05,
+        "unit": "1/s",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "storage_leak"
+        }
+      },
+      "leak_destination": "middle",
+      "energy": {
+        "value": 0.2,
+        "unit": "kWh/kg",
+        "source": {
+          "record": "manufactured_catchment",
+          "variable": "handling_energy"
+        }
+      }
+    }
+  ],
+  "source_factor": {
+    "value": 0.5,
+    "unit": "1",
+    "source": {
+      "record": "manufactured_catchment",
+      "variable": "source_factor"
+    }
+  },
+  "omissions": [
+    "No rainfall-runoff or hydraulic solution",
+    "No measured or plausible particle size/density/shape",
+    "Synthetic class conversion is not validated settling or fragmentation",
+    "No real disposal, lifecycle, ecological or health result"
+  ],
+  "source_records": [
+    {
+      "id": "manufactured_catchment",
+      "kind": "wholly_synthetic",
+      "title": "Original CATCHMENT-001 numerical and custody controls",
+      "provider": "Lucas Santana / Earth Rehearsal",
+      "url": "https://github.com/thepianistdirector/earth-rehearsal",
+      "version": "CATCHMENT-001/1.0.0",
+      "license": "AGPL-3.0-only",
+      "rights": {
+        "use": true,
+        "derivatives": true,
+        "redistribution": true
+      },
+      "coverage": {
+        "spatial": "Three fictional compartments, no real-site coverage",
+        "temporal": "Relative dry/storm intervals only",
+        "coordinate_reference": "LOCAL_SYNTHETIC",
+        "resolution": "Prescribed mixed compartments, not a measured grid"
+      },
+      "values": {
+        "mobile_mobility": {
+          "value": 1,
+          "unit": "1",
+          "quality_flags": []
+        },
+        "retained_mobility": {
+          "value": 0,
+          "unit": "1",
+          "quality_flags": []
+        },
+        "headwater_volume": {
+          "value": 1000,
+          "unit": "m3",
+          "quality_flags": []
+        },
+        "headwater_initial_mobile": {
+          "value": 0,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "headwater_initial_retained": {
+          "value": 0,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "middle_volume": {
+          "value": 1000,
+          "unit": "m3",
+          "quality_flags": []
+        },
+        "middle_initial_mobile": {
+          "value": 0,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "middle_initial_retained": {
+          "value": 0,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "outlet_volume": {
+          "value": 1000,
+          "unit": "m3",
+          "quality_flags": []
+        },
+        "outlet_initial_mobile": {
+          "value": 0,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "outlet_initial_retained": {
+          "value": 0,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "dry_duration": {
+          "value": 3600,
+          "unit": "s",
+          "quality_flags": []
+        },
+        "dry_flow_inflow": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "dry_flow_head_to_middle": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "dry_flow_middle_to_outlet": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "dry_flow_escape": {
+          "value": 0.1,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "dry_source_headwater_mobile": {
+          "value": 0.001,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "dry_source_headwater_retained": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "dry_source_middle_mobile": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "dry_source_middle_retained": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "dry_source_outlet_mobile": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "dry_source_outlet_retained": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "storm_duration": {
+          "value": 1800,
+          "unit": "s",
+          "quality_flags": []
+        },
+        "storm_flow_inflow": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "storm_flow_head_to_middle": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "storm_flow_middle_to_outlet": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "storm_flow_escape": {
+          "value": 0.5,
+          "unit": "m3/s",
+          "quality_flags": []
+        },
+        "storm_source_headwater_mobile": {
+          "value": 0.003,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "storm_source_headwater_retained": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "storm_source_middle_mobile": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "storm_source_middle_retained": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "storm_source_outlet_mobile": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "storm_source_outlet_retained": {
+          "value": 0,
+          "unit": "kg/s",
+          "quality_flags": []
+        },
+        "retention_rate": {
+          "value": 1e-05,
+          "unit": "1/s",
+          "quality_flags": []
+        },
+        "return_rate": {
+          "value": 2e-06,
+          "unit": "1/s",
+          "quality_flags": []
+        },
+        "capture_fraction": {
+          "value": 0.6,
+          "unit": "1",
+          "quality_flags": []
+        },
+        "capture_capacity": {
+          "value": 0.4,
+          "unit": "kg",
+          "quality_flags": []
+        },
+        "storage_release": {
+          "value": 0.0001,
+          "unit": "1/s",
+          "quality_flags": []
+        },
+        "storage_leak": {
+          "value": 2e-05,
+          "unit": "1/s",
+          "quality_flags": []
+        },
+        "handling_energy": {
+          "value": 0.2,
+          "unit": "kWh/kg",
+          "quality_flags": []
+        },
+        "source_factor": {
+          "value": 0.5,
+          "unit": "1",
+          "quality_flags": []
+        }
+      },
+      "quality_flags": [
+        "wholly synthetic computational parameters"
+      ],
+      "missing_variables": [],
+      "transforms": [],
+      "content_sha256": "6dad2f4730d1d109f94ca450f67ed1eac426be80f0bc3bdc304553285d19c3ec"
+    }
+  ]
+}

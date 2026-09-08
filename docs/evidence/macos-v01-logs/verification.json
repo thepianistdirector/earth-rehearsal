@@ -1,0 +1,204 @@
+{
+  "evidence_kind": "Agent-run verification on independent Mac; no human participant observation",
+  "started_utc": "2026-09-08T12:46:29.039993+00:00",
+  "environment": {
+    "macos": "26.6.2",
+    "machine": "arm64",
+    "kernel": "25.6.0",
+    "python_executable": "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+    "python": "Python 3.12.13"
+  },
+  "source_directory": "<MAC_HOME>/Developer/codex-mac-helper/tests/public-source-20260908/earth-rehearsal-0.1.0",
+  "results": [
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "run",
+        "--out",
+        "runs/first"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/01.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "inspect",
+        "runs/first"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/02.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "run",
+        "--source-factor",
+        "0.25",
+        "--out",
+        "runs/changed"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/03.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "conservation",
+        "--out",
+        "runs/conservation.json"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/04.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "negative-control",
+        "--kind",
+        "disposal",
+        "--out",
+        "runs/disposal.json"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/05.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "reproduce",
+        "runs/first",
+        "--out",
+        "runs/reproduced"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/06.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "export",
+        "runs/first",
+        "--out",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/07.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "inspect",
+        "runs/exported"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/08.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_bundle.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/09.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "export",
+        "runs/first",
+        "--out",
+        "runs/incomplete-demo"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/10.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "-c",
+        "from pathlib import Path; Path('runs/incomplete-demo/complete.json').unlink()"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/11.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "inspect",
+        "runs/incomplete-demo"
+      ],
+      "exit_code": 2,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/12.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "run",
+        "--study",
+        "runs/incomplete-demo/study.json",
+        "--out",
+        "runs/recovered-demo"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/13.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "inspect",
+        "runs/recovered-demo"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/14.txt"
+    },
+    {
+      "command": [
+        "<MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+        "earth.py",
+        "inspect",
+        "runs/first"
+      ],
+      "exit_code": 0,
+      "expected_outcome_met": true,
+      "log": "<MAC_HOME>/Developer/codex-mac-helper/tests/mac-20260908/15.txt"
+    }
+  ],
+  "completed_utc": "2026-09-08T12:46:31.470154+00:00",
+  "all_expected_outcomes_met": true
+}

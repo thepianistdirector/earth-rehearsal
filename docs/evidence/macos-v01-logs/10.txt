@@ -1,0 +1,4 @@
+$ <MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12 earth.py export runs/first --out runs/incomplete-demo
+Exported verified evidence: runs/incomplete-demo
+
+EXIT=0

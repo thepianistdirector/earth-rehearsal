@@ -1,0 +1,4 @@
+$ <MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12 earth.py inspect runs/incomplete-demo
+ERROR: incomplete attempt: complete.json is absent; rerun its study.json into a new directory
+
+EXIT=2

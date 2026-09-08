@@ -1,0 +1,4 @@
+$ <MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12 earth.py negative-control --kind conservation --out runs/conservation.json
+EXPECTED_REJECTION: step mass balance: mismatch (-0.1 versus 0)
+
+EXIT=0

@@ -1,0 +1,11 @@
+$ <MAC_HOME>/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12 earth.py inspect runs/first
+BOX-001 | A0_KNOWN_ANSWER | wholly synthetic | Earth Rehearsal 0.1.0
+Arm                       In reservoir kg     Escaped kg    Captured kg
+BASELINE                      4.794600525    4.205399475    0.000000000
+SOURCE_REDUCTION              2.397300262    2.102699738    0.000000000
+OUTLET_CAPTURE                4.794600525    2.102699738    2.102699738
+Captured mass is transferred through storage to destination_unknown.
+Disposal, lifecycle, ecological and health benefit: NOT_EVALUATED.
+VERIFIED: retained evidence, hashes and independently recomputed balances
+
+EXIT=0

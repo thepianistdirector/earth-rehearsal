@@ -1,0 +1,69 @@
+{
+  "scope": "Retained independent Mac v0.1 command logs; home-prefix-redacted derivatives, verified against atomic helper transfer receipt. No commands were rerun for this transfer.",
+  "files": {
+    "01.txt": {
+      "sha256": "596413e8708f1dfca32c560d50298d06b6c39cc0f269825e641803483eb7bc9d",
+      "bytes": 645
+    },
+    "02.txt": {
+      "sha256": "eb08041dca0bcc7979d7ae3e4c01958d6521f3977a17a4172345bbd92994b78f",
+      "bytes": 689
+    },
+    "03.txt": {
+      "sha256": "1c902de0468a8d0244c7f01fb125d33f186964533e63b2e2e91ba67b65ee0de8",
+      "bytes": 670
+    },
+    "04.txt": {
+      "sha256": "a43c4b8e3ebc103d54141ce6587d77f55b58a64bb996164192920a499ff43b72",
+      "bytes": 233
+    },
+    "05.txt": {
+      "sha256": "60a08657e7e894a3d84718697cb048270856f8950f39679490988c0d55d0cca6",
+      "bytes": 236
+    },
+    "06.txt": {
+      "sha256": "663d7e6e7c6276bbcdbab3a720873410b99f85e22fbde833ab19d644723a8f85",
+      "bytes": 683
+    },
+    "07.txt": {
+      "sha256": "2f173c5ffd0bb4f4233e7ec48bd189f793a3f9befbccbeb67801897d52c0201b",
+      "bytes": 183
+    },
+    "08.txt": {
+      "sha256": "05b66ee085e6b86c359ee8808c31b62f252eb77ebf238e989ee8a3ff0ce14548",
+      "bytes": 692
+    },
+    "09.txt": {
+      "sha256": "64d1a4ec986a528cedddb6b191c4767d44c8213f089ad57baffcb46dd3dbfa8d",
+      "bytes": 1323
+    },
+    "10.txt": {
+      "sha256": "5580ea0babfc6de6a7132871ace6aaa9a4dbedc6bd87263b12a6b787047180a8",
+      "bytes": 197
+    },
+    "11.txt": {
+      "sha256": "d793a85ebce6d152a2039841af3f20de8f33bebc397f5ca6f4b9ae0bcff15b1e",
+      "bytes": 175
+    },
+    "12.txt": {
+      "sha256": "0d8504f985df279f97065d5e26aebaf6b68492a1abf8879694fc62b90c4061cd",
+      "bytes": 226
+    },
+    "13.txt": {
+      "sha256": "d3adeb05ca3769bf7bba52aa5f79bab412a1645d3ccd7001cbe539297692871b",
+      "bytes": 703
+    },
+    "14.txt": {
+      "sha256": "549d549c9e4ad3a87511934ee1130888ad3ed16e59f6e606333589b4ca82e87d",
+      "bytes": 698
+    },
+    "15.txt": {
+      "sha256": "eb08041dca0bcc7979d7ae3e4c01958d6521f3977a17a4172345bbd92994b78f",
+      "bytes": 689
+    },
+    "verification.json": {
+      "sha256": "7021c8dffb4053e539f1113da2602fd88a41e1da5073d3d024c98184c593d149",
+      "bytes": 6196
+    }
+  }
+}

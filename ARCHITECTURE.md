@@ -1,6 +1,25 @@
 # Earth Rehearsal architecture
 
-Status: **architecture foundation accepted; narrow BOX-001 runtime implemented and locally verified; public release pending**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
+Status: **v0.1.0 BOX-001 is public; the v0.5 synthetic workbench is implemented and undergoing candidate verification. Human/qualified review and native publication remain incomplete.** Owner: Lucas Santana. Foundation date: 2026-09-07. Evidence: [STATUS.md](STATUS.md).
+
+## Implemented v0.5 boundary
+
+The working modules implement source-bound prescribed-flow compartment controls, finite capture/storage/leakage, independent reference certification, explicit sensitivity samples, normalized channel/remapping controls, frozen synthetic fitting/confirmation and portable offline evidence. [The study guide](docs/STUDIES.md) and [CATCHMENT-001 contract](docs/benchmarks/CATCHMENT-001.md) state exact supported schemas and resource bounds.
+
+The broader adapter architecture below remains the research programme. v0.5 adds no hydraulic, particle-property, ecological, lifecycle or climate solver and no external dependency. Its synthetic calibration/confirmation remains A0 known-answer evidence. Existing historical task acceptance is preserved; implemented software does not satisfy missing domain or participant review.
+
+```mermaid
+flowchart LR
+  S[Source-bound synthetic study] --> E[Independent Euler and exponential paths]
+  E --> V[Local physics, custody and reference certificates]
+  V --> B[Raw network evidence]
+  B --> C[Ordered sensitivity and resolution controls]
+  B --> F[Frozen development fitting]
+  F --> X[Durable holdout exposure]
+  X --> H[Frozen synthetic confirmation]
+  C --> O[Verified offline HTML, CSV and JSON]
+  H --> O
+```
 
 ## Product boundary
 
